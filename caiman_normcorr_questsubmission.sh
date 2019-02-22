@@ -22,7 +22,7 @@ source activate caiman
 
 #need to cd to module directory
 
-cd /home/jma819/caimandata/
+cd /home/jma819/caimandata/demos/notebooks/caiman_analysis
 
 #run normcorr
 
@@ -32,6 +32,6 @@ echo "through: $4"
 
 echo "running motion correction"
 
-python caiman_motion_correction_normcorr_e_script.py $1 $2 $3 $4 
+python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs H10_M19_S59msCam 1 10 
 
 echo "finished motion correction"
