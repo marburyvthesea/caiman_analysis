@@ -22,7 +22,7 @@ source activate caiman
 
 #need to cd to module directory
 
-cd /home/jma819/caimandata/demos/notebooks/caiman_analysis
+cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 #run normcorr
 
