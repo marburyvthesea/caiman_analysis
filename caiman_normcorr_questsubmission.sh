@@ -4,7 +4,7 @@
 #MSUB -l walltime=08:00:00
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
-#MSUB -N normcorr
+#MSUB -N normcorr_caiman
 #MSUB -l nodes=1:ppn=12
 cd ~
 
