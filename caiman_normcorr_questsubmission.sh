@@ -30,5 +30,8 @@ echo "loading folder: $1"
 echo "file: $2 $3"
 echo "through: $4"
 
+echo "running motion correction"
 
 python caiman_motion_correction_normcorr_e_script.py $1 $2 $3 $4 
+
+echo "finished motion correction"
