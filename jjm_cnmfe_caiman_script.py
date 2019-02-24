@@ -34,6 +34,7 @@ from caiman.source_extraction.cnmf import params as params
 from caiman.utils.visualization import plot_contours, nb_view_patches, nb_plot_contour
 import cv2
 import sys
+import h5py
 
 try:
     cv2.setNumThreads(0)
