@@ -89,10 +89,10 @@ if motion_correct:
         #plt.ylabel('pixels')
 
     bord_px = 0 if border_nan is 'copy' else bord_px
-    fname_new = cm.save_memmap(fname_mc, base_name=str('memmap_'+str(file_start)+'_'+str(file_end)), order='C',
+    fname_new = cm.save_memmap(fname_mc, base_name='memmap_', order='C',
                                border_to_0=bord_px)
 else:  # if no motion correction just memory map the file
-    fname_new = cm.save_memmap(fnames, base_name=str('memmap_'+str(file_start)+'_'+str(file_end)),
+    fname_new = cm.save_memmap(fnames, base_name='memmap_',
                                order='C', border_to_0=0, dview=dview)
 
 
