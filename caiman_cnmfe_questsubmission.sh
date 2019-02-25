@@ -5,7 +5,7 @@
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N caiman_cnmfe_analysis
-#MSUB -l nodes=1:ppn=12
+#MSUB -l nodes=1:ppn=4
 cd ~
 
 add project directory to PATH
