@@ -128,11 +128,10 @@ opts.change_params(params_dict={'method_init': 'corr_pnr',  # use this for 1 pho
                                 'border_pix': bord_px})                # number of pixels to not consider in the borders)
 
 # compute some summary images (correlation and peak to noise)
-cn_filter, pnr = cm.summary_images.correlation_pnr(images, gSig=gSig[0], swap_dim=False) # change swap dim if output looks weird, it is a problem with tiffile
+#cn_filter, pnr = cm.summary_images.correlation_pnr(images, gSig=gSig[0], swap_dim=False) # change swap dim if output looks weird, it is a problem with tiffile
 
 
 # In[5]:
-
 
 #inspect_correlation_pnr(cn_filter, pnr)
 
@@ -141,8 +140,8 @@ cn_filter, pnr = cm.summary_images.correlation_pnr(images, gSig=gSig[0], swap_di
 
 
 # print parameters set above, modify them if necessary based on summary images
-print(min_corr) # min correlation of peak (from correlation image)
-print(min_pnr)  # min peak to noise ratio
+#print(min_corr) # min correlation of peak (from correlation image)
+#print(min_pnr)  # min peak to noise ratio
 
 
 # In[ ]:
