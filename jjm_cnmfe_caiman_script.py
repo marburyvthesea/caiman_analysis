@@ -53,12 +53,11 @@ c, dview, n_processes = cm.cluster.setup_cluster(
 # In[ ]:
 
 
-## path to motion corrected tif tif file
+## path to motion corrected tif file
 #folder = '/Volumes/My_Passport/MiniscopeMovies/caiman_pipeline_test/'
 #mc_file = 'memmap__d1_480_d2_752_d3_1_order_C_frames_202_.mmap'
-folder = sys.argv[1]
-mc_file = sys.argv[2]
-memory_map_file = sys.argv[1] + sys.argv[2]
+
+memory_map_file = sys.argv[1]
 
 
 # In[4]:
