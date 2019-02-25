@@ -32,6 +32,7 @@ cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 #echo "running motion correction"
 
-python jjm_cnmfe_caiman_script.py /Volumes/My_Passport/MiniscopeMovies/caiman_pipeline_test/ memmap__d1_480_d2_752_d3_1_order_C_frames_202_.mmap
+python jjm_cnmfe_caiman_script.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
+
 
 echo "finished cnmfe"
