@@ -5,7 +5,7 @@
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N caiman_cnmfe_analysis
-#MSUB -l nodes=1:ppn=12
+#MSUB -l nodes=1:ppn=20
 cd ~
 
 add project directory to PATH
@@ -32,7 +32,7 @@ cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 #echo "running motion correction"
 
-python jjm_cnmfe_caiman_script.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
+python jjm_cnmfe_caiman_script.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/full_movie_caiman_analysis/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
 
 
 echo "finished cnmfe"
