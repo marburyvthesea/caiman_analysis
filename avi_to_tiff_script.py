@@ -7,7 +7,7 @@
 import av
 import glob
 import sys
-from tqdm import tqdm
+
 
 
 # In[6]:
@@ -30,6 +30,8 @@ def convert_to_tiff(avi_file):
 
 folder_name = sys.argv[1]
 files = glob.glob(folder_name+'/*.avi')
-for file in tqdm(files):
+for file in files:
+	print('converting')
+	print(file)
     convert_to_tiff(file)
 
