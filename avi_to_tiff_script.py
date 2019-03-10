@@ -33,5 +33,5 @@ files = glob.glob(folder_name+'/*.avi')
 for file in files:
 	print('converting')
 	print(file)
-    convert_to_tiff(file)
+	convert_to_tiff(file)
 
