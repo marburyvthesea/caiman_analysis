@@ -32,6 +32,6 @@ echo "through: $4"
 
 echo "running motion correction"
 
-python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN012/3_8_2019/H16_M57_S23 msCam 1 30 
+python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN012/3_8_2019/H16_M57_S23 msCam 1 3m:0 
 
 echo "finished motion correction"

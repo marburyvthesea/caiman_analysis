@@ -1,7 +1,7 @@
 #!/bin/bash
 #MSUB -A p30771
-#MSUB -q normal
-#MSUB -l walltime=12:00:00
+#MSUB -q short
+#MSUB -l walltime=04:00:00
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N caiman_cnmfe_analysis
@@ -32,7 +32,6 @@ cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 #echo "running motion correction"
 
-python jjm_cnmfe_caiman_script.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/full_movie_caiman_analysis/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
-
+python jjm_cnmfe_caiman_script.py /projects/p30771/miniscope/data/GRIN012/3_8_2019/H16_M57_S23/TIFs/mmap_files/memmap__d1_480_d2_752_d3_1_order_C_frames_9000_.mmap
 
 echo "finished cnmfe"
