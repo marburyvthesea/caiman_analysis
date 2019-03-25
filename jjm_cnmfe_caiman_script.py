@@ -196,3 +196,8 @@ hf.create_dataset('A', data=cnm.estimates.A.toarray())
 hf.create_dataset('C', data=cnm.estimates.C)
 hf.close()
 
+hf = h5py.File(folder + 'output_data_background.h5', 'w')
+hf.create_dataset('b', data=cnm.estimates.A.toarray())
+hf.create_dataset('W', data=cnm.estimates.C)
+hf.close()
+
