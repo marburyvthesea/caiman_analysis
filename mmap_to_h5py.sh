@@ -30,4 +30,3 @@ cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 python mmap_to_h5py.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/caiman_analysis/memmap_0008_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
 
-print('finished')
