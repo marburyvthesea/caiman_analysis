@@ -70,9 +70,10 @@ def run_convert_concat(files, num_procs, concat_size):
 	chunk_list = list(chunks(files, concat_size))
 	pool = mp.Pool(num_procs)
 	print('starting pool with procs:', num_procs)
-	print('starting pool with procs:', concat_size)
+	print('concatenating files to bunches of:', concat_size)
 	print(chunk_list)
-	pool.map(mmp_h5.concat_convert_from_mmap, [chunk for chunk in chunk_list])
+	pool.map(concat_convert_from_mmap, [chunk for chunk in chunk_list])
+	pool.close()
 	return()
 
 
