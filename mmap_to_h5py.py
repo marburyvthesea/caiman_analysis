@@ -69,13 +69,15 @@ def run_convert_concat(files, num_procs, concat_size):
 	chunk_list = list(chunks(files, concat_size))
 	pool = mp.Pool(num_procs)
 	print('starting pool with procs:', num_procs)
+	print('starting pool with procs:', concat_size)
+	print(chunk_list)
 	pool.map(mmp_h5.concat_convert_from_mmap, [chunk for chunk in chunk_list])
 	return()
 
 
 folder_path = sys.argv[1]
-processors = sys.argv[2]
-num_files_to_combine = sys.argv[3]
+processors = int(sys.argv[2])
+num_files_to_combine = int(sys.argv[3])
 
 files_list = glob.glob(folder_path+'/*.mmap')
 run_convert_concat(files_list, processors, num_files_to_combine)
