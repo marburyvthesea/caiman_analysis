@@ -5,10 +5,6 @@ import sys
 import os
 from caiman import mmapping as mmp
 
-def chunks(l, n):
-	for i in range(0, len(l), n):
-		yield(l[i:i+n])
-
 
 def caiman_mmap_to_hdf(array_from_mmap, dims):
 	movie_by_frames = []
@@ -67,20 +63,18 @@ def run_convert_concat(files, num_procs, concat_size):
 	#start pool
 	chunk_list = list(chunks(files, concat_size))
 	pool = mp.Pool(num_procs)
-	print('starting pool with procs:', num_procs)
 	pool.map(mmp_h5.concat_convert_from_mmap, [chunk for chunk in chunk_list])
 	return()
 
 
-folder_path = sys.argv[1]
-processors = sys.argv[2]
-num_files_to_combine = sys.argv[3]
+#path_to_mmap = sys.argv[1]
 
-files_list = glob.glob(folder_path+'/*.mmap')
-run_convert_concat(files_list, processors, num_files_to_combine)
+#folder_path, mmap_path  = os.path.split(path_to_mmap)
 
+#frames, dims, T = mmp.load_memmap(path_to_mmap)
 
+#frames_array = np.array(frames)
 
-
+#output_fname = save_to_hdf(folder_path, mmap_path, movie_reshaped)
 
 
