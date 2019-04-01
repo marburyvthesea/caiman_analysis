@@ -4,6 +4,7 @@ from tqdm import tqdm
 import sys
 import os
 import glob
+import multiprocessing as mp
 from caiman import mmapping as mmp
 
 def chunks(l, n):
