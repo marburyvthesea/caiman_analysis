@@ -3,6 +3,7 @@ import numpy as np
 from tqdm import tqdm
 import sys
 import os
+import glob
 from caiman import mmapping as mmp
 
 def chunks(l, n):

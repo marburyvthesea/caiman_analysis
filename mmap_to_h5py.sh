@@ -1,7 +1,7 @@
 #!/bin/bash
 #MSUB -A p30771
 #MSUB -q short
-#MSUB -l walltime=1:00:00
+#MSUB -l walltime=4:00:00
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N mmap_to_h5py
