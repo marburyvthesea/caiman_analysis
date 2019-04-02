@@ -81,7 +81,7 @@ folder_path = sys.argv[1]
 processors = int(sys.argv[2])
 num_files_to_combine = int(sys.argv[3])
 
-files_list = glob.glob(folder_path+'/*.mmap')
+files_list = sorted(glob.glob(folder_path+'/*.mmap'))
 run_convert_concat(files_list, processors, num_files_to_combine)
 
 
