@@ -28,4 +28,4 @@ cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
 #
 
-python mmap_to_h5py.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order 4 5
+python mmap_to_h5py.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order 4 2
