@@ -32,6 +32,7 @@ echo "through: $4"
 
 echo "running motion correction"
 
-python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN013/H13_M33_S54/H13_M33_S54 msCam 1 30 
+# inputs are folder path, regular expression in file names(e.g. msCam), start and end files to correct, number of processors to run
+python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN013/H13_M33_S54/H13_M33_S54 msCam 1 30 12
 
 echo "finished motion correction"

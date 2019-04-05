@@ -31,6 +31,7 @@ folder = sys.argv[1]
 reg_exp = sys.argv[2]
 file_start = int(sys.argv[3])
 file_end = int(sys.argv[4])
+num_procs = int(sys.argv[5])
 
 fnames = []
 for i in range(file_start, file_end):
@@ -42,7 +43,7 @@ print(fnames)
 if 'dview' in locals():
     cm.stop_server(dview=dview)
 c, dview, n_processes = cm.cluster.setup_cluster(
-    backend='local', n_processes=None, single_thread=False)
+    backend='local', n_processes=num_procs, single_thread=False)
 
 frate = 20                       # movie frame rate
 decay_time = 0.4                 # length of a typical transient in seconds
