@@ -1,0 +1,67 @@
+----------------------------------------
+PBS: Begin PBS Prologue Sun Feb 24 22:48:05 CST 2019 1551070085
+PBS: Job ID:		3603633.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     normal
+PBS: Job name:		caiman_cnmfe_analysis
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3603633.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode6815
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode6815/aux//3603633.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Sun Feb 24 22:48:05 CST 2019 1551070085
+/hpc/opt/torque6/nodes/qnode6815/mom_priv/jobs/3603633.qsched03.quest.it.northwestern.edu.SC: line 23: add: command not found
+       17115 [params.py:                 set():780] [739] Changing key rf in group patch from None to 40
+       17116 [params.py:                 set():780] [739] Changing key stride in group patch from None to 20
+       17116 [params.py:                 set():780] [739] Changing key nb_patch in group patch from 1 to 0
+       17117 [params.py:                 set():780] [739] Changing key low_rank_background in group patch from True to None
+       17117 [params.py:                 set():780] [739] Changing key del_duplicates in group patch from False to True
+       17117 [params.py:                 set():780] [739] Changing key p in group preprocess from 2 to 1
+       17117 [params.py:                 set():780] [739] Changing key method_init in group init from greedy_roi to corr_pnr
+       17117 [params.py:                 set():780] [739] Changing key K in group init from 30 to None
+       17117 [params.py:                 set():780] [739] Changing key gSig in group init from [5, 5] to (3, 3)
+       17117 [params.py:                 set():780] [739] Changing key gSiz in group init from [11, 11] to (13, 13)
+       17117 [params.py:                 set():780] [739] Changing key ssub in group init from 2 to 1
+       17117 [params.py:                 set():780] [739] Changing key nb in group init from 1 to 0
+       17118 [params.py:                 set():780] [739] Changing key min_corr in group init from 0.85 to 0.8
+       17118 [params.py:                 set():780] [739] Changing key min_pnr in group init from 20 to 10
+       17118 [params.py:                 set():780] [739] Changing key normalize_init in group init from True to False
+       17118 [params.py:                 set():780] [739] Changing key center_psf in group init from False to True
+       17118 [params.py:                 set():780] [739] Changing key ring_size_factor in group init from 1.5 to 1.4
+       17118 [params.py:                 set():780] [739] Changing key nb in group spatial from 1 to 0
+       17118 [params.py:                 set():780] [739] Changing key p in group temporal from 2 to 1
+       17118 [params.py:                 set():780] [739] Changing key nb in group temporal from 1 to 0
+       17118 [params.py:       change_params():851] [739] No parameter merge_thresh found!
+loading file:
+/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
+Traceback (most recent call last):
+  File "jjm_cnmfe_caiman_script.py", line 131, in <module>
+    cn_filter, pnr = cm.summary_images.correlation_pnr(images, gSig=gSig[0], swap_dim=False) # change swap dim if output looks weird, it is a problem with tiffile
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/summary_images.py", line 375, in correlation_pnr
+    cn = local_correlations_fft(tmp_data, swap_dim=False)
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/summary_images.py", line 117, in local_correlations_fft
+    Ystd = np.std(Y, axis=0)
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 3242, in std
+    **kwargs)
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/_methods.py", line 140, in _std
+    keepdims=keepdims)
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/_methods.py", line 117, in _var
+    x = asanyarray(arr - arrmean)
+MemoryError
+finished cnmfe
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Sun Feb 24 22:58:35 CST 2019 1551070715
+JobID: 3603633.qsched03.quest.it.northwestern.edu
+Session ID:			32609
+Resources Used:			cput=00:09:57,vmem=179808904kb,walltime=00:10:26,mem=123646020kb,energy_used=0
+Job exit value:			0
+----------------------------------------

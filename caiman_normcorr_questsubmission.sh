@@ -1,11 +1,11 @@
 #!/bin/bash
 #MSUB -A p30771
 #MSUB -q normal
-#MSUB -l walltime=12:00:00
+#MSUB -l walltime=24:00:00
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N normcorr_caiman
-#MSUB -l nodes=1:ppn=12
+#MSUB -l nodes=1:ppn=4
 cd ~
 
 #add project directory to PATH
@@ -32,6 +32,6 @@ echo "through: $4"
 
 echo "running motion correction"
 
-python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN012/3_8_2019/H16_M57_S23 msCam 1 30 
+python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN013/H13_M33_S54/H13_M33_S54 msCam 1 30 
 
 echo "finished motion correction"

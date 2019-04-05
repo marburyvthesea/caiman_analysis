@@ -1,0 +1,551 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Mar 11 12:51:34 CDT 2019 1552326694
+PBS: Job ID:		3757427.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		caiman_cnmfe_analysis
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3757427.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5077
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5077/aux//3757427.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Mar 11 12:51:34 CDT 2019 1552326694
+/hpc/opt/torque6/nodes/qnode5077/mom_priv/jobs/3757427.qsched03.quest.it.northwestern.edu.SC: line 23: add: command not found
+       23078 [params.py:                 set():780] [12386] Changing key rf in group patch from None to 40
+       23079 [params.py:                 set():780] [12386] Changing key stride in group patch from None to 20
+       23080 [params.py:                 set():780] [12386] Changing key nb_patch in group patch from 1 to 0
+       23080 [params.py:                 set():780] [12386] Changing key low_rank_background in group patch from True to None
+       23080 [params.py:                 set():780] [12386] Changing key del_duplicates in group patch from False to True
+       23080 [params.py:                 set():780] [12386] Changing key p in group preprocess from 2 to 1
+       23080 [params.py:                 set():780] [12386] Changing key method_init in group init from greedy_roi to corr_pnr
+       23080 [params.py:                 set():780] [12386] Changing key K in group init from 30 to None
+       23080 [params.py:                 set():780] [12386] Changing key gSig in group init from [5, 5] to (3, 3)
+       23081 [params.py:                 set():780] [12386] Changing key gSiz in group init from [11, 11] to (13, 13)
+       23081 [params.py:                 set():780] [12386] Changing key ssub in group init from 2 to 1
+       23081 [params.py:                 set():780] [12386] Changing key nb in group init from 1 to 0
+       23081 [params.py:                 set():780] [12386] Changing key min_corr in group init from 0.85 to 0.8
+       23081 [params.py:                 set():780] [12386] Changing key min_pnr in group init from 20 to 10
+       23081 [params.py:                 set():780] [12386] Changing key normalize_init in group init from True to False
+       23081 [params.py:                 set():780] [12386] Changing key center_psf in group init from False to True
+       23082 [params.py:                 set():780] [12386] Changing key ring_size_factor in group init from 1.5 to 1.4
+       23082 [params.py:                 set():780] [12386] Changing key nb in group spatial from 1 to 0
+       23082 [params.py:                 set():780] [12386] Changing key p in group temporal from 2 to 1
+       23082 [params.py:                 set():780] [12386] Changing key nb in group temporal from 1 to 0
+       23082 [params.py:       change_params():851] [12386] No parameter merge_thresh found!
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+       23107 [params.py:                 set():780] [12386] Changing key init_batch in group online from 200 to 5000
+       23108 [cnmf.py:                 fit():404] [12386] (5000, 480, 752)
+       23110 [params.py:                 set():780] [12386] Changing key medw in group spatial from None to (3, 3)
+       23111 [params.py:                 set():780] [12386] Changing key se in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+       23112 [params.py:                 set():780] [12386] Changing key ss in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+       23112 [cnmf.py:                 fit():420] [12386] Using 1 processes
+       23113 [params.py:                 set():780] [12386] Changing key n_pixels_per_process in group preprocess from None to 360960
+       23113 [params.py:                 set():780] [12386] Changing key n_pixels_per_process in group spatial from None to 360960
+       23113 [cnmf.py:                 fit():431] [12386] using 360960 pixels per process
+       23113 [cnmf.py:                 fit():432] [12386] using 5000 block_size_spat
+       23113 [cnmf.py:                 fit():433] [12386] using 5000 block_size_temp
+       23115 [params.py:                 set():780] [12386] Changing key n_pixels_per_process in group preprocess from 360960 to 1600
+       23115 [params.py:                 set():780] [12386] Changing key n_pixels_per_process in group spatial from 360960 to 1600
+       23411 [map_reduce.py:        cnmf_patches():101] [12451] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 0_38480START
+       23412 [map_reduce.py:        cnmf_patches():103] [12451] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 0_38480Read file
+       23413 [map_reduce.py:        cnmf_patches():101] [12452] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57600_96080START
+       23414 [map_reduce.py:        cnmf_patches():103] [12452] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57600_96080Read file
+       23414 [map_reduce.py:        cnmf_patches():101] [12453] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115200_153680START
+       23415 [map_reduce.py:        cnmf_patches():103] [12453] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115200_153680Read file
+       23415 [map_reduce.py:        cnmf_patches():101] [12454] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172800_211280START
+       23416 [map_reduce.py:        cnmf_patches():103] [12454] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172800_211280Read file
+       23416 [map_reduce.py:        cnmf_patches():101] [12455] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230400_268880START
+       23418 [map_reduce.py:        cnmf_patches():103] [12455] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230400_268880Read file
+       23418 [map_reduce.py:        cnmf_patches():101] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288000_326480START
+       23419 [map_reduce.py:        cnmf_patches():103] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288000_326480Read file
+       23419 [map_reduce.py:        cnmf_patches():101] [12457] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322560_360560START
+       23420 [map_reduce.py:        cnmf_patches():103] [12457] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322560_360560Read file
+       23421 [map_reduce.py:        cnmf_patches():101] [12458] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28860_67340START
+       23422 [map_reduce.py:        cnmf_patches():103] [12458] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28860_67340Read file
+       23422 [map_reduce.py:        cnmf_patches():101] [12459] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86460_124940START
+       23423 [map_reduce.py:        cnmf_patches():103] [12459] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86460_124940Read file
+       23424 [map_reduce.py:        cnmf_patches():101] [12460] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144060_182540START
+       23425 [map_reduce.py:        cnmf_patches():103] [12460] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144060_182540Read file
+       23425 [map_reduce.py:        cnmf_patches():101] [12461] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201660_240140START
+       23426 [map_reduce.py:        cnmf_patches():103] [12461] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201660_240140Read file
+       23426 [map_reduce.py:        cnmf_patches():101] [12462] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 259260_297740START
+       23427 [map_reduce.py:        cnmf_patches():103] [12462] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 259260_297740Read file
+       23428 [map_reduce.py:        cnmf_patches():101] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316860_355340START
+       23429 [map_reduce.py:        cnmf_patches():103] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316860_355340Read file
+       23429 [map_reduce.py:        cnmf_patches():101] [12464] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 120_38600START
+       23430 [map_reduce.py:        cnmf_patches():103] [12464] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 120_38600Read file
+       23430 [map_reduce.py:        cnmf_patches():101] [12465] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57720_96200START
+       23432 [map_reduce.py:        cnmf_patches():103] [12465] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57720_96200Read file
+       23432 [map_reduce.py:        cnmf_patches():101] [12466] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115320_153800START
+       23433 [map_reduce.py:        cnmf_patches():103] [12466] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115320_153800Read file
+       23433 [map_reduce.py:        cnmf_patches():101] [12467] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172920_211400START
+       23434 [map_reduce.py:        cnmf_patches():103] [12467] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172920_211400Read file
+       23434 [map_reduce.py:        cnmf_patches():101] [12468] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230520_269000START
+       23435 [map_reduce.py:        cnmf_patches():103] [12468] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230520_269000Read file
+       23436 [map_reduce.py:        cnmf_patches():101] [12469] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288120_326600START
+       23437 [map_reduce.py:        cnmf_patches():103] [12469] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288120_326600Read file
+       23437 [map_reduce.py:        cnmf_patches():101] [12470] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322680_360680START
+       23438 [map_reduce.py:        cnmf_patches():103] [12470] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322680_360680Read file
+       23438 [map_reduce.py:        cnmf_patches():101] [12471] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28980_67460START
+       23439 [map_reduce.py:        cnmf_patches():103] [12471] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28980_67460Read file
+       23439 [map_reduce.py:        cnmf_patches():101] [12472] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86580_125060START
+       23440 [map_reduce.py:        cnmf_patches():103] [12472] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86580_125060Read file
+       23441 [map_reduce.py:        cnmf_patches():101] [12473] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144180_182660START
+       23441 [map_reduce.py:        cnmf_patches():101] [12474] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201780_240260START
+       23442 [map_reduce.py:        cnmf_patches():103] [12473] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144180_182660Read file
+       23442 [map_reduce.py:        cnmf_patches():103] [12474] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201780_240260Read file
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      811153 [map_reduce.py:        cnmf_patches():122] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316860_355340file loaded
+      811514 [params.py:                 set():780] [12463] Changing key rf in group patch from 40 to None
+      811514 [params.py:                 set():780] [12463] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      811553 [cnmf.py:                 fit():393] [12463] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      811553 [cnmf.py:                 fit():404] [12463] (5000, 81, 81)
+      811554 [cnmf.py:                 fit():420] [12463] Using 1 processes
+      811554 [cnmf.py:                 fit():431] [12463] using 1600 pixels per process
+      811554 [cnmf.py:                 fit():432] [12463] using 5000 block_size_spat
+      811554 [cnmf.py:                 fit():433] [12463] using 5000 block_size_temp
+      811554 [cnmf.py:                 fit():436] [12463] preprocessing ...
+      812258 [cnmf.py:                 fit():439] [12463] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/scipy/sparse/dia.py:300: RuntimeWarning: divide by zero encountered in remainder
+  c = np.arange(num_rows, dtype=np.intc) - (offsets % max_dim)[:, None]
+      827145 [map_reduce.py:        cnmf_patches():101] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322620_360620START
+      827145 [map_reduce.py:        cnmf_patches():103] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322620_360620Read file
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      858533 [map_reduce.py:        cnmf_patches():122] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288000_326480file loaded
+      858835 [params.py:                 set():780] [12456] Changing key rf in group patch from 40 to None
+      858835 [params.py:                 set():780] [12456] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      858837 [cnmf.py:                 fit():393] [12456] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      858854 [cnmf.py:                 fit():404] [12456] (5000, 81, 81)
+      858854 [cnmf.py:                 fit():420] [12456] Using 1 processes
+      858854 [cnmf.py:                 fit():431] [12456] using 1600 pixels per process
+      858854 [cnmf.py:                 fit():432] [12456] using 5000 block_size_spat
+      858854 [cnmf.py:                 fit():433] [12456] using 5000 block_size_temp
+      858854 [cnmf.py:                 fit():436] [12456] preprocessing ...
+      859509 [cnmf.py:                 fit():439] [12456] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      868847 [map_reduce.py:        cnmf_patches():122] [12469] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 288120_326600file loaded
+      869088 [params.py:                 set():780] [12469] Changing key rf in group patch from 40 to None
+      869088 [params.py:                 set():780] [12469] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      869090 [cnmf.py:                 fit():393] [12469] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      869090 [cnmf.py:                 fit():404] [12469] (5000, 81, 81)
+      869090 [cnmf.py:                 fit():420] [12469] Using 1 processes
+      869091 [cnmf.py:                 fit():431] [12469] using 1600 pixels per process
+      869091 [cnmf.py:                 fit():432] [12469] using 5000 block_size_spat
+      869091 [cnmf.py:                 fit():433] [12469] using 5000 block_size_temp
+      869091 [cnmf.py:                 fit():436] [12469] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      869253 [map_reduce.py:        cnmf_patches():122] [12465] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57720_96200file loaded
+      869497 [params.py:                 set():780] [12465] Changing key rf in group patch from 40 to None
+      869498 [params.py:                 set():780] [12465] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      869499 [cnmf.py:                 fit():393] [12465] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      869501 [cnmf.py:                 fit():404] [12465] (5000, 81, 81)
+      869501 [cnmf.py:                 fit():420] [12465] Using 1 processes
+      869501 [cnmf.py:                 fit():431] [12465] using 1600 pixels per process
+      869501 [cnmf.py:                 fit():432] [12465] using 5000 block_size_spat
+      869501 [cnmf.py:                 fit():433] [12465] using 5000 block_size_temp
+      869501 [cnmf.py:                 fit():436] [12465] preprocessing ...
+      869727 [cnmf.py:                 fit():439] [12469] initializing ...
+      870108 [cnmf.py:                 fit():439] [12465] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      877793 [map_reduce.py:        cnmf_patches():122] [12459] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86460_124940file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      877789 [map_reduce.py:        cnmf_patches():122] [12467] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172920_211400file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      877854 [map_reduce.py:        cnmf_patches():122] [12460] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144060_182540file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      877852 [map_reduce.py:        cnmf_patches():122] [12461] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201660_240140file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      878382 [map_reduce.py:        cnmf_patches():122] [12458] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28860_67340file loaded
+      878543 [params.py:                 set():780] [12461] Changing key rf in group patch from 40 to None
+      878543 [params.py:                 set():780] [12461] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      878551 [cnmf.py:                 fit():393] [12461] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      878551 [cnmf.py:                 fit():404] [12461] (5000, 81, 81)
+      878551 [cnmf.py:                 fit():420] [12461] Using 1 processes
+      878552 [cnmf.py:                 fit():431] [12461] using 1600 pixels per process
+      878552 [cnmf.py:                 fit():432] [12461] using 5000 block_size_spat
+      878552 [cnmf.py:                 fit():433] [12461] using 5000 block_size_temp
+      878552 [cnmf.py:                 fit():436] [12461] preprocessing ...
+      878571 [params.py:                 set():780] [12459] Changing key rf in group patch from 40 to None
+      878571 [params.py:                 set():780] [12459] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      878573 [cnmf.py:                 fit():393] [12459] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      878573 [cnmf.py:                 fit():404] [12459] (5000, 81, 81)
+      878573 [cnmf.py:                 fit():420] [12459] Using 1 processes
+      878574 [cnmf.py:                 fit():431] [12459] using 1600 pixels per process
+      878574 [cnmf.py:                 fit():432] [12459] using 5000 block_size_spat
+      878574 [cnmf.py:                 fit():433] [12459] using 5000 block_size_temp
+      878574 [cnmf.py:                 fit():436] [12459] preprocessing ...
+      878578 [params.py:                 set():780] [12467] Changing key rf in group patch from 40 to None
+      878579 [params.py:                 set():780] [12467] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      878589 [cnmf.py:                 fit():393] [12467] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      878612 [cnmf.py:                 fit():404] [12467] (5000, 81, 81)
+      878613 [cnmf.py:                 fit():420] [12467] Using 1 processes
+      878613 [cnmf.py:                 fit():431] [12467] using 1600 pixels per process
+      878613 [cnmf.py:                 fit():432] [12467] using 5000 block_size_spat
+      878613 [cnmf.py:                 fit():433] [12467] using 5000 block_size_temp
+      878613 [cnmf.py:                 fit():436] [12467] preprocessing ...
+      878594 [params.py:                 set():780] [12460] Changing key rf in group patch from 40 to None
+      878621 [params.py:                 set():780] [12460] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      878623 [cnmf.py:                 fit():393] [12460] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      878623 [cnmf.py:                 fit():404] [12460] (5000, 81, 81)
+      878623 [cnmf.py:                 fit():420] [12460] Using 1 processes
+      878623 [cnmf.py:                 fit():431] [12460] using 1600 pixels per process
+      878624 [cnmf.py:                 fit():432] [12460] using 5000 block_size_spat
+      878624 [cnmf.py:                 fit():433] [12460] using 5000 block_size_temp
+      878624 [cnmf.py:                 fit():436] [12460] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      878685 [map_reduce.py:        cnmf_patches():122] [12453] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115200_153680file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      878692 [map_reduce.py:        cnmf_patches():122] [12468] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230520_269000file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      878809 [map_reduce.py:        cnmf_patches():122] [12466] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 115320_153800file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      878816 [map_reduce.py:        cnmf_patches():122] [12457] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322560_360560file loaded
+      879131 [params.py:                 set():780] [12458] Changing key rf in group patch from 40 to None
+      879132 [params.py:                 set():780] [12458] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879133 [cnmf.py:                 fit():393] [12458] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879133 [cnmf.py:                 fit():404] [12458] (5000, 81, 81)
+      879134 [cnmf.py:                 fit():420] [12458] Using 1 processes
+      879134 [cnmf.py:                 fit():431] [12458] using 1600 pixels per process
+      879134 [cnmf.py:                 fit():432] [12458] using 5000 block_size_spat
+      879134 [cnmf.py:                 fit():433] [12458] using 5000 block_size_temp
+      879134 [cnmf.py:                 fit():436] [12458] preprocessing ...
+      879157 [params.py:                 set():780] [12453] Changing key rf in group patch from 40 to None
+      879157 [params.py:                 set():780] [12453] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879159 [cnmf.py:                 fit():393] [12453] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879159 [cnmf.py:                 fit():404] [12453] (5000, 81, 81)
+      879159 [cnmf.py:                 fit():420] [12453] Using 1 processes
+      879160 [cnmf.py:                 fit():431] [12453] using 1600 pixels per process
+      879160 [cnmf.py:                 fit():432] [12453] using 5000 block_size_spat
+      879160 [cnmf.py:                 fit():433] [12453] using 5000 block_size_temp
+      879168 [cnmf.py:                 fit():436] [12453] preprocessing ...
+      879206 [params.py:                 set():780] [12457] Changing key rf in group patch from 40 to None
+      879206 [params.py:                 set():780] [12457] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879208 [cnmf.py:                 fit():393] [12457] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879208 [cnmf.py:                 fit():404] [12457] (5000, 81, 80)
+      879208 [cnmf.py:                 fit():420] [12457] Using 1 processes
+      879208 [cnmf.py:                 fit():431] [12457] using 1600 pixels per process
+      879208 [cnmf.py:                 fit():432] [12457] using 5000 block_size_spat
+      879208 [cnmf.py:                 fit():433] [12457] using 5000 block_size_temp
+      879208 [cnmf.py:                 fit():436] [12457] preprocessing ...
+      879219 [cnmf.py:                 fit():439] [12459] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879219 [map_reduce.py:        cnmf_patches():122] [12472] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 86580_125060file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879237 [map_reduce.py:        cnmf_patches():122] [12451] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 0_38480file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879230 [map_reduce.py:        cnmf_patches():122] [12455] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 230400_268880file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879229 [map_reduce.py:        cnmf_patches():122] [12470] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322680_360680file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879301 [map_reduce.py:        cnmf_patches():122] [12473] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 144180_182660file loaded
+      879316 [params.py:                 set():780] [12466] Changing key rf in group patch from 40 to None
+      879317 [params.py:                 set():780] [12466] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879318 [cnmf.py:                 fit():393] [12466] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879319 [cnmf.py:                 fit():404] [12466] (5000, 81, 81)
+      879319 [cnmf.py:                 fit():420] [12466] Using 1 processes
+      879319 [cnmf.py:                 fit():431] [12466] using 1600 pixels per process
+      879326 [cnmf.py:                 fit():432] [12466] using 5000 block_size_spat
+      879326 [cnmf.py:                 fit():433] [12466] using 5000 block_size_temp
+      879326 [cnmf.py:                 fit():436] [12466] preprocessing ...
+      879371 [params.py:                 set():780] [12468] Changing key rf in group patch from 40 to None
+      879371 [params.py:                 set():780] [12468] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879373 [cnmf.py:                 fit():393] [12468] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879373 [cnmf.py:                 fit():404] [12468] (5000, 81, 81)
+      879373 [cnmf.py:                 fit():420] [12468] Using 1 processes
+      879373 [cnmf.py:                 fit():431] [12468] using 1600 pixels per process
+      879373 [cnmf.py:                 fit():432] [12468] using 5000 block_size_spat
+      879373 [cnmf.py:                 fit():433] [12468] using 5000 block_size_temp
+      879373 [cnmf.py:                 fit():436] [12468] preprocessing ...
+      879426 [map_reduce.py:        cnmf_patches():122] [12463] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 322620_360620file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879441 [map_reduce.py:        cnmf_patches():122] [12462] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 259260_297740file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879462 [map_reduce.py:        cnmf_patches():122] [12464] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 120_38600file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/scipy/sparse/dia.py:300: RuntimeWarning: divide by zero encountered in remainder
+  c = np.arange(num_rows, dtype=np.intc) - (offsets % max_dim)[:, None]
+      879494 [map_reduce.py:        cnmf_patches():101] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316800_355280START
+      879494 [map_reduce.py:        cnmf_patches():103] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316800_355280Read file
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879495 [map_reduce.py:        cnmf_patches():122] [12452] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 57600_96080file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879545 [map_reduce.py:        cnmf_patches():122] [12454] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 172800_211280file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879549 [map_reduce.py:        cnmf_patches():122] [12471] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 28980_67460file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+      879550 [map_reduce.py:        cnmf_patches():122] [12474] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 201780_240260file loaded
+      879666 [map_reduce.py:        cnmf_patches():122] [12456] memmap__d1_480_d2_752_d3_1_order_C_frames_5000__LOG_ 316800_355280file loaded
+      879772 [params.py:                 set():780] [12451] Changing key rf in group patch from 40 to None
+      879772 [params.py:                 set():780] [12451] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879782 [cnmf.py:                 fit():393] [12451] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879784 [cnmf.py:                 fit():404] [12451] (5000, 81, 81)
+      879784 [cnmf.py:                 fit():420] [12451] Using 1 processes
+      879784 [cnmf.py:                 fit():431] [12451] using 1600 pixels per process
+      879784 [cnmf.py:                 fit():432] [12451] using 5000 block_size_spat
+      879784 [cnmf.py:                 fit():433] [12451] using 5000 block_size_temp
+      879784 [cnmf.py:                 fit():436] [12451] preprocessing ...
+      879855 [cnmf.py:                 fit():439] [12461] initializing ...
+      879883 [params.py:                 set():780] [12473] Changing key rf in group patch from 40 to None
+      879883 [params.py:                 set():780] [12473] Changing key stride in group patch from 20 to None
+      879883 [params.py:                 set():780] [12470] Changing key rf in group patch from 40 to None
+      879883 [params.py:                 set():780] [12470] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879886 [cnmf.py:                 fit():393] [12473] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879886 [cnmf.py:                 fit():404] [12473] (5000, 81, 81)
+      879886 [cnmf.py:                 fit():420] [12473] Using 1 processes
+      879887 [cnmf.py:                 fit():431] [12473] using 1600 pixels per process
+      879887 [cnmf.py:                 fit():432] [12473] using 5000 block_size_spat
+      879887 [cnmf.py:                 fit():433] [12473] using 5000 block_size_temp
+      879887 [cnmf.py:                 fit():436] [12473] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      879887 [cnmf.py:                 fit():393] [12470] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      879888 [cnmf.py:                 fit():404] [12470] (5000, 81, 80)
+      879888 [cnmf.py:                 fit():420] [12470] Using 1 processes
+      879888 [cnmf.py:                 fit():431] [12470] using 1600 pixels per process
+      879888 [cnmf.py:                 fit():432] [12470] using 5000 block_size_spat
+      879888 [cnmf.py:                 fit():433] [12470] using 5000 block_size_temp
+      879888 [cnmf.py:                 fit():436] [12470] preprocessing ...
+      880018 [params.py:                 set():780] [12472] Changing key rf in group patch from 40 to None
+      880018 [params.py:                 set():780] [12472] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880019 [cnmf.py:                 fit():393] [12472] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880019 [cnmf.py:                 fit():404] [12472] (5000, 81, 81)
+      880019 [cnmf.py:                 fit():420] [12472] Using 1 processes
+      880020 [cnmf.py:                 fit():431] [12472] using 1600 pixels per process
+      880020 [cnmf.py:                 fit():432] [12472] using 5000 block_size_spat
+      880020 [cnmf.py:                 fit():433] [12472] using 5000 block_size_temp
+      880020 [cnmf.py:                 fit():436] [12472] preprocessing ...
+      880033 [params.py:                 set():780] [12455] Changing key rf in group patch from 40 to None
+      880033 [params.py:                 set():780] [12455] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880034 [cnmf.py:                 fit():393] [12455] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880034 [cnmf.py:                 fit():404] [12455] (5000, 81, 81)
+      880034 [cnmf.py:                 fit():420] [12455] Using 1 processes
+      880041 [cnmf.py:                 fit():431] [12455] using 1600 pixels per process
+      880041 [cnmf.py:                 fit():432] [12455] using 5000 block_size_spat
+      880041 [cnmf.py:                 fit():433] [12455] using 5000 block_size_temp
+      880041 [cnmf.py:                 fit():436] [12455] preprocessing ...
+      880125 [params.py:                 set():780] [12471] Changing key rf in group patch from 40 to None
+      880125 [params.py:                 set():780] [12471] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880127 [cnmf.py:                 fit():393] [12471] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880127 [cnmf.py:                 fit():404] [12471] (5000, 81, 81)
+      880127 [cnmf.py:                 fit():420] [12471] Using 1 processes
+      880127 [cnmf.py:                 fit():431] [12471] using 1600 pixels per process
+      880127 [cnmf.py:                 fit():432] [12471] using 5000 block_size_spat
+      880127 [cnmf.py:                 fit():433] [12471] using 5000 block_size_temp
+      880127 [cnmf.py:                 fit():436] [12471] preprocessing ...
+      880143 [params.py:                 set():780] [12464] Changing key rf in group patch from 40 to None
+      880143 [params.py:                 set():780] [12464] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880145 [cnmf.py:                 fit():393] [12464] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880145 [cnmf.py:                 fit():404] [12464] (5000, 81, 81)
+      880145 [cnmf.py:                 fit():420] [12464] Using 1 processes
+      880145 [cnmf.py:                 fit():431] [12464] using 1600 pixels per process
+      880145 [cnmf.py:                 fit():432] [12464] using 5000 block_size_spat
+      880145 [cnmf.py:                 fit():433] [12464] using 5000 block_size_temp
+      880145 [cnmf.py:                 fit():436] [12464] preprocessing ...
+      880155 [cnmf.py:                 fit():393] [12463] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880155 [cnmf.py:                 fit():404] [12463] (5000, 81, 80)
+      880155 [cnmf.py:                 fit():420] [12463] Using 1 processes
+      880166 [params.py:                 set():780] [12462] Changing key rf in group patch from 40 to None
+      880179 [cnmf.py:                 fit():431] [12463] using 1600 pixels per process
+      880179 [params.py:                 set():780] [12462] Changing key stride in group patch from 20 to None
+      880179 [cnmf.py:                 fit():432] [12463] using 5000 block_size_spat
+      880179 [cnmf.py:                 fit():433] [12463] using 5000 block_size_temp
+      880179 [cnmf.py:                 fit():436] [12463] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880180 [cnmf.py:                 fit():393] [12462] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880181 [cnmf.py:                 fit():404] [12462] (5000, 81, 81)
+      880181 [cnmf.py:                 fit():420] [12462] Using 1 processes
+      880181 [cnmf.py:                 fit():431] [12462] using 1600 pixels per process
+      880181 [cnmf.py:                 fit():432] [12462] using 5000 block_size_spat
+      880181 [cnmf.py:                 fit():433] [12462] using 5000 block_size_temp
+      880181 [cnmf.py:                 fit():436] [12462] preprocessing ...
+      880193 [params.py:                 set():780] [12452] Changing key rf in group patch from 40 to None
+      880211 [params.py:                 set():780] [12452] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880213 [cnmf.py:                 fit():393] [12452] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880213 [cnmf.py:                 fit():404] [12452] (5000, 81, 81)
+      880213 [cnmf.py:                 fit():420] [12452] Using 1 processes
+      880213 [cnmf.py:                 fit():431] [12452] using 1600 pixels per process
+      880214 [cnmf.py:                 fit():432] [12452] using 5000 block_size_spat
+      880214 [cnmf.py:                 fit():433] [12452] using 5000 block_size_temp
+      880214 [cnmf.py:                 fit():436] [12452] preprocessing ...
+      880224 [params.py:                 set():780] [12454] Changing key rf in group patch from 40 to None
+      880225 [params.py:                 set():780] [12454] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880226 [cnmf.py:                 fit():393] [12454] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880235 [cnmf.py:                 fit():404] [12454] (5000, 81, 81)
+      880235 [cnmf.py:                 fit():420] [12454] Using 1 processes
+      880235 [cnmf.py:                 fit():431] [12454] using 1600 pixels per process
+      880235 [cnmf.py:                 fit():432] [12454] using 5000 block_size_spat
+      880236 [cnmf.py:                 fit():433] [12454] using 5000 block_size_temp
+      880236 [cnmf.py:                 fit():436] [12454] preprocessing ...
+      880250 [params.py:                 set():780] [12474] Changing key rf in group patch from 40 to None
+      880250 [params.py:                 set():780] [12474] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+      880252 [cnmf.py:                 fit():393] [12474] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880252 [cnmf.py:                 fit():404] [12474] (5000, 81, 81)
+      880252 [cnmf.py:                 fit():420] [12474] Using 1 processes
+      880252 [cnmf.py:                 fit():431] [12474] using 1600 pixels per process
+      880252 [cnmf.py:                 fit():432] [12474] using 5000 block_size_spat
+      880253 [cnmf.py:                 fit():433] [12474] using 5000 block_size_temp
+      880253 [cnmf.py:                 fit():436] [12474] preprocessing ...
+      880254 [cnmf.py:                 fit():439] [12467] initializing ...
+      880286 [cnmf.py:                 fit():439] [12460] initializing ...
+      880397 [cnmf.py:                 fit():393] [12456] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+      880397 [cnmf.py:                 fit():404] [12456] (5000, 81, 81)
+      880397 [cnmf.py:                 fit():420] [12456] Using 1 processes
+      880397 [cnmf.py:                 fit():431] [12456] using 1600 pixels per process
+      880398 [cnmf.py:                 fit():432] [12456] using 5000 block_size_spat
+      880398 [cnmf.py:                 fit():433] [12456] using 5000 block_size_temp
+      880398 [cnmf.py:                 fit():436] [12456] preprocessing ...
+      880520 [cnmf.py:                 fit():439] [12457] initializing ...
+      880665 [cnmf.py:                 fit():439] [12458] initializing ...
+      880783 [cnmf.py:                 fit():439] [12453] initializing ...
+      880904 [cnmf.py:                 fit():439] [12468] initializing ...
+      881059 [cnmf.py:                 fit():439] [12466] initializing ...
+      881198 [cnmf.py:                 fit():439] [12473] initializing ...
+      881217 [cnmf.py:                 fit():439] [12451] initializing ...
+      881634 [cnmf.py:                 fit():439] [12470] initializing ...
+      881683 [cnmf.py:                 fit():439] [12462] initializing ...
+      881721 [cnmf.py:                 fit():439] [12456] initializing ...
+      881767 [cnmf.py:                 fit():439] [12455] initializing ...
+      881790 [cnmf.py:                 fit():439] [12472] initializing ...
+      881795 [cnmf.py:                 fit():439] [12464] initializing ...
+      881836 [cnmf.py:                 fit():439] [12454] initializing ...
+      881872 [cnmf.py:                 fit():439] [12471] initializing ...
+      881873 [cnmf.py:                 fit():439] [12474] initializing ...
+      881885 [cnmf.py:                 fit():439] [12463] initializing ...
+      881979 [cnmf.py:                 fit():439] [12452] initializing ...
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Mar 11 13:30:30 CDT 2019 1552329030
+JobID: 3757427.qsched03.quest.it.northwestern.edu
+Session ID:			11814
+Resources Used:			cput=09:29:15,vmem=226523240kb,walltime=00:38:52,mem=21888336kb,energy_used=0
+Job exit value:			271
+----------------------------------------

@@ -1,0 +1,1473 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Mar 11 08:32:48 CDT 2019 1552311168
+PBS: Job ID:		3751573.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		normcorr_caiman
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3751573.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5033
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5033/aux//3751573.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Mar 11 08:32:48 CDT 2019 1552311168
+loading folder: 
+file:  
+through: 
+running motion correction
+         864 [__init__.py:             wrapper():415] [2830] $HOME=/home/jma819
+         866 [__init__.py:             wrapper():415] [2830] CONFIGDIR=/home/jma819/.config/matplotlib
+         867 [__init__.py:             wrapper():415] [2830] matplotlib data path: /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data
+         890 [__init__.py: rc_params_from_file():1093] [2830] loaded rc file /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
+         894 [__init__.py:            <module>():1819] [2830] matplotlib version 3.0.2
+         894 [__init__.py:            <module>():1820] [2830] interactive is False
+         895 [__init__.py:            <module>():1821] [2830] platform is linux
+         895 [__init__.py:            <module>():1822] [2830] loaded modules: ['builtins', 'sys', '_frozen_importlib', '_imp', '_warnings', '_thread', '_weakref', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'zipimport', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_weakrefset', '_bootlocale', '_locale', 'site', 'os', 'errno', 'stat', '_stat', 'posixpath', 'genericpath', 'os.path', '_collections_abc', '_sitebuiltins', 'sysconfig', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'types', 'functools', '_functools', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'weakref', 'collections.abc', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', '_sysconfigdata_x86_64_conda_cos6_linux_gnu', 'mpl_toolkits', 'google', 'sphinxcontrib', 'logging', 'time', 'traceback', 'linecache', 'tokenize', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'token', 'string', '_string', 'threading', 'atexit', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'numpy.core', 'numpy.core.info', 'numpy.core.multiarray', 'numpy.core.overrides', 'datetime', 'math', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'fnmatch', 'ntpath', 'urllib', 'urllib.parse', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core._internal', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.shape_base', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.info', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.info', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.utils', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.mixins', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.scimath', 'numpy.lib.polynomial', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft.info', 'numpy.fft.fftpack', 'numpy.fft.fftpack_lite', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random.mtrand', 'cython_runtime', 'mtrand', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'textwrap', 'numpy.ma.extras', 'numpy.testing', 'unittest', 'unittest.result', 'unittest.util', 'unittest.case', 'difflib', 'pprint', 'unittest.suite', 'unittest.loader', 'unittest.main', 'argparse', 'copy', 'gettext', 'locale', 'unittest.runner', 'unittest.signals', 'signal', 'numpy.testing._private', 'numpy.testing._private.utils', 'gc', 'tempfile', 'random', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'numpy.testing._private.decorators', 'numpy.testing._private.nosetester', 'caiman', 'caiman.base', 'caiman.base.movies', 'past', 'past.translation', 'imp', 'lib2to3', 'lib2to3.pgen2', 'lib2to3.pgen2.parse', 'lib2to3.pgen2.token', 'lib2to3.refactor', 'lib2to3.pgen2.driver', 'pkgutil', 'lib2to3.pgen2.grammar', 'lib2to3.pgen2.tokenize', 'lib2to3.pgen2.pgen', 'lib2to3.fixer_util', 'lib2to3.pytree', 'lib2to3.pygram', 'lib2to3.patcomp', 'lib2to3.pgen2.literals', 'lib2to3.btm_matcher', 'lib2to3.btm_utils', 'libfuturize', 'libfuturize.fixes', 'future', 'past.utils', 'cv2', 'cv2.Error', 'cv2.cuda', 'cv2.detail', 'cv2.dnn', 'cv2.fisheye', 'cv2.flann', 'cv2.instr', 'cv2.ipp', 'cv2.ml', 'cv2.ocl', 'cv2.ogl', 'cv2.samples', 'cv2.utils', 'cv2.videoio_registry', 'cv2.cv2', 'cv2.data', 'h5py', 'h5py._errors', 'h5py._hl', 'h5py._hl.compat', 'six', 'h5py._conv', 'h5py.h5r', 'h5py._objects', '_cython_0_29_3', 'h5py.defs', 'h5py.h5t', 'h5py.utils', 'h5py.h5', 'h5py.h5py_warnings', 'platform', 'subprocess', '_posixsubprocess', 'select', 'selectors', 'h5py.h5z', 'h5py.h5a', 'h5py.h5s', 'h5py.h5p', 'h5py.h5ac', 'h5py._proxy', 'h5py.h5d', 'h5py.h5ds', 'h5py.h5f', 'h5py.h5g', 'h5py.h5i', 'h5py.h5fd', 'h5py._hl.filters', 'h5py._hl.base', 'h5py._hl.files', 'h5py._hl.group', 'h5py.h5o', 'h5py.h5l', 'h5py._hl.dataset', 'six.moves', 'h5py._hl.selections', 'h5py._hl.selections2', 'h5py._hl.datatype', 'h5py._hl.vds', 'h5py.version', 'h5py._hl.attrs', 'uuid', 'ctypes.util', 'matplotlib', 'distutils', 'distutils.version', 'inspect', 'dis', 'opcode', '_opcode', 'urllib.request', 'base64', 'binascii', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'socket', '_socket', 'email._parseaddr', 'calendar', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', 'ipaddress', '_ssl', 'urllib.error', 'urllib.response', 'matplotlib.cbook', 'glob', 'gzip', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'dateutil', 'dateutil._version']
+        1294 [__init__.py:             wrapper():415] [2830] CACHEDIR=/home/jma819/.cache/matplotlib
+        1310 [font_manager.py:            <module>():1362] [2830] Using fontManager instance from /home/jma819/.cache/matplotlib/fontlist-v300.json
+        1579 [pyplot.py:      switch_backend():211] [2830] Loaded backend qt5agg version unknown.
+        1790 [pyplot.py:      switch_backend():211] [2830] Loaded backend qt5agg version unknown.
+        1792 [pyplot.py:      switch_backend():211] [2830] Loaded backend qt4agg version unknown.
+        1839 [pyplot.py:      switch_backend():211] [2830] Loaded backend tkagg version unknown.
+        1841 [pyplot.py:      switch_backend():211] [2830] Loaded backend agg version unknown.
+        1842 [pyplot.py:      switch_backend():211] [2830] Loaded backend agg version unknown.
+loading
+['/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam22.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam23.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam24.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam25.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam26.tif']
+        7158 [params.py:                 set():780] [2830] Changing key fnames in group data from None to ['/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam22.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam23.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam24.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam25.tif', '/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam26.tif']
+        7159 [params.py:                 set():780] [2830] Changing key fr in group data from 30 to 20
+        7159 [params.py:                 set():780] [2830] Changing key max_shifts in group motion from (6, 6) to (5, 5)
+        7159 [params.py:                 set():780] [2830] Changing key gSig_filt in group motion from None to (3, 3)
+        7159 [params.py:                 set():780] [2830] Changing key strides in group motion from (96, 96) to (48, 48)
+        7159 [params.py:                 set():780] [2830] Changing key overlaps in group motion from (32, 32) to (24, 24)
+       13436 [motion_correction.py:motion_correct_rigid():258] [2830] Entering Rigid Motion Correction
+       13436 [motion_correction.py:motion_correct_rigid():259] [2830] 0.9894885
+       14889 [movies.py:      extract_shifts():256] [2830] min_val in extract_shifts: -0.22966358661651612
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:258: UserWarning: ** Pixel averages are too negative. Removing 1 percentile. **
+  '** Pixel averages are too negative. Removing 1 percentile. **')
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:277: UserWarning: Pixel averages are too negative for template. Removing 1 percentile.
+  'Pixel averages are too negative for template. Removing 1 percentile.')
+       16427 [movies.py:      extract_shifts():289] [2830] Frame 100
+       16494 [movies.py:        apply_shifts():352] [2830] cubic interpolation
+       17081 [movies.py:        apply_shifts():385] [2830] Frame 100
+       17654 [movies.py:      extract_shifts():256] [2830] min_val in extract_shifts: -0.22966358661651612
+       19186 [movies.py:      extract_shifts():289] [2830] Frame 100
+       19252 [movies.py:        apply_shifts():352] [2830] cubic interpolation
+       19838 [movies.py:        apply_shifts():385] [2830] Frame 100
+       20348 [movies.py:      extract_shifts():256] [2830] min_val in extract_shifts: -0.22966358661651612
+       21880 [movies.py:      extract_shifts():289] [2830] Frame 100
+       21946 [movies.py:        apply_shifts():352] [2830] cubic interpolation
+       22531 [movies.py:        apply_shifts():385] [2830] Frame 100
+       22835 [motion_correction.py:motion_correct_batch_rigid():2235] [2830] Adding to movie 0.9894885
+       22835 [motion_correction.py:motion_correct_batch_rigid():2241] [2830] 0
+       22836 [motion_correction.py:motion_correct_batch_rigid():2245] [2830] saving!
+       22904 [motion_correction.py:motion_correction_piecewise():2574] [2830] ** Starting parallel motion correction **
+       23114 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 0
+       23124 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 0
+       23132 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 0
+       23152 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 0
+       23162 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 0
+       23173 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 0
+       23185 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 0
+       23192 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 0
+       23202 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 0
+       23209 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 0
+       23210 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 0
+       23240 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 0
+       27177 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 10
+       27525 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 10
+       27845 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 10
+       27873 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 10
+       28061 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 10
+       28121 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 10
+       28151 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 10
+       28184 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 10
+       28188 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 10
+       28324 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 10
+       28514 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 10
+       28702 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 10
+       31729 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 20
+       32107 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 20
+       32481 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 20
+       32544 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 20
+       32641 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 20
+       32709 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 20
+       32830 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 20
+       32848 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 20
+       33160 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 20
+       33570 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 20
+       33760 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 20
+       33766 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 20
+       36319 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 30
+       36685 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 30
+       37056 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 30
+       37731 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 30
+       37732 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 30
+       37799 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 30
+       37843 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 30
+       37890 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 30
+       38038 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 30
+       38062 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 30
+       38093 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 30
+       38688 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 30
+       40632 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 40
+       41122 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 40
+       41241 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 40
+       42074 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 40
+       42116 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 40
+       42576 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 40
+       42713 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 40
+       43199 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 40
+       43322 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 40
+       43406 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 40
+       43434 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 40
+       43564 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 40
+       45482 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 50
+       45734 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 50
+       45745 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 50
+       45815 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 50
+       46244 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 50
+       47050 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 50
+       47469 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 50
+       47906 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 50
+       48004 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 50
+       48037 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 50
+       48337 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 50
+       49024 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 50
+       50399 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 60
+       50571 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 60
+       50589 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 60
+       50805 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 60
+       51241 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 60
+       51986 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 60
+       52060 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 60
+       52375 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 60
+       52667 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 60
+       52764 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 60
+       53481 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 60
+       54102 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 60
+       55330 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 70
+       55462 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 70
+       56040 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 70
+       56198 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 70
+       56338 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 70
+       56688 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 70
+       56786 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 70
+       57096 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 70
+       57216 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 70
+       57908 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 70
+       58492 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 70
+       58518 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 70
+       59729 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 80
+       60572 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 80
+       60945 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 80
+       61283 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 80
+       61439 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 80
+       61449 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 80
+       61504 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 80
+       61732 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 80
+       61808 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 80
+       62561 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 80
+       63178 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 80
+       63252 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 80
+      291420 [motion_correction.py:motion_correction_piecewise():2582] [2830] ** Finished parallel motion correction **
+      291655 [motion_correction.py:motion_correct_batch_rigid():2258] [2830] 0.10134709
+      292256 [motion_correction.py:motion_correct_batch_rigid():2235] [2830] Adding to movie 0.9894885
+      292257 [motion_correction.py:motion_correct_batch_rigid():2241] [2830] 0
+      292257 [motion_correction.py:motion_correct_batch_rigid():2245] [2830] saving!
+      292403 [motion_correction.py:motion_correction_piecewise():2574] [2830] ** Starting parallel motion correction **
+      292604 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 0
+      292611 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 0
+      292621 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 0
+      292636 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 0
+      292642 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 0
+      292652 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 0
+      292668 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 0
+      292686 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 0
+      292691 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 0
+      292701 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 0
+      292708 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 0
+      292711 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 0
+      296147 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 10
+      296631 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 10
+      296825 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 10
+      296972 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 10
+      296984 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 10
+      297281 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 10
+      297290 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 10
+      297416 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 10
+      297551 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 10
+      297595 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 10
+      297748 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 10
+      298007 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 10
+      300800 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 20
+      301361 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 20
+      301576 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 20
+      301654 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 20
+      302005 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 20
+      302015 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 20
+      302172 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 20
+      302453 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 20
+      302538 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 20
+      302809 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 20
+      302964 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 20
+      303242 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 20
+      305461 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 30
+      305675 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 30
+      305729 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 30
+      306298 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 30
+      306317 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 30
+      306866 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 30
+      306950 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 30
+      307095 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 30
+      307134 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 30
+      307481 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 30
+      307515 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 30
+      308401 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 30
+      309555 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 40
+      310690 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 40
+      310967 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 40
+      311135 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 40
+      311255 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 40
+      311276 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 40
+      311538 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 40
+      312007 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 40
+      312073 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 40
+      312669 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 40
+      312948 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 40
+      312970 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 40
+      313814 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 50
+      314993 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 50
+      315130 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 50
+      315654 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 50
+      316026 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 50
+      316052 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 50
+      316536 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 50
+      316548 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 50
+      316790 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 50
+      317173 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 50
+      317722 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 50
+      317930 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 50
+      319538 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 60
+      319787 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 60
+      320085 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 60
+      320124 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 60
+      320493 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 60
+      321352 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 60
+      321479 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 60
+      321630 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 60
+      321650 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 60
+      321822 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 60
+      322117 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 60
+      322629 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 60
+      324352 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 70
+      324418 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 70
+      324640 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 70
+      325158 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 70
+      325476 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 70
+      325908 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 70
+      326107 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 70
+      326223 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 70
+      326349 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 70
+      326755 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 70
+      326779 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 70
+      328042 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 70
+      329201 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 80
+      329206 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 80
+      329538 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 80
+      330202 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 80
+      330333 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 80
+      330406 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 80
+      330421 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 80
+      330797 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 80
+      331032 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 80
+      331388 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 80
+      331479 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 80
+      332379 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 80
+      872221 [motion_correction.py:motion_correction_piecewise():2582] [2830] ** Finished parallel motion correction **
+      872451 [motion_correction.py:motion_correct_batch_rigid():2258] [2830] 0.12246915
+      873283 [motion_correction.py:motion_correct_batch_rigid():2235] [2830] Adding to movie 0.9894885
+      873283 [motion_correction.py:motion_correct_batch_rigid():2241] [2830] 0
+      873283 [motion_correction.py:motion_correct_batch_rigid():2245] [2830] saving!
+      873357 [motion_correction.py:motion_correction_piecewise():2574] [2830] ** Starting parallel motion correction **
+      873534 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 0
+      873577 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 0
+      873583 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 0
+      873597 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 0
+      873606 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 0
+      873656 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 0
+      873695 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 0
+      873723 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 0
+      873778 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 0
+      873790 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 0
+      873811 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 0
+      873964 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 0
+      877578 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 10
+      877667 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 10
+      878059 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 10
+      878078 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 10
+      878381 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 10
+      878578 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 10
+      878588 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 10
+      878595 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 10
+      879077 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 10
+      879080 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 10
+      879113 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 10
+      879339 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 10
+      882487 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 20
+      882653 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 20
+      882678 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 20
+      882865 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 20
+      883053 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 20
+      883158 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 20
+      883240 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 20
+      883388 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 20
+      883492 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 20
+      883637 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 20
+      883638 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 20
+      884746 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 20
+      886703 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 30
+      887116 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 30
+      887232 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 30
+      887839 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 30
+      888050 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 30
+      888095 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 30
+      888345 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 30
+      888536 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 30
+      888587 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 30
+      888707 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 30
+      889346 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 30
+      889620 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 30
+      891424 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 40
+      891780 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 40
+      892025 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 40
+      892035 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 40
+      892953 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 40
+      892999 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 40
+      893483 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 40
+      893668 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 40
+      893785 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 40
+      893926 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 40
+      893980 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 40
+      894521 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 40
+      896093 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 50
+      896331 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 50
+      896813 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 50
+      896964 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 50
+      897346 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 50
+      897576 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 50
+      898043 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 50
+      898539 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 50
+      898633 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 50
+      898707 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 50
+      899391 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 50
+      899599 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 50
+      900320 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 60
+      900560 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 60
+      902212 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 60
+      902495 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 60
+      902805 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 60
+      903103 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 60
+      903117 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 60
+      903162 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 60
+      903410 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 60
+      903528 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 60
+      903954 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 60
+      904650 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 70
+      904979 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 60
+      905543 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 70
+      906365 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 70
+      906547 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 70
+      907203 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 70
+      907618 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 70
+      907858 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 70
+      908007 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 70
+      908531 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 70
+      908816 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 70
+      908826 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 70
+      909819 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 80
+      910168 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 80
+      910492 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 80
+      910517 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 70
+      911415 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 80
+      911475 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 80
+      912281 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 80
+      912990 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 80
+      913166 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 80
+      913228 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 80
+      913527 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 80
+      913898 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 80
+      914655 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 80
+     1132688 [motion_correction.py:motion_correction_piecewise():2582] [2830] ** Finished parallel motion correction **
+     1132930 [motion_correction.py:motion_correct_batch_rigid():2258] [2830] 0.13831589
+     1133960 [motion_correction.py:motion_correct_batch_rigid():2235] [2830] Adding to movie 0.9894885
+     1133960 [motion_correction.py:motion_correct_batch_rigid():2241] [2830] 0
+     1133960 [motion_correction.py:motion_correct_batch_rigid():2245] [2830] saving!
+     1134051 [motion_correction.py:motion_correction_piecewise():2574] [2830] ** Starting parallel motion correction **
+     1134237 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 0
+     1134249 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 0
+     1134259 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 0
+     1134299 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 0
+     1134341 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 0
+     1134345 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 0
+     1134351 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 0
+     1134442 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 0
+     1134447 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 0
+     1134446 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 0
+     1134463 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 0
+     1134654 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 0
+     1138190 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 10
+     1138211 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 10
+     1138243 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 10
+     1138359 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 10
+     1138820 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 10
+     1138839 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 10
+     1138950 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 10
+     1138952 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 10
+     1139299 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 10
+     1139380 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 10
+     1139450 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 10
+     1139458 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 10
+     1142445 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 20
+     1143033 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 20
+     1143045 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 20
+     1143383 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 20
+     1143579 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 20
+     1143581 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 20
+     1143772 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 20
+     1144154 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 20
+     1144271 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 20
+     1144283 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 20
+     1144298 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 20
+     1144324 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 20
+     1146773 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 30
+     1148014 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 30
+     1148095 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 30
+     1148142 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 30
+     1148167 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 30
+     1148282 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 30
+     1148377 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 30
+     1148492 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 30
+     1148519 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 30
+     1149094 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 30
+     1149159 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 30
+     1149581 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 30
+     1152426 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 40
+     1152678 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 40
+     1153048 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 40
+     1153079 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 40
+     1153219 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 40
+     1153227 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 40
+     1153464 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 40
+     1153616 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 40
+     1154155 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 40
+     1154230 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 40
+     1154267 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 40
+     1154514 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 40
+     1156327 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 50
+     1156479 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 50
+     1157013 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 50
+     1157836 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 50
+     1158103 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 50
+     1158255 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 50
+     1158331 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 50
+     1158630 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 50
+     1159169 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 50
+     1159184 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 50
+     1159536 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 50
+     1159629 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 50
+     1160945 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 60
+     1161372 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 60
+     1162289 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 60
+     1162674 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 60
+     1162696 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 60
+     1162738 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 60
+     1163134 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 60
+     1163134 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 60
+     1163403 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 60
+     1164168 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 60
+     1164283 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 60
+     1164391 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 60
+     1164805 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 70
+     1165681 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 70
+     1166363 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 70
+     1166964 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 70
+     1167453 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 70
+     1167759 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 70
+     1168287 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 70
+     1168409 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 70
+     1168431 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 70
+     1168970 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 70
+     1169309 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 70
+     1169426 [motion_correction.py:tile_and_correct_wrapper():2430] [2878] 80
+     1169445 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 70
+     1170019 [motion_correction.py:tile_and_correct_wrapper():2430] [2879] 80
+     1171270 [motion_correction.py:tile_and_correct_wrapper():2430] [2882] 80
+     1171358 [motion_correction.py:tile_and_correct_wrapper():2430] [2881] 80
+     1172124 [motion_correction.py:tile_and_correct_wrapper():2430] [2875] 80
+     1172594 [motion_correction.py:tile_and_correct_wrapper():2430] [2884] 80
+     1172962 [motion_correction.py:tile_and_correct_wrapper():2430] [2876] 80
+     1173107 [motion_correction.py:tile_and_correct_wrapper():2430] [2880] 80
+     1173138 [motion_correction.py:tile_and_correct_wrapper():2430] [2883] 80
+     1173379 [motion_correction.py:tile_and_correct_wrapper():2430] [2886] 80
+     1173436 [motion_correction.py:tile_and_correct_wrapper():2430] [2877] 80
+     1173584 [motion_correction.py:tile_and_correct_wrapper():2430] [2885] 80
+     1885850 [motion_correction.py:motion_correction_piecewise():2582] [2830] ** Finished parallel motion correction **
+     1886093 [motion_correction.py:motion_correct_batch_rigid():2258] [2830] 0.11855443
+     1887147 [motion_correction.py:motion_correct_batch_rigid():2235] [2830] Adding to movie 0.9894885
+     1887147 [motion_correction.py:motion_correct_batch_rigid():2241] [2830] 0
+     1887147 [motion_correction.py:motion_correct_batch_rigid():2245] [2830] saving!
+     1887222 [motion_correction.py:motion_correction_piecewise():2574] [2830] ** Starting parallel motion correction **
+     1887446 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 0
+     1887453 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 0
+     1887466 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 0
+     1887467 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 0
+     1887476 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 0
+     1887487 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 0
+     1887498 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 0
+     1887506 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 0
+     1887518 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 0
+     1887523 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 0
+     1887632 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 0
+     1887869 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 0
+     1891586 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 10
+     1891697 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 10
+     1891921 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 10
+     1892113 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 10
+     1892134 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 10
+     1892169 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 10
+     1892178 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 10
+     1892231 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 10
+     1892442 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 10
+     1892608 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 10
+     1892799 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 10
+     1892989 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 10
+     1895930 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 20
+     1896311 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 20
+     1896387 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 20
+     1896542 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 20
+     1897102 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 20
+     1897106 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 20
+     1897142 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 20
+     1897230 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 20
+     1897291 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 20
+     1897750 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 20
+     1898067 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 20
+     1898521 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 20
+     1899352 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 30
+     1900448 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 30
+     1900934 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 30
+     1901005 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 30
+     1901689 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 30
+     1901941 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 30
+     1902201 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 30
+     1902382 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 30
+     1902748 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 30
+     1903361 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 30
+     1903427 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 30
+     1903652 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 30
+     1904748 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 40
+     1904987 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 40
+     1905378 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 40
+     1905617 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 40
+     1906466 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 40
+     1906657 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 40
+     1906816 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 40
+     1907125 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 40
+     1908229 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 40
+     1908321 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 40
+     1908337 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 40
+     1908461 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 40
+     1908860 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 50
+     1909350 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 50
+     1910552 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 50
+     1910641 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 50
+     1910643 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 50
+     1911380 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 50
+     1911950 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 50
+     1912156 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 50
+     1912735 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 50
+     1912934 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 50
+     1912992 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 50
+     1913538 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 60
+     1913717 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 60
+     1913976 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 50
+     1914524 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 60
+     1915337 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 60
+     1915868 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 60
+     1915921 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 60
+     1916927 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 60
+     1917171 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 60
+     1917203 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 60
+     1917504 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 60
+     1917873 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 60
+     1918344 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 70
+     1918753 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 60
+     1919059 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 70
+     1919093 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 70
+     1920325 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 70
+     1920851 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 70
+     1921304 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 70
+     1921308 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 70
+     1921614 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 70
+     1921619 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 70
+     1922319 [motion_correction.py:tile_and_correct_wrapper():2430] [2868] 80
+     1922399 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 70
+     1922646 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 70
+     1923087 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 70
+     1923862 [motion_correction.py:tile_and_correct_wrapper():2430] [2867] 80
+     1924124 [motion_correction.py:tile_and_correct_wrapper():2430] [2865] 80
+     1925072 [motion_correction.py:tile_and_correct_wrapper():2430] [2870] 80
+     1925662 [motion_correction.py:tile_and_correct_wrapper():2430] [2873] 80
+     1925699 [motion_correction.py:tile_and_correct_wrapper():2430] [2872] 80
+     1925860 [motion_correction.py:tile_and_correct_wrapper():2430] [2869] 80
+     1926435 [motion_correction.py:tile_and_correct_wrapper():2430] [2866] 80
+     1926667 [motion_correction.py:tile_and_correct_wrapper():2430] [2863] 80
+     1926789 [motion_correction.py:tile_and_correct_wrapper():2430] [2864] 80
+     1927183 [motion_correction.py:tile_and_correct_wrapper():2430] [2871] 80
+     1927757 [motion_correction.py:tile_and_correct_wrapper():2430] [2874] 80
+     2583894 [motion_correction.py:motion_correction_piecewise():2582] [2830] ** Finished parallel motion correction **
+     2584132 [motion_correction.py:motion_correct_batch_rigid():2258] [2830] 0.1867909
+     2584138 [mmapping.py:         save_memmap():371] [2830] Distributing memory map over many files
+     2584138 [mmapping.py:         save_memmap():399] [2830] /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam22_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     2584138 [movies.py:                load():1352] [2830] loading in memory
+     2585752 [movies.py:                load():1355] [2830] mmap
+     2587400 [mmapping.py:         save_memmap():463] [2830] SAVING WITH numpy.tofile()
+     2588089 [mmapping.py:         save_memmap():399] [2830] /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam23_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     2588090 [movies.py:                load():1352] [2830] loading in memory
+     2589578 [movies.py:                load():1355] [2830] mmap
+     2591175 [mmapping.py:         save_memmap():463] [2830] SAVING WITH numpy.tofile()
+     2591778 [mmapping.py:         save_memmap():399] [2830] /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam24_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     2591779 [movies.py:                load():1352] [2830] loading in memory
+     2593217 [movies.py:                load():1355] [2830] mmap
+     2594808 [mmapping.py:         save_memmap():463] [2830] SAVING WITH numpy.tofile()
+     2595386 [mmapping.py:         save_memmap():399] [2830] /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam25_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     2595386 [movies.py:                load():1352] [2830] loading in memory
+     2596740 [movies.py:                load():1355] [2830] mmap
+     2598328 [mmapping.py:         save_memmap():463] [2830] SAVING WITH numpy.tofile()
+     2598920 [mmapping.py:         save_memmap():399] [2830] /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/H13_M33_S54msCam26_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     2598920 [movies.py:                load():1352] [2830] loading in memory
+     2600279 [movies.py:                load():1355] [2830] mmap
+     2601869 [mmapping.py:         save_memmap():463] [2830] SAVING WITH numpy.tofile()
+     2602492 [mmapping.py:    save_memmap_join():162] [2830] ('/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     2602492 [mmapping.py:    save_memmap_join():162] [2830] ('/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     2602492 [mmapping.py:    save_memmap_join():162] [2830] ('/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     2602492 [mmapping.py:    save_memmap_join():162] [2830] ('/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     2602493 [mmapping.py:    save_memmap_join():162] [2830] ('/projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     2602493 [mmapping.py:    save_memmap_join():178] [2830] Memmap file for fname_tot: /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_5000_.mmap
+     2602494 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2602494 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602528 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602562 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602592 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602619 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602646 [mmapping.py:        save_portion():264] [2830] Index start and end are 0 and 3609
+     2602680 [mmapping.py:        save_portion():283] [2830] done
+     2602681 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2602681 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602721 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602746 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602769 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602794 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602818 [mmapping.py:        save_portion():264] [2830] Index start and end are 3609 and 7218
+     2602844 [mmapping.py:        save_portion():283] [2830] done
+     2602844 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2602845 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602885 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602910 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602935 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602960 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2602985 [mmapping.py:        save_portion():264] [2830] Index start and end are 7218 and 10827
+     2603010 [mmapping.py:        save_portion():283] [2830] done
+     2603011 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603011 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603051 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603075 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603098 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603117 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603141 [mmapping.py:        save_portion():264] [2830] Index start and end are 10827 and 14436
+     2603165 [mmapping.py:        save_portion():283] [2830] done
+     2603165 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603165 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603204 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603229 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603253 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603276 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603298 [mmapping.py:        save_portion():264] [2830] Index start and end are 14436 and 18045
+     2603322 [mmapping.py:        save_portion():283] [2830] done
+     2603322 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603322 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603359 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603382 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603403 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603424 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603444 [mmapping.py:        save_portion():264] [2830] Index start and end are 18045 and 21654
+     2603467 [mmapping.py:        save_portion():283] [2830] done
+     2603467 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603467 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603502 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603525 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603546 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603568 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603590 [mmapping.py:        save_portion():264] [2830] Index start and end are 21654 and 25263
+     2603614 [mmapping.py:        save_portion():283] [2830] done
+     2603615 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603615 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603649 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603669 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603690 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603706 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603726 [mmapping.py:        save_portion():264] [2830] Index start and end are 25263 and 28872
+     2603749 [mmapping.py:        save_portion():283] [2830] done
+     2603750 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603750 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603785 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603807 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603828 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603849 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603881 [mmapping.py:        save_portion():264] [2830] Index start and end are 28872 and 32481
+     2603909 [mmapping.py:        save_portion():283] [2830] done
+     2603909 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2603910 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603957 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2603986 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604012 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604037 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604062 [mmapping.py:        save_portion():264] [2830] Index start and end are 32481 and 36090
+     2604088 [mmapping.py:        save_portion():283] [2830] done
+     2604089 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604089 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604130 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604149 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604168 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604187 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604206 [mmapping.py:        save_portion():264] [2830] Index start and end are 36090 and 39699
+     2604232 [mmapping.py:        save_portion():283] [2830] done
+     2604233 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604233 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604274 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604298 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604323 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604348 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604372 [mmapping.py:        save_portion():264] [2830] Index start and end are 39699 and 43308
+     2604397 [mmapping.py:        save_portion():283] [2830] done
+     2604398 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604398 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604437 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604462 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604486 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604509 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604534 [mmapping.py:        save_portion():264] [2830] Index start and end are 43308 and 46917
+     2604559 [mmapping.py:        save_portion():283] [2830] done
+     2604560 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604560 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604600 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604624 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604649 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604674 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604699 [mmapping.py:        save_portion():264] [2830] Index start and end are 46917 and 50526
+     2604724 [mmapping.py:        save_portion():283] [2830] done
+     2604725 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604725 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604761 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604782 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604802 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604818 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604833 [mmapping.py:        save_portion():264] [2830] Index start and end are 50526 and 54135
+     2604857 [mmapping.py:        save_portion():283] [2830] done
+     2604858 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2604858 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604893 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604914 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604935 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604956 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2604977 [mmapping.py:        save_portion():264] [2830] Index start and end are 54135 and 57744
+     2605000 [mmapping.py:        save_portion():283] [2830] done
+     2605000 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605000 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605034 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605056 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605077 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605098 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605119 [mmapping.py:        save_portion():264] [2830] Index start and end are 57744 and 61353
+     2605143 [mmapping.py:        save_portion():283] [2830] done
+     2605144 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605144 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605174 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605190 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605210 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605230 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605251 [mmapping.py:        save_portion():264] [2830] Index start and end are 61353 and 64962
+     2605272 [mmapping.py:        save_portion():283] [2830] done
+     2605273 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605273 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605307 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605328 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605349 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605371 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605392 [mmapping.py:        save_portion():264] [2830] Index start and end are 64962 and 68571
+     2605415 [mmapping.py:        save_portion():283] [2830] done
+     2605415 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605415 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605450 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605472 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605492 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605507 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605529 [mmapping.py:        save_portion():264] [2830] Index start and end are 68571 and 72180
+     2605551 [mmapping.py:        save_portion():283] [2830] done
+     2605552 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605552 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605588 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605610 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605633 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605654 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605670 [mmapping.py:        save_portion():264] [2830] Index start and end are 72180 and 75789
+     2605694 [mmapping.py:        save_portion():283] [2830] done
+     2605695 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605695 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605730 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605745 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605765 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605781 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605801 [mmapping.py:        save_portion():264] [2830] Index start and end are 75789 and 79398
+     2605909 [mmapping.py:        save_portion():283] [2830] done
+     2605910 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2605910 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605957 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2605985 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606012 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606037 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606060 [mmapping.py:        save_portion():264] [2830] Index start and end are 79398 and 83007
+     2606086 [mmapping.py:        save_portion():283] [2830] done
+     2606087 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606087 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606122 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606144 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606166 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606187 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606209 [mmapping.py:        save_portion():264] [2830] Index start and end are 83007 and 86616
+     2606233 [mmapping.py:        save_portion():283] [2830] done
+     2606233 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606233 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606267 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606289 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606312 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606333 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606354 [mmapping.py:        save_portion():264] [2830] Index start and end are 86616 and 90225
+     2606378 [mmapping.py:        save_portion():283] [2830] done
+     2606379 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606379 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606407 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606427 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606447 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606466 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606486 [mmapping.py:        save_portion():264] [2830] Index start and end are 90225 and 93834
+     2606509 [mmapping.py:        save_portion():283] [2830] done
+     2606510 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606510 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606544 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606565 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606586 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606607 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606628 [mmapping.py:        save_portion():264] [2830] Index start and end are 93834 and 97443
+     2606652 [mmapping.py:        save_portion():283] [2830] done
+     2606652 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606652 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606687 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606710 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606732 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606754 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606776 [mmapping.py:        save_portion():264] [2830] Index start and end are 97443 and 101052
+     2606800 [mmapping.py:        save_portion():283] [2830] done
+     2606800 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606800 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606836 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606851 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606867 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606886 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606906 [mmapping.py:        save_portion():264] [2830] Index start and end are 101052 and 104661
+     2606930 [mmapping.py:        save_portion():283] [2830] done
+     2606931 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2606931 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606966 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2606987 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607009 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607031 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607053 [mmapping.py:        save_portion():264] [2830] Index start and end are 104661 and 108270
+     2607077 [mmapping.py:        save_portion():283] [2830] done
+     2607077 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607077 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607111 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607132 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607152 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607174 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607195 [mmapping.py:        save_portion():264] [2830] Index start and end are 108270 and 111879
+     2607218 [mmapping.py:        save_portion():283] [2830] done
+     2607219 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607219 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607248 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607263 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607286 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607301 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607316 [mmapping.py:        save_portion():264] [2830] Index start and end are 111879 and 115488
+     2607338 [mmapping.py:        save_portion():283] [2830] done
+     2607339 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607339 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607373 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607394 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607414 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607435 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607456 [mmapping.py:        save_portion():264] [2830] Index start and end are 115488 and 119097
+     2607480 [mmapping.py:        save_portion():283] [2830] done
+     2607480 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607480 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607515 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607537 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607559 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607582 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607604 [mmapping.py:        save_portion():264] [2830] Index start and end are 119097 and 122706
+     2607626 [mmapping.py:        save_portion():283] [2830] done
+     2607627 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607627 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607663 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607685 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607707 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607728 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607750 [mmapping.py:        save_portion():264] [2830] Index start and end are 122706 and 126315
+     2607773 [mmapping.py:        save_portion():283] [2830] done
+     2607773 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607773 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607807 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607828 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607848 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607863 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607879 [mmapping.py:        save_portion():264] [2830] Index start and end are 126315 and 129924
+     2607902 [mmapping.py:        save_portion():283] [2830] done
+     2607902 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2607902 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607937 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607959 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2607980 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608001 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608022 [mmapping.py:        save_portion():264] [2830] Index start and end are 129924 and 133533
+     2608057 [mmapping.py:        save_portion():283] [2830] done
+     2608058 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608058 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608093 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608115 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608137 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608157 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608178 [mmapping.py:        save_portion():264] [2830] Index start and end are 133533 and 137142
+     2608202 [mmapping.py:        save_portion():283] [2830] done
+     2608202 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608202 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608238 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608254 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608269 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608293 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608315 [mmapping.py:        save_portion():264] [2830] Index start and end are 137142 and 140751
+     2608339 [mmapping.py:        save_portion():283] [2830] done
+     2608340 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608340 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608370 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608391 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608412 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608432 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608453 [mmapping.py:        save_portion():264] [2830] Index start and end are 140751 and 144360
+     2608476 [mmapping.py:        save_portion():283] [2830] done
+     2608477 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608477 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608511 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608532 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608553 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608574 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608595 [mmapping.py:        save_portion():264] [2830] Index start and end are 144360 and 147969
+     2608619 [mmapping.py:        save_portion():283] [2830] done
+     2608619 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608619 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608653 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608675 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608697 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608718 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608739 [mmapping.py:        save_portion():264] [2830] Index start and end are 147969 and 151578
+     2608763 [mmapping.py:        save_portion():283] [2830] done
+     2608763 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608763 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608797 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608818 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608838 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608853 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608869 [mmapping.py:        save_portion():264] [2830] Index start and end are 151578 and 155187
+     2608893 [mmapping.py:        save_portion():283] [2830] done
+     2608893 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2608893 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608927 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608948 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608969 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2608990 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609011 [mmapping.py:        save_portion():264] [2830] Index start and end are 155187 and 158796
+     2609033 [mmapping.py:        save_portion():283] [2830] done
+     2609034 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609034 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609063 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609084 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609104 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609125 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609146 [mmapping.py:        save_portion():264] [2830] Index start and end are 158796 and 162405
+     2609170 [mmapping.py:        save_portion():283] [2830] done
+     2609170 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609170 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609206 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609228 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609250 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609273 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609296 [mmapping.py:        save_portion():264] [2830] Index start and end are 162405 and 166014
+     2609319 [mmapping.py:        save_portion():283] [2830] done
+     2609319 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609319 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609354 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609374 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609394 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609415 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609435 [mmapping.py:        save_portion():264] [2830] Index start and end are 166014 and 169623
+     2609458 [mmapping.py:        save_portion():283] [2830] done
+     2609458 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609458 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609493 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609514 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609534 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609555 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609576 [mmapping.py:        save_portion():264] [2830] Index start and end are 169623 and 173232
+     2609599 [mmapping.py:        save_portion():283] [2830] done
+     2609599 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609599 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609632 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609653 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609675 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609690 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609712 [mmapping.py:        save_portion():264] [2830] Index start and end are 173232 and 176841
+     2609736 [mmapping.py:        save_portion():283] [2830] done
+     2609736 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609736 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609770 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609793 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609826 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609856 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609879 [mmapping.py:        save_portion():264] [2830] Index start and end are 176841 and 180450
+     2609905 [mmapping.py:        save_portion():283] [2830] done
+     2609906 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2609906 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609949 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609972 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2609996 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610015 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610039 [mmapping.py:        save_portion():264] [2830] Index start and end are 180450 and 184059
+     2610064 [mmapping.py:        save_portion():283] [2830] done
+     2610065 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610065 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610106 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610131 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610154 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610179 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610203 [mmapping.py:        save_portion():264] [2830] Index start and end are 184059 and 187668
+     2610229 [mmapping.py:        save_portion():283] [2830] done
+     2610229 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610229 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610269 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610294 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610319 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610343 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610367 [mmapping.py:        save_portion():264] [2830] Index start and end are 187668 and 191277
+     2610392 [mmapping.py:        save_portion():283] [2830] done
+     2610393 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610393 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610433 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610457 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610480 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610503 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610522 [mmapping.py:        save_portion():264] [2830] Index start and end are 191277 and 194886
+     2610548 [mmapping.py:        save_portion():283] [2830] done
+     2610548 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610548 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610587 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610609 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610631 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610652 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610673 [mmapping.py:        save_portion():264] [2830] Index start and end are 194886 and 198495
+     2610697 [mmapping.py:        save_portion():283] [2830] done
+     2610698 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610698 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610732 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610753 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610774 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610797 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610817 [mmapping.py:        save_portion():264] [2830] Index start and end are 198495 and 202104
+     2610840 [mmapping.py:        save_portion():283] [2830] done
+     2610841 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610841 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610875 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610897 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610920 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610941 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2610957 [mmapping.py:        save_portion():264] [2830] Index start and end are 202104 and 205713
+     2610981 [mmapping.py:        save_portion():283] [2830] done
+     2610982 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2610982 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611011 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611031 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611051 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611071 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611091 [mmapping.py:        save_portion():264] [2830] Index start and end are 205713 and 209322
+     2611113 [mmapping.py:        save_portion():283] [2830] done
+     2611113 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611113 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611148 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611168 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611189 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611210 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611231 [mmapping.py:        save_portion():264] [2830] Index start and end are 209322 and 212931
+     2611254 [mmapping.py:        save_portion():283] [2830] done
+     2611254 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611254 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611288 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611309 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611330 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611351 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611372 [mmapping.py:        save_portion():264] [2830] Index start and end are 212931 and 216540
+     2611394 [mmapping.py:        save_portion():283] [2830] done
+     2611395 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611395 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611429 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611449 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611468 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611488 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611507 [mmapping.py:        save_portion():264] [2830] Index start and end are 216540 and 220149
+     2611530 [mmapping.py:        save_portion():283] [2830] done
+     2611531 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611531 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611564 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611585 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611606 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611628 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611649 [mmapping.py:        save_portion():264] [2830] Index start and end are 220149 and 223758
+     2611671 [mmapping.py:        save_portion():283] [2830] done
+     2611672 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611672 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611705 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611726 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611747 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611768 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611789 [mmapping.py:        save_portion():264] [2830] Index start and end are 223758 and 227367
+     2611813 [mmapping.py:        save_portion():283] [2830] done
+     2611813 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611813 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611847 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611870 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611892 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611908 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611930 [mmapping.py:        save_portion():264] [2830] Index start and end are 227367 and 230976
+     2611954 [mmapping.py:        save_portion():283] [2830] done
+     2611954 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2611954 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2611988 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612004 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612019 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612040 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612055 [mmapping.py:        save_portion():264] [2830] Index start and end are 230976 and 234585
+     2612080 [mmapping.py:        save_portion():283] [2830] done
+     2612080 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612080 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612114 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612135 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612156 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612177 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612198 [mmapping.py:        save_portion():264] [2830] Index start and end are 234585 and 238194
+     2612221 [mmapping.py:        save_portion():283] [2830] done
+     2612222 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612222 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612255 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612277 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612298 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612319 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612341 [mmapping.py:        save_portion():264] [2830] Index start and end are 238194 and 241803
+     2612365 [mmapping.py:        save_portion():283] [2830] done
+     2612365 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612365 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612400 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612423 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612445 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612467 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612482 [mmapping.py:        save_portion():264] [2830] Index start and end are 241803 and 245412
+     2612506 [mmapping.py:        save_portion():283] [2830] done
+     2612506 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612506 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612542 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612562 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612577 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612597 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612618 [mmapping.py:        save_portion():264] [2830] Index start and end are 245412 and 249021
+     2612641 [mmapping.py:        save_portion():283] [2830] done
+     2612642 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612642 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612676 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612697 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612718 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612739 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612760 [mmapping.py:        save_portion():264] [2830] Index start and end are 249021 and 252630
+     2612784 [mmapping.py:        save_portion():283] [2830] done
+     2612784 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612784 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612818 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612839 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612861 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612883 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612905 [mmapping.py:        save_portion():264] [2830] Index start and end are 252630 and 256239
+     2612929 [mmapping.py:        save_portion():283] [2830] done
+     2612929 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2612929 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612958 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612973 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2612993 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613009 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613029 [mmapping.py:        save_portion():264] [2830] Index start and end are 256239 and 259848
+     2613053 [mmapping.py:        save_portion():283] [2830] done
+     2613054 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613054 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613089 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613111 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613132 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613153 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613175 [mmapping.py:        save_portion():264] [2830] Index start and end are 259848 and 263457
+     2613197 [mmapping.py:        save_portion():283] [2830] done
+     2613197 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613197 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613232 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613254 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613275 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613296 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613317 [mmapping.py:        save_portion():264] [2830] Index start and end are 263457 and 267066
+     2613340 [mmapping.py:        save_portion():283] [2830] done
+     2613341 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613341 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613374 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613396 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613418 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613434 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613456 [mmapping.py:        save_portion():264] [2830] Index start and end are 267066 and 270675
+     2613479 [mmapping.py:        save_portion():283] [2830] done
+     2613479 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613480 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613514 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613534 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613550 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613571 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613586 [mmapping.py:        save_portion():264] [2830] Index start and end are 270675 and 274284
+     2613609 [mmapping.py:        save_portion():283] [2830] done
+     2613609 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613609 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613643 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613664 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613685 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613706 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613727 [mmapping.py:        save_portion():264] [2830] Index start and end are 274284 and 277893
+     2613751 [mmapping.py:        save_portion():283] [2830] done
+     2613752 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613752 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613786 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613808 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613829 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613850 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613873 [mmapping.py:        save_portion():264] [2830] Index start and end are 277893 and 281502
+     2613896 [mmapping.py:        save_portion():283] [2830] done
+     2613896 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2613896 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613930 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613946 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613961 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613977 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2613992 [mmapping.py:        save_portion():264] [2830] Index start and end are 281502 and 285111
+     2614016 [mmapping.py:        save_portion():283] [2830] done
+     2614016 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614016 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614051 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614071 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614092 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614113 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614133 [mmapping.py:        save_portion():264] [2830] Index start and end are 285111 and 288720
+     2614157 [mmapping.py:        save_portion():283] [2830] done
+     2614157 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614157 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614191 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614213 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614234 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614254 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614276 [mmapping.py:        save_portion():264] [2830] Index start and end are 288720 and 292329
+     2614300 [mmapping.py:        save_portion():283] [2830] done
+     2614300 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614300 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614335 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614351 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614373 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614389 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614411 [mmapping.py:        save_portion():264] [2830] Index start and end are 292329 and 295938
+     2614519 [mmapping.py:        save_portion():283] [2830] done
+     2614519 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614519 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614566 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614594 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614616 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614642 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614662 [mmapping.py:        save_portion():264] [2830] Index start and end are 295938 and 299547
+     2614688 [mmapping.py:        save_portion():283] [2830] done
+     2614689 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614689 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614729 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614753 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614777 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614801 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614826 [mmapping.py:        save_portion():264] [2830] Index start and end are 299547 and 303156
+     2614851 [mmapping.py:        save_portion():283] [2830] done
+     2614852 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2614852 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614892 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614917 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614942 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614966 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2614990 [mmapping.py:        save_portion():264] [2830] Index start and end are 303156 and 306765
+     2615017 [mmapping.py:        save_portion():283] [2830] done
+     2615017 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615017 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615058 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615077 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615096 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615119 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615143 [mmapping.py:        save_portion():264] [2830] Index start and end are 306765 and 310374
+     2615168 [mmapping.py:        save_portion():283] [2830] done
+     2615169 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615169 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615209 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615233 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615258 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615282 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615306 [mmapping.py:        save_portion():264] [2830] Index start and end are 310374 and 313983
+     2615332 [mmapping.py:        save_portion():283] [2830] done
+     2615332 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615333 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615371 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615417 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615441 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615463 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615486 [mmapping.py:        save_portion():264] [2830] Index start and end are 313983 and 317592
+     2615510 [mmapping.py:        save_portion():283] [2830] done
+     2615511 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615511 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615545 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615567 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615590 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615611 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615632 [mmapping.py:        save_portion():264] [2830] Index start and end are 317592 and 321201
+     2615655 [mmapping.py:        save_portion():283] [2830] done
+     2615656 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615656 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615690 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615710 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615730 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615750 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615770 [mmapping.py:        save_portion():264] [2830] Index start and end are 321201 and 324810
+     2615793 [mmapping.py:        save_portion():283] [2830] done
+     2615794 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615794 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615829 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615850 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615871 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615893 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615914 [mmapping.py:        save_portion():264] [2830] Index start and end are 324810 and 328419
+     2615937 [mmapping.py:        save_portion():283] [2830] done
+     2615938 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2615938 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615972 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2615988 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616004 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616025 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616047 [mmapping.py:        save_portion():264] [2830] Index start and end are 328419 and 332028
+     2616070 [mmapping.py:        save_portion():283] [2830] done
+     2616070 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616070 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616105 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616128 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616150 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616166 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616182 [mmapping.py:        save_portion():264] [2830] Index start and end are 332028 and 335637
+     2616206 [mmapping.py:        save_portion():283] [2830] done
+     2616206 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616206 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616241 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616261 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616281 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616302 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616323 [mmapping.py:        save_portion():264] [2830] Index start and end are 335637 and 339246
+     2616345 [mmapping.py:        save_portion():283] [2830] done
+     2616346 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616346 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616380 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616401 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616422 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616444 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616465 [mmapping.py:        save_portion():264] [2830] Index start and end are 339246 and 342855
+     2616489 [mmapping.py:        save_portion():283] [2830] done
+     2616489 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616489 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616523 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616545 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616568 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616590 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616613 [mmapping.py:        save_portion():264] [2830] Index start and end are 342855 and 346464
+     2616636 [mmapping.py:        save_portion():283] [2830] done
+     2616637 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616637 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616671 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616690 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616710 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616730 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616745 [mmapping.py:        save_portion():264] [2830] Index start and end are 346464 and 350073
+     2616769 [mmapping.py:        save_portion():283] [2830] done
+     2616769 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616770 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616804 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616825 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616846 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616868 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616889 [mmapping.py:        save_portion():264] [2830] Index start and end are 350073 and 353682
+     2616913 [mmapping.py:        save_portion():283] [2830] done
+     2616913 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3609, 5000)
+     2616913 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616949 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616969 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2616993 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617014 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617033 [mmapping.py:        save_portion():264] [2830] Index start and end are 353682 and 357291
+     2617056 [mmapping.py:        save_portion():283] [2830] done
+     2617056 [mmapping.py:        save_portion():256] [2830] Shape of Yr_tot is (3669, 5000)
+     2617056 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617091 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617111 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617132 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617153 [mmapping.py:        save_portion():258] [2830] Saving portion to /projects/p30771/miniscope/data/GRIN013/3_9_2019/TIFs/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     2617174 [mmapping.py:        save_portion():264] [2830] Index start and end are 357291 and 360960
+     2617216 [mmapping.py:        save_portion():283] [2830] done
+     2617343 [mmapping.py:    save_memmap_join():205] [2830] Deleting big mov
+finished motion correction
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Mar 11 09:16:43 CDT 2019 1552313803
+JobID: 3751573.qsched03.quest.it.northwestern.edu
+Session ID:			2145
+Resources Used:			cput=01:27:29,vmem=60320272kb,walltime=00:43:50,mem=12673088kb,energy_used=0
+Job exit value:			0
+----------------------------------------

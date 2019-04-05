@@ -1,0 +1,33 @@
+----------------------------------------
+PBS: Begin PBS Prologue Thu Feb 21 20:30:44 CST 2019 1550802644
+PBS: Job ID:		3578495.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     normal
+PBS: Job name:		normcorr_caiman
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3578495.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode8052
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode8052/aux//3578495.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Thu Feb 21 20:30:44 CST 2019 1550802644
+/hpc/opt/torque6/nodes/qnode8052/mom_priv/jobs/3578495.qsched03.quest.it.northwestern.edu.SC: line 38: cd: /home/jma819/caimandata/: No such file or directory
+loading folder: /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/
+file:  
+through: 
+python: can't open file 'caiman_motion_correction_normcorr_e_script.py': [Errno 2] No such file or directory
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Thu Feb 21 20:31:19 CST 2019 1550802679
+JobID: 3578495.qsched03.quest.it.northwestern.edu
+Session ID:			61124
+Resources Used:			cput=00:00:06,energy_used=0,mem=129552kb,vmem=1540988kb,walltime=00:00:30
+Job exit value:			2
+----------------------------------------

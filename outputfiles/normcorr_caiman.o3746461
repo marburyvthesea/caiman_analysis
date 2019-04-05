@@ -1,0 +1,1379 @@
+----------------------------------------
+PBS: Begin PBS Prologue Sun Mar 10 17:32:27 CDT 2019 1552257147
+PBS: Job ID:		3746461.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		normcorr_caiman
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3746461.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5110
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5110/aux//3746461.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Sun Mar 10 17:32:27 CDT 2019 1552257147
+loading folder: 
+file:  
+through: 
+running motion correction and cnmfe
+         917 [__init__.py:             wrapper():415] [15236] $HOME=/home/jma819
+         918 [__init__.py:             wrapper():415] [15236] CONFIGDIR=/home/jma819/.config/matplotlib
+         919 [__init__.py:             wrapper():415] [15236] matplotlib data path: /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data
+         932 [__init__.py: rc_params_from_file():1093] [15236] loaded rc file /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
+         935 [__init__.py:            <module>():1819] [15236] matplotlib version 3.0.2
+         936 [__init__.py:            <module>():1820] [15236] interactive is False
+         936 [__init__.py:            <module>():1821] [15236] platform is linux
+         936 [__init__.py:            <module>():1822] [15236] loaded modules: ['builtins', 'sys', '_frozen_importlib', '_imp', '_warnings', '_thread', '_weakref', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'zipimport', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_weakrefset', '_bootlocale', '_locale', 'site', 'os', 'errno', 'stat', '_stat', 'posixpath', 'genericpath', 'os.path', '_collections_abc', '_sitebuiltins', 'sysconfig', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'types', 'functools', '_functools', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'weakref', 'collections.abc', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', '_sysconfigdata_x86_64_conda_cos6_linux_gnu', 'mpl_toolkits', 'google', 'sphinxcontrib', 'logging', 'time', 'traceback', 'linecache', 'tokenize', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'token', 'string', '_string', 'threading', 'atexit', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'numpy.core', 'numpy.core.info', 'numpy.core.multiarray', 'numpy.core.overrides', 'datetime', 'math', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'fnmatch', 'ntpath', 'urllib', 'urllib.parse', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core._internal', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.shape_base', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.info', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.info', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.utils', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.mixins', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.scimath', 'numpy.lib.polynomial', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft.info', 'numpy.fft.fftpack', 'numpy.fft.fftpack_lite', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random.mtrand', 'cython_runtime', 'mtrand', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'textwrap', 'numpy.ma.extras', 'numpy.testing', 'unittest', 'unittest.result', 'unittest.util', 'unittest.case', 'difflib', 'pprint', 'unittest.suite', 'unittest.loader', 'unittest.main', 'argparse', 'copy', 'gettext', 'locale', 'unittest.runner', 'unittest.signals', 'signal', 'numpy.testing._private', 'numpy.testing._private.utils', 'gc', 'tempfile', 'random', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'numpy.testing._private.decorators', 'numpy.testing._private.nosetester', 'caiman', 'caiman.base', 'caiman.base.movies', 'past', 'past.translation', 'imp', 'lib2to3', 'lib2to3.pgen2', 'lib2to3.pgen2.parse', 'lib2to3.pgen2.token', 'lib2to3.refactor', 'lib2to3.pgen2.driver', 'pkgutil', 'lib2to3.pgen2.grammar', 'lib2to3.pgen2.tokenize', 'lib2to3.pgen2.pgen', 'lib2to3.fixer_util', 'lib2to3.pytree', 'lib2to3.pygram', 'lib2to3.patcomp', 'lib2to3.pgen2.literals', 'lib2to3.btm_matcher', 'lib2to3.btm_utils', 'libfuturize', 'libfuturize.fixes', 'future', 'past.utils', 'cv2', 'cv2.Error', 'cv2.cuda', 'cv2.detail', 'cv2.dnn', 'cv2.fisheye', 'cv2.flann', 'cv2.instr', 'cv2.ipp', 'cv2.ml', 'cv2.ocl', 'cv2.ogl', 'cv2.samples', 'cv2.utils', 'cv2.videoio_registry', 'cv2.cv2', 'cv2.data', 'h5py', 'h5py._errors', 'h5py._hl', 'h5py._hl.compat', 'six', 'h5py._conv', 'h5py.h5r', 'h5py._objects', '_cython_0_29_3', 'h5py.defs', 'h5py.h5t', 'h5py.utils', 'h5py.h5', 'h5py.h5py_warnings', 'platform', 'subprocess', '_posixsubprocess', 'select', 'selectors', 'h5py.h5z', 'h5py.h5a', 'h5py.h5s', 'h5py.h5p', 'h5py.h5ac', 'h5py._proxy', 'h5py.h5d', 'h5py.h5ds', 'h5py.h5f', 'h5py.h5g', 'h5py.h5i', 'h5py.h5fd', 'h5py._hl.filters', 'h5py._hl.base', 'h5py._hl.files', 'h5py._hl.group', 'h5py.h5o', 'h5py.h5l', 'h5py._hl.dataset', 'six.moves', 'h5py._hl.selections', 'h5py._hl.selections2', 'h5py._hl.datatype', 'h5py._hl.vds', 'h5py.version', 'h5py._hl.attrs', 'uuid', 'ctypes.util', 'matplotlib', 'distutils', 'distutils.version', 'inspect', 'dis', 'opcode', '_opcode', 'urllib.request', 'base64', 'binascii', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'socket', '_socket', 'email._parseaddr', 'calendar', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', 'ipaddress', '_ssl', 'urllib.error', 'urllib.response', 'matplotlib.cbook', 'glob', 'gzip', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'dateutil', 'dateutil._version']
+        1532 [__init__.py:             wrapper():415] [15236] CACHEDIR=/home/jma819/.cache/matplotlib
+        1535 [font_manager.py:            <module>():1362] [15236] Using fontManager instance from /home/jma819/.cache/matplotlib/fontlist-v300.json
+        2101 [pyplot.py:      switch_backend():211] [15236] Loaded backend qt5agg version unknown.
+        2694 [pyplot.py:      switch_backend():211] [15236] Loaded backend qt5agg version unknown.
+        2696 [pyplot.py:      switch_backend():211] [15236] Loaded backend qt4agg version unknown.
+        2833 [pyplot.py:      switch_backend():211] [15236] Loaded backend tkagg version unknown.
+        2835 [pyplot.py:      switch_backend():211] [15236] Loaded backend agg version unknown.
+        2836 [pyplot.py:      switch_backend():211] [15236] Loaded backend agg version unknown.
+loading
+['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam9.tif', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam10.tif']
+       14367 [params.py:                 set():780] [15236] Changing key fnames in group data from None to ['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam9.tif', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam10.tif']
+       14368 [params.py:                 set():780] [15236] Changing key fr in group data from 30 to 20
+       14368 [params.py:                 set():780] [15236] Changing key max_shifts in group motion from (6, 6) to (5, 5)
+       14369 [params.py:                 set():780] [15236] Changing key gSig_filt in group motion from None to (3, 3)
+       14369 [params.py:                 set():780] [15236] Changing key strides in group motion from (96, 96) to (48, 48)
+       14369 [params.py:                 set():780] [15236] Changing key overlaps in group motion from (32, 32) to (24, 24)
+       18737 [motion_correction.py:motion_correct_rigid():258] [15236] Entering Rigid Motion Correction
+       18737 [motion_correction.py:motion_correct_rigid():259] [15236] 1.3795735
+       20218 [movies.py:      extract_shifts():256] [15236] min_val in extract_shifts: -0.2907070556282997
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:258: UserWarning: ** Pixel averages are too negative. Removing 1 percentile. **
+  '** Pixel averages are too negative. Removing 1 percentile. **')
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:277: UserWarning: Pixel averages are too negative for template. Removing 1 percentile.
+  'Pixel averages are too negative for template. Removing 1 percentile.')
+       21752 [movies.py:      extract_shifts():289] [15236] Frame 100
+       21818 [movies.py:        apply_shifts():352] [15236] cubic interpolation
+       22404 [movies.py:        apply_shifts():385] [15236] Frame 100
+       22997 [movies.py:      extract_shifts():256] [15236] min_val in extract_shifts: -0.2907070556282997
+       24594 [movies.py:      extract_shifts():289] [15236] Frame 100
+       24660 [movies.py:        apply_shifts():352] [15236] cubic interpolation
+       25244 [movies.py:        apply_shifts():385] [15236] Frame 100
+       25773 [movies.py:      extract_shifts():256] [15236] min_val in extract_shifts: -0.2907070556282997
+       27309 [movies.py:      extract_shifts():289] [15236] Frame 100
+       27375 [movies.py:        apply_shifts():352] [15236] cubic interpolation
+       27958 [movies.py:        apply_shifts():385] [15236] Frame 100
+       28264 [motion_correction.py:motion_correct_batch_rigid():2235] [15236] Adding to movie 1.3795735
+       28264 [motion_correction.py:motion_correct_batch_rigid():2241] [15236] 0
+       28265 [motion_correction.py:motion_correct_batch_rigid():2245] [15236] saving!
+       28357 [motion_correction.py:motion_correction_piecewise():2574] [15236] ** Starting parallel motion correction **
+       28552 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 0
+       28566 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 0
+       28577 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 0
+       28591 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 0
+       28601 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 0
+       28609 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 0
+       28628 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 0
+       28630 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 0
+       28636 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 0
+       28639 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 0
+       28643 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 0
+       28652 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 0
+       32519 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 10
+       32658 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 10
+       32930 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 10
+       33104 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 10
+       33223 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 10
+       33293 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 10
+       33345 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 10
+       33474 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 10
+       33503 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 10
+       33580 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 10
+       33587 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 10
+       33795 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 10
+       37257 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 20
+       37436 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 20
+       37573 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 20
+       37616 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 20
+       37669 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 20
+       37746 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 20
+       38170 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 20
+       38582 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 20
+       38713 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 20
+       38783 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 20
+       38806 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 20
+       39726 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 20
+       41363 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 30
+       42060 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 30
+       42084 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 30
+       42107 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 30
+       42465 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 30
+       43173 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 30
+       43187 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 30
+       43228 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 30
+       43500 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 30
+       43523 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 30
+       43996 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 30
+       44246 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 30
+       46071 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 40
+       46376 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 40
+       46780 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 40
+       47390 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 40
+       47392 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 40
+       47397 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 40
+       47403 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 40
+       47648 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 40
+       47709 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 40
+       47990 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 40
+       48646 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 40
+       49422 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 40
+       50964 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 50
+       51382 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 50
+       51432 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 50
+       51799 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 50
+       51822 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 50
+       51858 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 50
+       52193 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 50
+       52399 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 50
+       53166 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 50
+       53357 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 50
+       53635 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 50
+       54688 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 50
+       55883 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 60
+       55939 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 60
+       56321 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 60
+       56328 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 60
+       56379 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 60
+       56928 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 60
+       57079 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 60
+       57439 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 60
+       57628 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 60
+       58510 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 60
+       58648 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 60
+       59530 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 60
+       60806 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 70
+       60882 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 70
+       61076 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 70
+       61363 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 70
+       61775 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 70
+       61833 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 70
+       62097 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 70
+       62146 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 70
+       62158 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 70
+       62699 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 70
+       63404 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 70
+       64056 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 70
+       65224 [motion_correction.py:tile_and_correct_wrapper():2430] [15269] 80
+       65620 [motion_correction.py:tile_and_correct_wrapper():2430] [15280] 80
+       65970 [motion_correction.py:tile_and_correct_wrapper():2430] [15279] 80
+       66252 [motion_correction.py:tile_and_correct_wrapper():2430] [15271] 80
+       66339 [motion_correction.py:tile_and_correct_wrapper():2430] [15277] 80
+       66353 [motion_correction.py:tile_and_correct_wrapper():2430] [15278] 80
+       66707 [motion_correction.py:tile_and_correct_wrapper():2430] [15273] 80
+       66850 [motion_correction.py:tile_and_correct_wrapper():2430] [15275] 80
+       67360 [motion_correction.py:tile_and_correct_wrapper():2430] [15272] 80
+       67421 [motion_correction.py:tile_and_correct_wrapper():2430] [15276] 80
+       68025 [motion_correction.py:tile_and_correct_wrapper():2430] [15270] 80
+       68508 [motion_correction.py:tile_and_correct_wrapper():2430] [15274] 80
+      235426 [motion_correction.py:motion_correction_piecewise():2582] [15236] ** Finished parallel motion correction **
+      235657 [motion_correction.py:motion_correct_batch_rigid():2258] [15236] 0.11689844
+      236253 [motion_correction.py:motion_correct_batch_rigid():2235] [15236] Adding to movie 1.3795735
+      236254 [motion_correction.py:motion_correct_batch_rigid():2241] [15236] 0
+      236254 [motion_correction.py:motion_correct_batch_rigid():2245] [15236] saving!
+      236319 [motion_correction.py:motion_correction_piecewise():2574] [15236] ** Starting parallel motion correction **
+      236524 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 0
+      236537 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 0
+      236540 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 0
+      236555 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 0
+      236566 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 0
+      236580 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 0
+      236593 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 0
+      236604 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 0
+      236620 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 0
+      236628 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 0
+      236641 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 0
+      236643 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 0
+      240560 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 10
+      240603 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 10
+      240763 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 10
+      241186 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 10
+      241310 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 10
+      241330 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 10
+      241369 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 10
+      241549 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 10
+      241663 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 10
+      241684 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 10
+      241860 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 10
+      241931 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 10
+      245134 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 20
+      245254 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 20
+      245880 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 20
+      245909 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 20
+      246197 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 20
+      246198 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 20
+      246248 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 20
+      246624 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 20
+      246705 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 20
+      246909 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 20
+      246923 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 20
+      247172 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 20
+      249615 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 30
+      249937 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 30
+      249981 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 30
+      250312 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 30
+      250366 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 30
+      250608 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 30
+      250740 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 30
+      251210 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 30
+      251657 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 30
+      251944 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 30
+      252409 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 30
+      252509 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 30
+      254217 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 40
+      254177 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 40
+      254330 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 40
+      254636 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 40
+      254782 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 40
+      255496 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 40
+      255898 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 40
+      256455 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 40
+      256637 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 40
+      256640 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 40
+      257017 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 40
+      257362 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 40
+      257798 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 50
+      258903 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 50
+      258974 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 50
+      259167 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 50
+      259682 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 50
+      260201 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 50
+      260687 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 50
+      261083 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 50
+      261412 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 50
+      261735 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 50
+      261832 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 60
+      261834 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 50
+      261963 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 50
+      263388 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 60
+      263710 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 60
+      264503 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 60
+      264591 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 60
+      265126 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 60
+      265455 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 60
+      266012 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 60
+      266118 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 70
+      266359 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 60
+      266882 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 60
+      266916 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 60
+      267141 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 60
+      267334 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 70
+      268874 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 70
+      269046 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 70
+      269577 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 70
+      269980 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 70
+      270128 [motion_correction.py:tile_and_correct_wrapper():2430] [15282] 80
+      270394 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 70
+      270869 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 70
+      271284 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 70
+      271411 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 70
+      272359 [motion_correction.py:tile_and_correct_wrapper():2430] [15288] 80
+      272591 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 70
+      272827 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 70
+      273209 [motion_correction.py:tile_and_correct_wrapper():2430] [15286] 80
+      273691 [motion_correction.py:tile_and_correct_wrapper():2430] [15289] 80
+      274068 [motion_correction.py:tile_and_correct_wrapper():2430] [15285] 80
+      274407 [motion_correction.py:tile_and_correct_wrapper():2430] [15283] 80
+      274662 [motion_correction.py:tile_and_correct_wrapper():2430] [15292] 80
+      275686 [motion_correction.py:tile_and_correct_wrapper():2430] [15290] 80
+      275933 [motion_correction.py:tile_and_correct_wrapper():2430] [15284] 80
+      276096 [motion_correction.py:tile_and_correct_wrapper():2430] [15281] 80
+      276347 [motion_correction.py:tile_and_correct_wrapper():2430] [15287] 80
+      276398 [motion_correction.py:tile_and_correct_wrapper():2430] [15291] 80
+     1152751 [motion_correction.py:motion_correction_piecewise():2582] [15236] ** Finished parallel motion correction **
+     1152990 [motion_correction.py:motion_correct_batch_rigid():2258] [15236] 0.2053681
+     1152993 [mmapping.py:         save_memmap():371] [15236] Distributing memory map over many files
+     1152994 [mmapping.py:         save_memmap():399] [15236] /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam9_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     1152994 [movies.py:                load():1352] [15236] loading in memory
+     1154500 [movies.py:                load():1355] [15236] mmap
+     1156148 [mmapping.py:         save_memmap():463] [15236] SAVING WITH numpy.tofile()
+     1156922 [mmapping.py:         save_memmap():399] [15236] /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/H10_M19_S59msCam10_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     1156922 [movies.py:                load():1352] [15236] loading in memory
+     1158405 [movies.py:                load():1355] [15236] mmap
+     1159997 [mmapping.py:         save_memmap():463] [15236] SAVING WITH numpy.tofile()
+     1160531 [mmapping.py:    save_memmap_join():162] [15236] ('/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     1160532 [mmapping.py:    save_memmap_join():162] [15236] ('/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', 1000)
+     1160532 [mmapping.py:    save_memmap_join():178] [15236] Memmap file for fname_tot: /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_2000_.mmap
+     1160537 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160537 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160563 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160588 [mmapping.py:        save_portion():264] [15236] Index start and end are 0 and 3609
+     1160601 [mmapping.py:        save_portion():283] [15236] done
+     1160606 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160606 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160630 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160655 [mmapping.py:        save_portion():264] [15236] Index start and end are 3609 and 7218
+     1160664 [mmapping.py:        save_portion():283] [15236] done
+     1160668 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160669 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160693 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160718 [mmapping.py:        save_portion():264] [15236] Index start and end are 7218 and 10827
+     1160729 [mmapping.py:        save_portion():283] [15236] done
+     1160732 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160732 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160752 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160771 [mmapping.py:        save_portion():264] [15236] Index start and end are 10827 and 14436
+     1160781 [mmapping.py:        save_portion():283] [15236] done
+     1160785 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160785 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160809 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160832 [mmapping.py:        save_portion():264] [15236] Index start and end are 14436 and 18045
+     1160841 [mmapping.py:        save_portion():283] [15236] done
+     1160845 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160845 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160861 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160877 [mmapping.py:        save_portion():264] [15236] Index start and end are 18045 and 21654
+     1160887 [mmapping.py:        save_portion():283] [15236] done
+     1160890 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160890 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160913 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160937 [mmapping.py:        save_portion():264] [15236] Index start and end are 21654 and 25263
+     1160947 [mmapping.py:        save_portion():283] [15236] done
+     1160950 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1160950 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160971 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1160986 [mmapping.py:        save_portion():264] [15236] Index start and end are 25263 and 28872
+     1160997 [mmapping.py:        save_portion():283] [15236] done
+     1161000 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161001 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161022 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161043 [mmapping.py:        save_portion():264] [15236] Index start and end are 28872 and 32481
+     1161053 [mmapping.py:        save_portion():283] [15236] done
+     1161056 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161056 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161078 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161100 [mmapping.py:        save_portion():264] [15236] Index start and end are 32481 and 36090
+     1161110 [mmapping.py:        save_portion():283] [15236] done
+     1161113 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161113 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161129 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161145 [mmapping.py:        save_portion():264] [15236] Index start and end are 36090 and 39699
+     1161154 [mmapping.py:        save_portion():283] [15236] done
+     1161157 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161158 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161178 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161199 [mmapping.py:        save_portion():264] [15236] Index start and end are 39699 and 43308
+     1161209 [mmapping.py:        save_portion():283] [15236] done
+     1161212 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161212 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161233 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161254 [mmapping.py:        save_portion():264] [15236] Index start and end are 43308 and 46917
+     1161263 [mmapping.py:        save_portion():283] [15236] done
+     1161266 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161266 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161282 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161298 [mmapping.py:        save_portion():264] [15236] Index start and end are 46917 and 50526
+     1161308 [mmapping.py:        save_portion():283] [15236] done
+     1161311 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161311 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161333 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161354 [mmapping.py:        save_portion():264] [15236] Index start and end are 50526 and 54135
+     1161364 [mmapping.py:        save_portion():283] [15236] done
+     1161367 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161367 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161388 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161409 [mmapping.py:        save_portion():264] [15236] Index start and end are 54135 and 57744
+     1161419 [mmapping.py:        save_portion():283] [15236] done
+     1161422 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161423 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161444 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161466 [mmapping.py:        save_portion():264] [15236] Index start and end are 57744 and 61353
+     1161475 [mmapping.py:        save_portion():283] [15236] done
+     1161479 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161479 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161500 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161516 [mmapping.py:        save_portion():264] [15236] Index start and end are 61353 and 64962
+     1161526 [mmapping.py:        save_portion():283] [15236] done
+     1161529 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161529 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161550 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161570 [mmapping.py:        save_portion():264] [15236] Index start and end are 64962 and 68571
+     1161580 [mmapping.py:        save_portion():283] [15236] done
+     1161584 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161584 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161605 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161626 [mmapping.py:        save_portion():264] [15236] Index start and end are 68571 and 72180
+     1161636 [mmapping.py:        save_portion():283] [15236] done
+     1161639 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161639 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161661 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161682 [mmapping.py:        save_portion():264] [15236] Index start and end are 72180 and 75789
+     1161692 [mmapping.py:        save_portion():283] [15236] done
+     1161695 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161695 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161711 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161726 [mmapping.py:        save_portion():264] [15236] Index start and end are 75789 and 79398
+     1161736 [mmapping.py:        save_portion():283] [15236] done
+     1161739 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161739 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161762 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161783 [mmapping.py:        save_portion():264] [15236] Index start and end are 79398 and 83007
+     1161792 [mmapping.py:        save_portion():283] [15236] done
+     1161795 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161796 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161817 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161839 [mmapping.py:        save_portion():264] [15236] Index start and end are 83007 and 86616
+     1161848 [mmapping.py:        save_portion():283] [15236] done
+     1161852 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161852 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161874 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161895 [mmapping.py:        save_portion():264] [15236] Index start and end are 86616 and 90225
+     1161905 [mmapping.py:        save_portion():283] [15236] done
+     1161908 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161908 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161930 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161950 [mmapping.py:        save_portion():264] [15236] Index start and end are 90225 and 93834
+     1161960 [mmapping.py:        save_portion():283] [15236] done
+     1161963 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1161963 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1161983 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162004 [mmapping.py:        save_portion():264] [15236] Index start and end are 93834 and 97443
+     1162013 [mmapping.py:        save_portion():283] [15236] done
+     1162017 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162017 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162033 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162054 [mmapping.py:        save_portion():264] [15236] Index start and end are 97443 and 101052
+     1162063 [mmapping.py:        save_portion():283] [15236] done
+     1162067 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162067 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162088 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162108 [mmapping.py:        save_portion():264] [15236] Index start and end are 101052 and 104661
+     1162117 [mmapping.py:        save_portion():283] [15236] done
+     1162120 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162121 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162142 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162164 [mmapping.py:        save_portion():264] [15236] Index start and end are 104661 and 108270
+     1162174 [mmapping.py:        save_portion():283] [15236] done
+     1162178 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162178 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162199 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162221 [mmapping.py:        save_portion():264] [15236] Index start and end are 108270 and 111879
+     1162230 [mmapping.py:        save_portion():283] [15236] done
+     1162234 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162234 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162256 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162271 [mmapping.py:        save_portion():264] [15236] Index start and end are 111879 and 115488
+     1162281 [mmapping.py:        save_portion():283] [15236] done
+     1162285 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162285 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162306 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162328 [mmapping.py:        save_portion():264] [15236] Index start and end are 115488 and 119097
+     1162337 [mmapping.py:        save_portion():283] [15236] done
+     1162340 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162340 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162361 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162382 [mmapping.py:        save_portion():264] [15236] Index start and end are 119097 and 122706
+     1162392 [mmapping.py:        save_portion():283] [15236] done
+     1162395 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162395 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162417 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162439 [mmapping.py:        save_portion():264] [15236] Index start and end are 122706 and 126315
+     1162448 [mmapping.py:        save_portion():283] [15236] done
+     1162452 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162452 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162468 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162483 [mmapping.py:        save_portion():264] [15236] Index start and end are 126315 and 129924
+     1162493 [mmapping.py:        save_portion():283] [15236] done
+     1162496 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162496 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162518 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162540 [mmapping.py:        save_portion():264] [15236] Index start and end are 129924 and 133533
+     1162549 [mmapping.py:        save_portion():283] [15236] done
+     1162553 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162553 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162574 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162595 [mmapping.py:        save_portion():264] [15236] Index start and end are 133533 and 137142
+     1162605 [mmapping.py:        save_portion():283] [15236] done
+     1162608 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162608 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162633 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162655 [mmapping.py:        save_portion():264] [15236] Index start and end are 137142 and 140751
+     1162665 [mmapping.py:        save_portion():283] [15236] done
+     1162668 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162669 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162684 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162700 [mmapping.py:        save_portion():264] [15236] Index start and end are 140751 and 144360
+     1162709 [mmapping.py:        save_portion():283] [15236] done
+     1162713 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162713 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162734 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162755 [mmapping.py:        save_portion():264] [15236] Index start and end are 144360 and 147969
+     1162764 [mmapping.py:        save_portion():283] [15236] done
+     1162767 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162767 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162789 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162810 [mmapping.py:        save_portion():264] [15236] Index start and end are 147969 and 151578
+     1162820 [mmapping.py:        save_portion():283] [15236] done
+     1162823 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162823 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162844 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162860 [mmapping.py:        save_portion():264] [15236] Index start and end are 151578 and 155187
+     1162870 [mmapping.py:        save_portion():283] [15236] done
+     1162874 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162874 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162895 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162917 [mmapping.py:        save_portion():264] [15236] Index start and end are 155187 and 158796
+     1162927 [mmapping.py:        save_portion():283] [15236] done
+     1162930 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162930 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162951 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1162973 [mmapping.py:        save_portion():264] [15236] Index start and end are 158796 and 162405
+     1162982 [mmapping.py:        save_portion():283] [15236] done
+     1162985 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1162985 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163006 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163026 [mmapping.py:        save_portion():264] [15236] Index start and end are 162405 and 166014
+     1163036 [mmapping.py:        save_portion():283] [15236] done
+     1163039 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163039 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163055 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163071 [mmapping.py:        save_portion():264] [15236] Index start and end are 166014 and 169623
+     1163080 [mmapping.py:        save_portion():283] [15236] done
+     1163083 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163084 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163104 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163125 [mmapping.py:        save_portion():264] [15236] Index start and end are 169623 and 173232
+     1163135 [mmapping.py:        save_portion():283] [15236] done
+     1163138 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163138 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163160 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163181 [mmapping.py:        save_portion():264] [15236] Index start and end are 173232 and 176841
+     1163190 [mmapping.py:        save_portion():283] [15236] done
+     1163193 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163194 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163216 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163232 [mmapping.py:        save_portion():264] [15236] Index start and end are 176841 and 180450
+     1163242 [mmapping.py:        save_portion():283] [15236] done
+     1163245 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163246 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163262 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163284 [mmapping.py:        save_portion():264] [15236] Index start and end are 180450 and 184059
+     1163293 [mmapping.py:        save_portion():283] [15236] done
+     1163297 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163297 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163318 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163340 [mmapping.py:        save_portion():264] [15236] Index start and end are 184059 and 187668
+     1163349 [mmapping.py:        save_portion():283] [15236] done
+     1163352 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163353 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163374 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163395 [mmapping.py:        save_portion():264] [15236] Index start and end are 187668 and 191277
+     1163405 [mmapping.py:        save_portion():283] [15236] done
+     1163408 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163408 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163424 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163439 [mmapping.py:        save_portion():264] [15236] Index start and end are 191277 and 194886
+     1163449 [mmapping.py:        save_portion():283] [15236] done
+     1163453 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163453 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163474 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163495 [mmapping.py:        save_portion():264] [15236] Index start and end are 194886 and 198495
+     1163505 [mmapping.py:        save_portion():283] [15236] done
+     1163509 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163509 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163530 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163551 [mmapping.py:        save_portion():264] [15236] Index start and end are 198495 and 202104
+     1163560 [mmapping.py:        save_portion():283] [15236] done
+     1163563 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163563 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163584 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163605 [mmapping.py:        save_portion():264] [15236] Index start and end are 202104 and 205713
+     1163615 [mmapping.py:        save_portion():283] [15236] done
+     1163619 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163619 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163634 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163654 [mmapping.py:        save_portion():264] [15236] Index start and end are 205713 and 209322
+     1163663 [mmapping.py:        save_portion():283] [15236] done
+     1163667 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163667 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163688 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163709 [mmapping.py:        save_portion():264] [15236] Index start and end are 209322 and 212931
+     1163718 [mmapping.py:        save_portion():283] [15236] done
+     1163722 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163722 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163743 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163764 [mmapping.py:        save_portion():264] [15236] Index start and end are 212931 and 216540
+     1163774 [mmapping.py:        save_portion():283] [15236] done
+     1163777 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163777 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163793 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163808 [mmapping.py:        save_portion():264] [15236] Index start and end are 216540 and 220149
+     1163818 [mmapping.py:        save_portion():283] [15236] done
+     1163821 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163822 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163844 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163865 [mmapping.py:        save_portion():264] [15236] Index start and end are 220149 and 223758
+     1163875 [mmapping.py:        save_portion():283] [15236] done
+     1163878 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163878 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163894 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163916 [mmapping.py:        save_portion():264] [15236] Index start and end are 223758 and 227367
+     1163925 [mmapping.py:        save_portion():283] [15236] done
+     1163928 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163929 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163951 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1163973 [mmapping.py:        save_portion():264] [15236] Index start and end are 227367 and 230976
+     1163983 [mmapping.py:        save_portion():283] [15236] done
+     1163986 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1163986 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164001 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164017 [mmapping.py:        save_portion():264] [15236] Index start and end are 230976 and 234585
+     1164027 [mmapping.py:        save_portion():283] [15236] done
+     1164030 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164030 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164052 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164072 [mmapping.py:        save_portion():264] [15236] Index start and end are 234585 and 238194
+     1164082 [mmapping.py:        save_portion():283] [15236] done
+     1164085 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164085 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164106 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164127 [mmapping.py:        save_portion():264] [15236] Index start and end are 238194 and 241803
+     1164136 [mmapping.py:        save_portion():283] [15236] done
+     1164139 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164140 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164161 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164182 [mmapping.py:        save_portion():264] [15236] Index start and end are 241803 and 245412
+     1164191 [mmapping.py:        save_portion():283] [15236] done
+     1164194 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164194 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164215 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164236 [mmapping.py:        save_portion():264] [15236] Index start and end are 245412 and 249021
+     1164244 [mmapping.py:        save_portion():283] [15236] done
+     1164248 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164248 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164269 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164368 [mmapping.py:        save_portion():264] [15236] Index start and end are 249021 and 252630
+     1164379 [mmapping.py:        save_portion():283] [15236] done
+     1164383 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164384 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164413 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164441 [mmapping.py:        save_portion():264] [15236] Index start and end are 252630 and 256239
+     1164452 [mmapping.py:        save_portion():283] [15236] done
+     1164456 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164456 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164475 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164491 [mmapping.py:        save_portion():264] [15236] Index start and end are 256239 and 259848
+     1164501 [mmapping.py:        save_portion():283] [15236] done
+     1164505 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164505 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164528 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164550 [mmapping.py:        save_portion():264] [15236] Index start and end are 259848 and 263457
+     1164561 [mmapping.py:        save_portion():283] [15236] done
+     1164565 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164565 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164587 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164607 [mmapping.py:        save_portion():264] [15236] Index start and end are 263457 and 267066
+     1164616 [mmapping.py:        save_portion():283] [15236] done
+     1164619 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164619 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164641 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164656 [mmapping.py:        save_portion():264] [15236] Index start and end are 267066 and 270675
+     1164667 [mmapping.py:        save_portion():283] [15236] done
+     1164670 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164670 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164686 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164707 [mmapping.py:        save_portion():264] [15236] Index start and end are 270675 and 274284
+     1164718 [mmapping.py:        save_portion():283] [15236] done
+     1164722 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164722 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164742 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164762 [mmapping.py:        save_portion():264] [15236] Index start and end are 274284 and 277893
+     1164774 [mmapping.py:        save_portion():283] [15236] done
+     1164778 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164778 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164799 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164814 [mmapping.py:        save_portion():264] [15236] Index start and end are 277893 and 281502
+     1164826 [mmapping.py:        save_portion():283] [15236] done
+     1164829 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164829 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164844 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164865 [mmapping.py:        save_portion():264] [15236] Index start and end are 281502 and 285111
+     1164877 [mmapping.py:        save_portion():283] [15236] done
+     1164880 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164880 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164903 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164924 [mmapping.py:        save_portion():264] [15236] Index start and end are 285111 and 288720
+     1164937 [mmapping.py:        save_portion():283] [15236] done
+     1164940 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164940 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164956 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1164977 [mmapping.py:        save_portion():264] [15236] Index start and end are 288720 and 292329
+     1164991 [mmapping.py:        save_portion():283] [15236] done
+     1164994 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1164994 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165017 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165133 [mmapping.py:        save_portion():264] [15236] Index start and end are 292329 and 295938
+     1165155 [mmapping.py:        save_portion():283] [15236] done
+     1165159 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165159 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165184 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165203 [mmapping.py:        save_portion():264] [15236] Index start and end are 295938 and 299547
+     1165215 [mmapping.py:        save_portion():283] [15236] done
+     1165219 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165219 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165241 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165263 [mmapping.py:        save_portion():264] [15236] Index start and end are 299547 and 303156
+     1165276 [mmapping.py:        save_portion():283] [15236] done
+     1165280 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165280 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165302 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165323 [mmapping.py:        save_portion():264] [15236] Index start and end are 303156 and 306765
+     1165333 [mmapping.py:        save_portion():283] [15236] done
+     1165336 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165337 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165358 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165379 [mmapping.py:        save_portion():264] [15236] Index start and end are 306765 and 310374
+     1165388 [mmapping.py:        save_portion():283] [15236] done
+     1165392 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165392 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165413 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165436 [mmapping.py:        save_portion():264] [15236] Index start and end are 310374 and 313983
+     1165445 [mmapping.py:        save_portion():283] [15236] done
+     1165448 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165449 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165470 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165493 [mmapping.py:        save_portion():264] [15236] Index start and end are 313983 and 317592
+     1165501 [mmapping.py:        save_portion():283] [15236] done
+     1165505 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165505 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165526 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165548 [mmapping.py:        save_portion():264] [15236] Index start and end are 317592 and 321201
+     1165557 [mmapping.py:        save_portion():283] [15236] done
+     1165561 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165561 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165582 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165604 [mmapping.py:        save_portion():264] [15236] Index start and end are 321201 and 324810
+     1165613 [mmapping.py:        save_portion():283] [15236] done
+     1165617 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165617 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165639 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165660 [mmapping.py:        save_portion():264] [15236] Index start and end are 324810 and 328419
+     1165670 [mmapping.py:        save_portion():283] [15236] done
+     1165674 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165674 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165694 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165716 [mmapping.py:        save_portion():264] [15236] Index start and end are 328419 and 332028
+     1165725 [mmapping.py:        save_portion():283] [15236] done
+     1165728 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165729 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165744 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165760 [mmapping.py:        save_portion():264] [15236] Index start and end are 332028 and 335637
+     1165769 [mmapping.py:        save_portion():283] [15236] done
+     1165773 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165773 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165795 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165816 [mmapping.py:        save_portion():264] [15236] Index start and end are 335637 and 339246
+     1165825 [mmapping.py:        save_portion():283] [15236] done
+     1165828 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165828 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165850 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165872 [mmapping.py:        save_portion():264] [15236] Index start and end are 339246 and 342855
+     1165881 [mmapping.py:        save_portion():283] [15236] done
+     1165884 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165884 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165906 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1165926 [mmapping.py:        save_portion():264] [15236] Index start and end are 342855 and 346464
+     1165936 [mmapping.py:        save_portion():283] [15236] done
+     1165940 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1165940 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166040 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166063 [mmapping.py:        save_portion():264] [15236] Index start and end are 346464 and 350073
+     1166075 [mmapping.py:        save_portion():283] [15236] done
+     1166079 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1166079 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166107 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166133 [mmapping.py:        save_portion():264] [15236] Index start and end are 350073 and 353682
+     1166143 [mmapping.py:        save_portion():283] [15236] done
+     1166147 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3609, 2000)
+     1166147 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166170 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166192 [mmapping.py:        save_portion():264] [15236] Index start and end are 353682 and 357291
+     1166202 [mmapping.py:        save_portion():283] [15236] done
+     1166202 [mmapping.py:        save_portion():256] [15236] Shape of Yr_tot is (3669, 2000)
+     1166202 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166226 [mmapping.py:        save_portion():258] [15236] Saving portion to /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+     1166247 [mmapping.py:        save_portion():264] [15236] Index start and end are 357291 and 360960
+     1166257 [mmapping.py:        save_portion():283] [15236] done
+     1166269 [mmapping.py:    save_memmap_join():205] [15236] Deleting big mov
+     1166271 [params.py:                 set():780] [15236] Changing key rf in group patch from None to 40
+     1166271 [params.py:                 set():780] [15236] Changing key stride in group patch from None to 20
+     1166271 [params.py:                 set():780] [15236] Changing key nb_patch in group patch from 1 to 0
+     1166271 [params.py:                 set():780] [15236] Changing key low_rank_background in group patch from True to None
+     1166271 [params.py:                 set():780] [15236] Changing key del_duplicates in group patch from False to True
+     1166271 [params.py:                 set():780] [15236] Changing key p in group preprocess from 2 to 1
+     1166271 [params.py:                 set():780] [15236] Changing key method_init in group init from greedy_roi to corr_pnr
+     1166271 [params.py:                 set():780] [15236] Changing key K in group init from 30 to None
+     1166271 [params.py:                 set():780] [15236] Changing key gSig in group init from [5, 5] to (3, 3)
+     1166271 [params.py:                 set():780] [15236] Changing key gSiz in group init from [11, 11] to (13, 13)
+     1166271 [params.py:                 set():780] [15236] Changing key ssub in group init from 2 to 1
+     1166271 [params.py:                 set():780] [15236] Changing key nb in group init from 1 to 0
+     1166271 [params.py:                 set():780] [15236] Changing key min_corr in group init from 0.85 to 0.8
+     1166271 [params.py:                 set():780] [15236] Changing key min_pnr in group init from 20 to 10
+     1166271 [params.py:                 set():780] [15236] Changing key normalize_init in group init from True to False
+     1166272 [params.py:                 set():780] [15236] Changing key center_psf in group init from False to True
+     1166272 [params.py:                 set():780] [15236] Changing key ring_size_factor in group init from 1.5 to 1.4
+     1166272 [params.py:                 set():780] [15236] Changing key nb in group spatial from 1 to 0
+     1166272 [params.py:                 set():780] [15236] Changing key p in group temporal from 2 to 1
+     1166272 [params.py:                 set():780] [15236] Changing key nb in group temporal from 1 to 0
+     1166272 [params.py:       change_params():851] [15236] No parameter merge_thresh found!
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1166288 [params.py:                 set():780] [15236] Changing key init_batch in group online from 200 to 2000
+     1166288 [cnmf.py:                 fit():404] [15236] (2000, 480, 752)
+     1166288 [params.py:                 set():780] [15236] Changing key medw in group spatial from None to (3, 3)
+     1166288 [params.py:                 set():780] [15236] Changing key se in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+     1166288 [params.py:                 set():780] [15236] Changing key ss in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+     1166288 [cnmf.py:                 fit():420] [15236] Using 1 processes
+     1166289 [params.py:                 set():780] [15236] Changing key n_pixels_per_process in group preprocess from None to 360960
+     1166289 [params.py:                 set():780] [15236] Changing key n_pixels_per_process in group spatial from None to 360960
+     1166289 [cnmf.py:                 fit():431] [15236] using 360960 pixels per process
+     1166289 [cnmf.py:                 fit():432] [15236] using 5000 block_size_spat
+     1166289 [cnmf.py:                 fit():433] [15236] using 5000 block_size_temp
+     1166289 [params.py:                 set():780] [15236] Changing key n_pixels_per_process in group preprocess from 360960 to 1600
+     1166289 [params.py:                 set():780] [15236] Changing key n_pixels_per_process in group spatial from 360960 to 1600
+     1166505 [map_reduce.py:        cnmf_patches():101] [15280] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288000_326480START
+     1166506 [map_reduce.py:        cnmf_patches():103] [15280] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288000_326480Read file
+     1166506 [map_reduce.py:        cnmf_patches():101] [15285] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115320_153800START
+     1166506 [map_reduce.py:        cnmf_patches():103] [15285] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115320_153800Read file
+     1166506 [map_reduce.py:        cnmf_patches():101] [15290] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144180_182660START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15272] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322560_360560START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15278] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230400_268880START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15281] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28980_67460START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15289] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172920_211400START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15288] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 120_38600START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15272] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322560_360560Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15290] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144180_182660Read file
+     1166506 [map_reduce.py:        cnmf_patches():101] [15284] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322680_360680START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15270] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172800_211280START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15279] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86460_124940START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15269] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115200_153680START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15278] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230400_268880Read file
+     1166506 [map_reduce.py:        cnmf_patches():101] [15273] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144060_182540START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15277] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 0_38480START
+     1166506 [map_reduce.py:        cnmf_patches():101] [15292] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288120_326600START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15281] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28980_67460Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15276] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201660_240140START
+     1166507 [map_reduce.py:        cnmf_patches():101] [15287] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86580_125060START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15289] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172920_211400Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15288] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 120_38600Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15291] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201780_240260START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15284] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322680_360680Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15270] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172800_211280Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15275] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57600_96080START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15279] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86460_124940Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 316860_355340START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15269] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115200_153680Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15274] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 259260_297740START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15273] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144060_182540Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15271] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28860_67340START
+     1166507 [map_reduce.py:        cnmf_patches():103] [15277] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 0_38480Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15292] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288120_326600Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15276] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201660_240140Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15287] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86580_125060Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15291] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201780_240260Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15275] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57600_96080Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 316860_355340Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15274] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 259260_297740Read file
+     1166507 [map_reduce.py:        cnmf_patches():103] [15271] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28860_67340Read file
+     1166507 [map_reduce.py:        cnmf_patches():101] [15286] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57720_96200START
+     1166508 [map_reduce.py:        cnmf_patches():103] [15286] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57720_96200Read file
+     1166509 [map_reduce.py:        cnmf_patches():101] [15283] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230520_269000START
+     1166510 [map_reduce.py:        cnmf_patches():103] [15283] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230520_269000Read file
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1189016 [map_reduce.py:        cnmf_patches():122] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 316860_355340file loaded
+     1189101 [params.py:                 set():780] [15282] Changing key rf in group patch from 40 to None
+     1189101 [params.py:                 set():780] [15282] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1189115 [cnmf.py:                 fit():393] [15282] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1189115 [cnmf.py:                 fit():404] [15282] (2000, 81, 81)
+     1189115 [cnmf.py:                 fit():420] [15282] Using 1 processes
+     1189115 [cnmf.py:                 fit():431] [15282] using 1600 pixels per process
+     1189115 [cnmf.py:                 fit():432] [15282] using 5000 block_size_spat
+     1189115 [cnmf.py:                 fit():433] [15282] using 5000 block_size_temp
+     1189115 [cnmf.py:                 fit():436] [15282] preprocessing ...
+     1189561 [cnmf.py:                 fit():439] [15282] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190075 [map_reduce.py:        cnmf_patches():122] [15280] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288000_326480file loaded
+     1190164 [params.py:                 set():780] [15280] Changing key rf in group patch from 40 to None
+     1190164 [params.py:                 set():780] [15280] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190165 [cnmf.py:                 fit():393] [15280] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190166 [cnmf.py:                 fit():404] [15280] (2000, 81, 81)
+     1190166 [cnmf.py:                 fit():420] [15280] Using 1 processes
+     1190166 [cnmf.py:                 fit():431] [15280] using 1600 pixels per process
+     1190166 [cnmf.py:                 fit():432] [15280] using 5000 block_size_spat
+     1190166 [cnmf.py:                 fit():433] [15280] using 5000 block_size_temp
+     1190166 [cnmf.py:                 fit():436] [15280] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190405 [map_reduce.py:        cnmf_patches():122] [15273] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144060_182540file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190479 [map_reduce.py:        cnmf_patches():122] [15292] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 288120_326600file loaded
+     1190507 [params.py:                 set():780] [15273] Changing key rf in group patch from 40 to None
+     1190507 [params.py:                 set():780] [15273] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190511 [cnmf.py:                 fit():393] [15273] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190511 [cnmf.py:                 fit():404] [15273] (2000, 81, 81)
+     1190511 [cnmf.py:                 fit():420] [15273] Using 1 processes
+     1190511 [cnmf.py:                 fit():431] [15273] using 1600 pixels per process
+     1190511 [cnmf.py:                 fit():432] [15273] using 5000 block_size_spat
+     1190511 [cnmf.py:                 fit():433] [15273] using 5000 block_size_temp
+     1190511 [cnmf.py:                 fit():436] [15273] preprocessing ...
+     1190568 [params.py:                 set():780] [15292] Changing key rf in group patch from 40 to None
+     1190568 [params.py:                 set():780] [15292] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190569 [cnmf.py:                 fit():393] [15292] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190569 [cnmf.py:                 fit():404] [15292] (2000, 81, 81)
+     1190570 [cnmf.py:                 fit():420] [15292] Using 1 processes
+     1190570 [cnmf.py:                 fit():431] [15292] using 1600 pixels per process
+     1190570 [cnmf.py:                 fit():432] [15292] using 5000 block_size_spat
+     1190570 [cnmf.py:                 fit():433] [15292] using 5000 block_size_temp
+     1190570 [cnmf.py:                 fit():436] [15292] preprocessing ...
+     1190575 [cnmf.py:                 fit():439] [15280] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190658 [map_reduce.py:        cnmf_patches():122] [15274] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 259260_297740file loaded
+     1190771 [params.py:                 set():780] [15274] Changing key rf in group patch from 40 to None
+     1190771 [params.py:                 set():780] [15274] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190775 [cnmf.py:                 fit():393] [15274] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190775 [cnmf.py:                 fit():404] [15274] (2000, 81, 81)
+     1190775 [cnmf.py:                 fit():420] [15274] Using 1 processes
+     1190776 [cnmf.py:                 fit():431] [15274] using 1600 pixels per process
+     1190776 [cnmf.py:                 fit():432] [15274] using 5000 block_size_spat
+     1190776 [cnmf.py:                 fit():433] [15274] using 5000 block_size_temp
+     1190776 [cnmf.py:                 fit():436] [15274] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190790 [map_reduce.py:        cnmf_patches():122] [15285] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115320_153800file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190797 [map_reduce.py:        cnmf_patches():122] [15289] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172920_211400file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190808 [map_reduce.py:        cnmf_patches():122] [15286] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57720_96200file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190808 [map_reduce.py:        cnmf_patches():122] [15279] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86460_124940file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190829 [map_reduce.py:        cnmf_patches():122] [15288] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 120_38600file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190845 [map_reduce.py:        cnmf_patches():122] [15276] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201660_240140file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190870 [map_reduce.py:        cnmf_patches():122] [15278] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230400_268880file loaded
+     1190880 [params.py:                 set():780] [15285] Changing key rf in group patch from 40 to None
+     1190881 [params.py:                 set():780] [15285] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190882 [cnmf.py:                 fit():393] [15285] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190882 [cnmf.py:                 fit():404] [15285] (2000, 81, 81)
+     1190882 [cnmf.py:                 fit():420] [15285] Using 1 processes
+     1190882 [cnmf.py:                 fit():431] [15285] using 1600 pixels per process
+     1190882 [cnmf.py:                 fit():432] [15285] using 5000 block_size_spat
+     1190882 [cnmf.py:                 fit():433] [15285] using 5000 block_size_temp
+     1190882 [cnmf.py:                 fit():436] [15285] preprocessing ...
+     1190886 [params.py:                 set():780] [15289] Changing key rf in group patch from 40 to None
+     1190886 [params.py:                 set():780] [15289] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1190888 [cnmf.py:                 fit():393] [15289] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1190888 [cnmf.py:                 fit():404] [15289] (2000, 81, 81)
+     1190888 [cnmf.py:                 fit():420] [15289] Using 1 processes
+     1190888 [cnmf.py:                 fit():431] [15289] using 1600 pixels per process
+     1190888 [cnmf.py:                 fit():432] [15289] using 5000 block_size_spat
+     1190888 [cnmf.py:                 fit():433] [15289] using 5000 block_size_temp
+     1190888 [cnmf.py:                 fit():436] [15289] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190902 [map_reduce.py:        cnmf_patches():122] [15271] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28860_67340file loaded
+     1190974 [cnmf.py:                 fit():439] [15273] initializing ...
+     1190995 [cnmf.py:                 fit():439] [15292] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1190999 [map_reduce.py:        cnmf_patches():122] [15272] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322560_360560file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191043 [map_reduce.py:        cnmf_patches():122] [15283] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 230520_269000file loaded
+     1191044 [params.py:                 set():780] [15279] Changing key rf in group patch from 40 to None
+     1191044 [params.py:                 set():780] [15279] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191045 [cnmf.py:                 fit():393] [15279] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191045 [cnmf.py:                 fit():404] [15279] (2000, 81, 81)
+     1191045 [cnmf.py:                 fit():420] [15279] Using 1 processes
+     1191046 [cnmf.py:                 fit():431] [15279] using 1600 pixels per process
+     1191046 [cnmf.py:                 fit():432] [15279] using 5000 block_size_spat
+     1191046 [cnmf.py:                 fit():433] [15279] using 5000 block_size_temp
+     1191046 [cnmf.py:                 fit():436] [15279] preprocessing ...
+     1191059 [params.py:                 set():780] [15286] Changing key rf in group patch from 40 to None
+     1191059 [params.py:                 set():780] [15286] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191060 [cnmf.py:                 fit():393] [15286] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191060 [cnmf.py:                 fit():404] [15286] (2000, 81, 81)
+     1191060 [cnmf.py:                 fit():420] [15286] Using 1 processes
+     1191060 [cnmf.py:                 fit():431] [15286] using 1600 pixels per process
+     1191060 [cnmf.py:                 fit():432] [15286] using 5000 block_size_spat
+     1191061 [cnmf.py:                 fit():433] [15286] using 5000 block_size_temp
+     1191061 [cnmf.py:                 fit():436] [15286] preprocessing ...
+     1191067 [params.py:                 set():780] [15288] Changing key rf in group patch from 40 to None
+     1191067 [params.py:                 set():780] [15288] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191068 [cnmf.py:                 fit():393] [15288] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191068 [cnmf.py:                 fit():404] [15288] (2000, 81, 81)
+     1191068 [cnmf.py:                 fit():420] [15288] Using 1 processes
+     1191068 [cnmf.py:                 fit():431] [15288] using 1600 pixels per process
+     1191068 [cnmf.py:                 fit():432] [15288] using 5000 block_size_spat
+     1191068 [cnmf.py:                 fit():433] [15288] using 5000 block_size_temp
+     1191068 [cnmf.py:                 fit():436] [15288] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191077 [map_reduce.py:        cnmf_patches():122] [15281] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 28980_67460file loaded
+     1191099 [params.py:                 set():780] [15278] Changing key rf in group patch from 40 to None
+     1191100 [params.py:                 set():780] [15278] Changing key stride in group patch from 20 to None
+     1191100 [params.py:                 set():780] [15271] Changing key rf in group patch from 40 to None
+     1191100 [params.py:                 set():780] [15271] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191101 [cnmf.py:                 fit():393] [15278] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191101 [cnmf.py:                 fit():404] [15278] (2000, 81, 81)
+     1191101 [cnmf.py:                 fit():420] [15278] Using 1 processes
+     1191101 [cnmf.py:                 fit():431] [15278] using 1600 pixels per process
+     1191101 [cnmf.py:                 fit():432] [15278] using 5000 block_size_spat
+     1191102 [cnmf.py:                 fit():433] [15278] using 5000 block_size_temp
+     1191102 [cnmf.py:                 fit():436] [15278] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191103 [map_reduce.py:        cnmf_patches():122] [15290] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 144180_182660file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191114 [cnmf.py:                 fit():393] [15271] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191115 [cnmf.py:                 fit():404] [15271] (2000, 81, 81)
+     1191115 [cnmf.py:                 fit():420] [15271] Using 1 processes
+     1191115 [cnmf.py:                 fit():431] [15271] using 1600 pixels per process
+     1191115 [cnmf.py:                 fit():432] [15271] using 5000 block_size_spat
+     1191115 [cnmf.py:                 fit():433] [15271] using 5000 block_size_temp
+     1191115 [cnmf.py:                 fit():436] [15271] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191128 [map_reduce.py:        cnmf_patches():122] [15284] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322680_360680file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191144 [map_reduce.py:        cnmf_patches():122] [15277] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 0_38480file loaded
+     1191158 [params.py:                 set():780] [15276] Changing key rf in group patch from 40 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191158 [map_reduce.py:        cnmf_patches():122] [15291] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 201780_240260file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191158 [map_reduce.py:        cnmf_patches():122] [15275] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 57600_96080file loaded
+     1191158 [params.py:                 set():780] [15276] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191159 [map_reduce.py:        cnmf_patches():122] [15287] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 86580_125060file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191159 [cnmf.py:                 fit():393] [15276] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191159 [cnmf.py:                 fit():404] [15276] (2000, 81, 81)
+     1191159 [cnmf.py:                 fit():420] [15276] Using 1 processes
+     1191159 [cnmf.py:                 fit():431] [15276] using 1600 pixels per process
+     1191159 [cnmf.py:                 fit():432] [15276] using 5000 block_size_spat
+     1191159 [cnmf.py:                 fit():433] [15276] using 5000 block_size_temp
+     1191159 [cnmf.py:                 fit():436] [15276] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191160 [map_reduce.py:        cnmf_patches():122] [15269] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 115200_153680file loaded
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+     1191163 [map_reduce.py:        cnmf_patches():122] [15270] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 172800_211280file loaded
+     1191310 [cnmf.py:                 fit():439] [15285] initializing ...
+     1191315 [cnmf.py:                 fit():439] [15289] initializing ...
+     1191327 [params.py:                 set():780] [15272] Changing key rf in group patch from 40 to None
+     1191327 [params.py:                 set():780] [15272] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191328 [cnmf.py:                 fit():393] [15272] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191328 [cnmf.py:                 fit():404] [15272] (2000, 81, 80)
+     1191328 [cnmf.py:                 fit():420] [15272] Using 1 processes
+     1191328 [cnmf.py:                 fit():431] [15272] using 1600 pixels per process
+     1191328 [cnmf.py:                 fit():432] [15272] using 5000 block_size_spat
+     1191328 [cnmf.py:                 fit():433] [15272] using 5000 block_size_temp
+     1191328 [cnmf.py:                 fit():436] [15272] preprocessing ...
+     1191362 [params.py:                 set():780] [15269] Changing key rf in group patch from 40 to None
+     1191362 [params.py:                 set():780] [15269] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191364 [cnmf.py:                 fit():393] [15269] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191364 [cnmf.py:                 fit():404] [15269] (2000, 81, 81)
+     1191364 [cnmf.py:                 fit():420] [15269] Using 1 processes
+     1191364 [cnmf.py:                 fit():431] [15269] using 1600 pixels per process
+     1191364 [cnmf.py:                 fit():432] [15269] using 5000 block_size_spat
+     1191364 [cnmf.py:                 fit():433] [15269] using 5000 block_size_temp
+     1191364 [cnmf.py:                 fit():436] [15269] preprocessing ...
+     1191376 [params.py:                 set():780] [15283] Changing key rf in group patch from 40 to None
+     1191377 [params.py:                 set():780] [15281] Changing key rf in group patch from 40 to None
+     1191377 [params.py:                 set():780] [15281] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191378 [cnmf.py:                 fit():393] [15281] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191378 [cnmf.py:                 fit():404] [15281] (2000, 81, 81)
+     1191378 [cnmf.py:                 fit():420] [15281] Using 1 processes
+     1191378 [cnmf.py:                 fit():431] [15281] using 1600 pixels per process
+     1191378 [cnmf.py:                 fit():432] [15281] using 5000 block_size_spat
+     1191378 [cnmf.py:                 fit():433] [15281] using 5000 block_size_temp
+     1191378 [cnmf.py:                 fit():436] [15281] preprocessing ...
+     1191387 [params.py:                 set():780] [15283] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191388 [cnmf.py:                 fit():393] [15283] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191388 [cnmf.py:                 fit():404] [15283] (2000, 81, 81)
+     1191388 [cnmf.py:                 fit():420] [15283] Using 1 processes
+     1191388 [cnmf.py:                 fit():431] [15283] using 1600 pixels per process
+     1191388 [cnmf.py:                 fit():432] [15283] using 5000 block_size_spat
+     1191388 [cnmf.py:                 fit():433] [15283] using 5000 block_size_temp
+     1191388 [cnmf.py:                 fit():436] [15283] preprocessing ...
+     1191422 [params.py:                 set():780] [15290] Changing key rf in group patch from 40 to None
+     1191422 [params.py:                 set():780] [15290] Changing key stride in group patch from 20 to None
+     1191424 [params.py:                 set():780] [15284] Changing key rf in group patch from 40 to None
+     1191425 [params.py:                 set():780] [15284] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191426 [cnmf.py:                 fit():393] [15284] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191426 [cnmf.py:                 fit():404] [15284] (2000, 81, 80)
+     1191426 [cnmf.py:                 fit():420] [15284] Using 1 processes
+     1191426 [cnmf.py:                 fit():431] [15284] using 1600 pixels per process
+     1191426 [cnmf.py:                 fit():432] [15284] using 5000 block_size_spat
+     1191426 [cnmf.py:                 fit():433] [15284] using 5000 block_size_temp
+     1191426 [cnmf.py:                 fit():436] [15284] preprocessing ...
+     1191434 [params.py:                 set():780] [15270] Changing key rf in group patch from 40 to None
+     1191434 [params.py:                 set():780] [15270] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191437 [cnmf.py:                 fit():393] [15270] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191437 [cnmf.py:                 fit():404] [15270] (2000, 81, 81)
+     1191438 [cnmf.py:                 fit():420] [15270] Using 1 processes
+     1191438 [cnmf.py:                 fit():431] [15270] using 1600 pixels per process
+     1191438 [cnmf.py:                 fit():432] [15270] using 5000 block_size_spat
+     1191438 [cnmf.py:                 fit():433] [15270] using 5000 block_size_temp
+     1191438 [cnmf.py:                 fit():436] [15270] preprocessing ...
+     1191439 [params.py:                 set():780] [15277] Changing key rf in group patch from 40 to None
+     1191439 [params.py:                 set():780] [15277] Changing key stride in group patch from 20 to None
+     1191439 [params.py:                 set():780] [15287] Changing key rf in group patch from 40 to None
+     1191440 [params.py:                 set():780] [15287] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191441 [cnmf.py:                 fit():393] [15287] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191441 [cnmf.py:                 fit():404] [15287] (2000, 81, 81)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191441 [cnmf.py:                 fit():393] [15290] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191441 [cnmf.py:                 fit():420] [15287] Using 1 processes
+     1191441 [cnmf.py:                 fit():404] [15290] (2000, 81, 81)
+     1191441 [cnmf.py:                 fit():431] [15287] using 1600 pixels per process
+     1191441 [cnmf.py:                 fit():432] [15287] using 5000 block_size_spat
+     1191442 [cnmf.py:                 fit():433] [15287] using 5000 block_size_temp
+     1191442 [cnmf.py:                 fit():420] [15290] Using 1 processes
+     1191442 [cnmf.py:                 fit():436] [15287] preprocessing ...
+     1191442 [cnmf.py:                 fit():431] [15290] using 1600 pixels per process
+     1191442 [cnmf.py:                 fit():432] [15290] using 5000 block_size_spat
+     1191442 [cnmf.py:                 fit():433] [15290] using 5000 block_size_temp
+     1191442 [cnmf.py:                 fit():436] [15290] preprocessing ...
+     1191446 [params.py:                 set():780] [15275] Changing key rf in group patch from 40 to None
+     1191446 [params.py:                 set():780] [15275] Changing key stride in group patch from 20 to None
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191448 [cnmf.py:                 fit():393] [15275] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191448 [cnmf.py:                 fit():404] [15275] (2000, 81, 81)
+     1191448 [cnmf.py:                 fit():420] [15275] Using 1 processes
+     1191448 [cnmf.py:                 fit():431] [15275] using 1600 pixels per process
+     1191448 [cnmf.py:                 fit():432] [15275] using 5000 block_size_spat
+     1191448 [params.py:                 set():780] [15291] Changing key rf in group patch from 40 to None
+     1191448 [cnmf.py:                 fit():433] [15275] using 5000 block_size_temp
+     1191448 [params.py:                 set():780] [15291] Changing key stride in group patch from 20 to None
+     1191448 [cnmf.py:                 fit():436] [15275] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191449 [cnmf.py:                 fit():393] [15291] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191449 [cnmf.py:                 fit():404] [15291] (2000, 81, 81)
+     1191449 [cnmf.py:                 fit():420] [15291] Using 1 processes
+     1191449 [cnmf.py:                 fit():431] [15291] using 1600 pixels per process
+     1191449 [cnmf.py:                 fit():432] [15291] using 5000 block_size_spat
+     1191449 [cnmf.py:                 fit():433] [15291] using 5000 block_size_temp
+     1191449 [cnmf.py:                 fit():436] [15291] preprocessing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:386: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  dims_sliced = images[indeces].shape[1:]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/cnmf.py:389: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  images = images[indeces]
+     1191451 [cnmf.py:                 fit():393] [15277] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     1191451 [cnmf.py:                 fit():404] [15277] (2000, 81, 81)
+     1191451 [cnmf.py:                 fit():420] [15277] Using 1 processes
+     1191451 [cnmf.py:                 fit():431] [15277] using 1600 pixels per process
+     1191451 [cnmf.py:                 fit():432] [15277] using 5000 block_size_spat
+     1191451 [cnmf.py:                 fit():433] [15277] using 5000 block_size_temp
+     1191451 [cnmf.py:                 fit():436] [15277] preprocessing ...
+     1191822 [cnmf.py:                 fit():439] [15274] initializing ...
+     1192045 [cnmf.py:                 fit():439] [15279] initializing ...
+     1192056 [cnmf.py:                 fit():439] [15286] initializing ...
+     1192240 [cnmf.py:                 fit():439] [15288] initializing ...
+     1192334 [cnmf.py:                 fit():439] [15278] initializing ...
+     1192371 [cnmf.py:                 fit():439] [15277] initializing ...
+     1192385 [cnmf.py:                 fit():439] [15271] initializing ...
+     1192398 [cnmf.py:                 fit():439] [15270] initializing ...
+     1192512 [cnmf.py:                 fit():439] [15283] initializing ...
+     1192524 [cnmf.py:                 fit():439] [15290] initializing ...
+     1192557 [cnmf.py:                 fit():439] [15272] initializing ...
+     1192595 [cnmf.py:                 fit():439] [15269] initializing ...
+     1192590 [cnmf.py:                 fit():439] [15276] initializing ...
+     1192628 [cnmf.py:                 fit():439] [15281] initializing ...
+     1192676 [cnmf.py:                 fit():439] [15275] initializing ...
+     1192750 [cnmf.py:                 fit():439] [15284] initializing ...
+     1192785 [cnmf.py:                 fit():439] [15291] initializing ...
+     1192847 [cnmf.py:                 fit():439] [15287] initializing ...
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/spatial.py:898: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  dist_indicator[:, i] = scipy.sparse.coo_matrix(np.squeeze(np.reshape(A_temp, (d, 1)))[:,None] > 0)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/merging.py:142: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  C_corr[ii, overlap_indeces] = corr_values
+     2451656 [merging.py:    merge_components():187] [15269] Merging components [0 2]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/spatial.py:898: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  dist_indicator[:, i] = scipy.sparse.coo_matrix(np.squeeze(np.reshape(A_temp, (d, 1)))[:,None] > 0)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/merging.py:142: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  C_corr[ii, overlap_indeces] = corr_values
+     2452168 [merging.py:    merge_components():187] [15273] Merging components [0 1 2]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/spatial.py:898: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  dist_indicator[:, i] = scipy.sparse.coo_matrix(np.squeeze(np.reshape(A_temp, (d, 1)))[:,None] > 0)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/merging.py:142: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  C_corr[ii, overlap_indeces] = corr_values
+     2459705 [merging.py:    merge_components():187] [15285] Merging components [0 1 3]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/spatial.py:898: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  dist_indicator[:, i] = scipy.sparse.coo_matrix(np.squeeze(np.reshape(A_temp, (d, 1)))[:,None] > 0)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/merging.py:142: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  C_corr[ii, overlap_indeces] = corr_values
+     2490852 [merging.py:    merge_components():187] [15286] Merging components [0 1]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/spatial.py:898: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  dist_indicator[:, i] = scipy.sparse.coo_matrix(np.squeeze(np.reshape(A_temp, (d, 1)))[:,None] > 0)
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/deconvolution.py:991: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  g = np.linalg.lstsq(A, xc[lags + 1:])[0]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/source_extraction/cnmf/merging.py:142: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  C_corr[ii, overlap_indeces] = corr_values
+     2513335 [merging.py:    merge_components():187] [15279] Merging components [1 6]
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/scipy/sparse/dia.py:300: RuntimeWarning: divide by zero encountered in remainder
+  c = np.arange(num_rows, dtype=np.intc) - (offsets % max_dim)[:, None]
+     3610437 [map_reduce.py:        cnmf_patches():101] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322620_360620START
+     3610439 [map_reduce.py:        cnmf_patches():103] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322620_360620Read file
+     3610867 [map_reduce.py:        cnmf_patches():122] [15282] memmap__d1_480_d2_752_d3_1_order_C_frames_2000__LOG_ 322620_360620file loaded
+     3612401 [cnmf.py:                 fit():393] [15282] Parallel processing in a single patch                            is not available for loaded in memory or sliced                            data.
+     3612401 [cnmf.py:                 fit():404] [15282] (2000, 81, 80)
+     3612401 [cnmf.py:                 fit():420] [15282] Using 1 processes
+     3612401 [cnmf.py:                 fit():431] [15282] using 1600 pixels per process
+     3612401 [cnmf.py:                 fit():432] [15282] using 5000 block_size_spat
+     3612401 [cnmf.py:                 fit():433] [15282] using 5000 block_size_temp
+     3612401 [cnmf.py:                 fit():436] [15282] preprocessing ...
+=>> PBS: job killed: walltime 3634 exceeded limit 3600
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Sun Mar 10 18:33:16 CDT 2019 1552260796
+JobID: 3746461.qsched03.quest.it.northwestern.edu
+Session ID:			14620
+Resources Used:			cput=16:44:31,vmem=116443728kb,walltime=01:00:44,mem=16911408kb,energy_used=0
+Job exit value:			-11
+----------------------------------------

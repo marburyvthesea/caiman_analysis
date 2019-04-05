@@ -1,0 +1,37 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Apr  1 18:46:42 CDT 2019 1554162402
+PBS: Job ID:		3977345.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		mmap_to_h5py
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3977345.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5019
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5019/aux//3977345.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Apr  1 18:46:42 CDT 2019 1554162402
+starting pool with procs: 4
+starting pool with procs: 5
+[['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0016_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0015_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0009_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0011_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0018_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0014_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0012_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0005_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0017_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0010_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0007_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0006_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0013_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap']]
+Traceback (most recent call last):
+  File "mmap_to_h5py.py", line 84, in <module>
+    run_convert_concat(files_list, processors, num_files_to_combine)
+  File "mmap_to_h5py.py", line 75, in run_convert_concat
+    pool.map(mmp_h5.concat_convert_from_mmap, [chunk for chunk in chunk_list])
+NameError: name 'mmp_h5' is not defined
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Apr  1 18:46:56 CDT 2019 1554162416
+JobID: 3977345.qsched03.quest.it.northwestern.edu
+Session ID:			8754
+Resources Used:			cput=00:00:08,vmem=0kb,walltime=00:00:08,mem=0kb,energy_used=0
+Job exit value:			1
+----------------------------------------

@@ -1,0 +1,55 @@
+----------------------------------------
+PBS: Begin PBS Prologue Tue Apr  2 08:04:49 CDT 2019 1554210289
+PBS: Job ID:		3985202.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		mmap_to_h5py
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3985202.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5044
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5044/aux//3985202.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Tue Apr  2 08:04:49 CDT 2019 1554210289
+  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 501495.05it/s]  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 456766.49it/s]  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 487007.57it/s]  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 509958.18it/s]
+  0%|          | 0/4000 [00:00<?, ?it/s]100%|██████████| 4000/4000 [00:00<00:00, 571567.34it/s]
+  0%|          | 0/5000 [00:00<?, ?it/s]100%|██████████| 5000/5000 [00:00<00:00, 619432.89it/s]starting chunk with memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0000memmap_0004 done
+
+starting chunk with memmap_0015_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0015memmap_0019 done
+
+starting chunk with memmap_0005_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0005memmap_0009 done
+starting chunk with memmap_0025_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0025memmap_0028 done
+starting chunk with memmap_0010_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0010memmap_0014 done
+starting chunk with memmap_0020_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap
+reshaping
+memmap_0020memmap_0024 done
+
+
+starting pool with procs: 4
+concatenating files to bunches of: 5
+[['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0000_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0001_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0002_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0003_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0004_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0005_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0006_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0007_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0008_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0009_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0010_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0011_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0012_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0013_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0014_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0015_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0016_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0017_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0018_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0019_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0020_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0021_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0022_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0023_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0024_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap'], ['/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0025_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0026_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0027_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap', '/projects/p30771/miniscope/data/GRIN012/mmap_C_order/memmap_0028_d1_480_d2_752_d3_1_order_C_frames_1000_.mmap']]
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Tue Apr  2 08:07:49 CDT 2019 1554210469
+JobID: 3985202.qsched03.quest.it.northwestern.edu
+Session ID:			15375
+Resources Used:			cput=00:04:37,vmem=75119300kb,walltime=00:02:55,mem=59712492kb,energy_used=0
+Job exit value:			0
+----------------------------------------

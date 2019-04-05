@@ -1,0 +1,33 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Mar 25 16:45:16 CDT 2019 1553550316
+PBS: Job ID:		3892977.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		mmap_to_h5py
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3892977.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode6736
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode6736/aux//3892977.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Mar 25 16:45:17 CDT 2019 1553550317
+  0%|          | 0/1000 [00:00<?, ?it/s]100%|██████████| 1000/1000 [00:00<00:00, 665762.54it/s]
+saved file
+/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/caiman_analysis/memmap_0008_d1_480_d2_752_d3_1_order_C_frames_1000__resized.h5
+/hpc/opt/torque6/nodes/qnode6736/mom_priv/jobs/3892977.qsched03.quest.it.northwestern.edu.SC: line 43: syntax error near unexpected token `'finished''
+/hpc/opt/torque6/nodes/qnode6736/mom_priv/jobs/3892977.qsched03.quest.it.northwestern.edu.SC: line 43: `print('finished')'
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Mar 25 16:46:43 CDT 2019 1553550403
+JobID: 3892977.qsched03.quest.it.northwestern.edu
+Session ID:			16011
+Resources Used:			cput=00:00:19,vmem=1806984kb,walltime=00:01:22,mem=162604kb,energy_used=0
+Job exit value:			2
+----------------------------------------

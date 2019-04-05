@@ -1,0 +1,32 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Apr  1 18:33:39 CDT 2019 1554161619
+PBS: Job ID:		3977252.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		mmap_to_h5py
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3977252.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5074
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5074/aux//3977252.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Apr  1 18:33:39 CDT 2019 1554161619
+Traceback (most recent call last):
+  File "mmap_to_h5py.py", line 77, in <module>
+    processors = sys.argv[2]
+IndexError: list index out of range
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Apr  1 18:34:24 CDT 2019 1554161664
+JobID: 3977252.qsched03.quest.it.northwestern.edu
+Session ID:			16003
+Resources Used:			cput=00:00:10,vmem=0kb,walltime=00:00:41,mem=0kb,energy_used=0
+Job exit value:			1
+----------------------------------------

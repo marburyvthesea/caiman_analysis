@@ -1,0 +1,117 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Mar 11 13:12:36 CDT 2019 1552327956
+PBS: Job ID:		3757894.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		caiman_cnmfe_analysis
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3757894.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5093
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5093/aux//3757894.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Mar 11 13:12:36 CDT 2019 1552327956
+/hpc/opt/torque6/nodes/qnode5093/mom_priv/jobs/3757894.qsched03.quest.it.northwestern.edu.SC: line 23: add: command not found
+       26487 [params.py:                 set():780] [8116] Changing key rf in group patch from None to 40
+       26489 [params.py:                 set():780] [8116] Changing key stride in group patch from None to 20
+       26489 [params.py:                 set():780] [8116] Changing key nb_patch in group patch from 1 to 0
+       26489 [params.py:                 set():780] [8116] Changing key low_rank_background in group patch from True to None
+       26489 [params.py:                 set():780] [8116] Changing key del_duplicates in group patch from False to True
+       26489 [params.py:                 set():780] [8116] Changing key p in group preprocess from 2 to 1
+       26489 [params.py:                 set():780] [8116] Changing key method_init in group init from greedy_roi to corr_pnr
+       26490 [params.py:                 set():780] [8116] Changing key K in group init from 30 to None
+       26490 [params.py:                 set():780] [8116] Changing key gSig in group init from [5, 5] to (3, 3)
+       26490 [params.py:                 set():780] [8116] Changing key gSiz in group init from [11, 11] to (13, 13)
+       26490 [params.py:                 set():780] [8116] Changing key ssub in group init from 2 to 1
+       26490 [params.py:                 set():780] [8116] Changing key nb in group init from 1 to 0
+       26490 [params.py:                 set():780] [8116] Changing key min_corr in group init from 0.85 to 0.8
+       26490 [params.py:                 set():780] [8116] Changing key min_pnr in group init from 20 to 10
+       26491 [params.py:                 set():780] [8116] Changing key normalize_init in group init from True to False
+       26491 [params.py:                 set():780] [8116] Changing key center_psf in group init from False to True
+       26491 [params.py:                 set():780] [8116] Changing key ring_size_factor in group init from 1.5 to 1.4
+       26491 [params.py:                 set():780] [8116] Changing key nb in group spatial from 1 to 0
+       26491 [params.py:                 set():780] [8116] Changing key p in group temporal from 2 to 1
+       26491 [params.py:                 set():780] [8116] Changing key nb in group temporal from 1 to 0
+       26492 [params.py:       change_params():851] [8116] No parameter merge_thresh found!
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/numpy/core/memmap.py:331: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  res = super(memmap, self).__getitem__(index)
+       26513 [params.py:                 set():780] [8116] Changing key init_batch in group online from 200 to 9000
+       26513 [cnmf.py:                 fit():404] [8116] (9000, 480, 752)
+       26542 [params.py:                 set():780] [8116] Changing key medw in group spatial from None to (3, 3)
+       26543 [params.py:                 set():780] [8116] Changing key se in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+       26544 [params.py:                 set():780] [8116] Changing key ss in group spatial from None to [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+       26544 [cnmf.py:                 fit():420] [8116] Using 1 processes
+       26544 [params.py:                 set():780] [8116] Changing key n_pixels_per_process in group preprocess from None to 360960
+       26545 [params.py:                 set():780] [8116] Changing key n_pixels_per_process in group spatial from None to 360960
+       26545 [cnmf.py:                 fit():431] [8116] using 360960 pixels per process
+       26545 [cnmf.py:                 fit():432] [8116] using 5000 block_size_spat
+       26545 [cnmf.py:                 fit():433] [8116] using 5000 block_size_temp
+       26546 [params.py:                 set():780] [8116] Changing key n_pixels_per_process in group preprocess from 360960 to 1600
+       26547 [params.py:                 set():780] [8116] Changing key n_pixels_per_process in group spatial from 360960 to 1600
+       26840 [map_reduce.py:        cnmf_patches():101] [8185] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 0_38480START
+       26841 [map_reduce.py:        cnmf_patches():103] [8185] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 0_38480Read file
+       26841 [map_reduce.py:        cnmf_patches():101] [8186] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 57600_96080START
+       26842 [map_reduce.py:        cnmf_patches():103] [8186] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 57600_96080Read file
+       26843 [map_reduce.py:        cnmf_patches():101] [8187] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 115200_153680START
+       26844 [map_reduce.py:        cnmf_patches():103] [8187] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 115200_153680Read file
+       26844 [map_reduce.py:        cnmf_patches():101] [8188] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 172800_211280START
+       26845 [map_reduce.py:        cnmf_patches():103] [8188] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 172800_211280Read file
+       26845 [map_reduce.py:        cnmf_patches():101] [8189] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 230400_268880START
+       26846 [map_reduce.py:        cnmf_patches():103] [8189] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 230400_268880Read file
+       26847 [map_reduce.py:        cnmf_patches():101] [8190] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 288000_326480START
+       26848 [map_reduce.py:        cnmf_patches():103] [8190] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 288000_326480Read file
+       26848 [map_reduce.py:        cnmf_patches():101] [8191] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 322560_360560START
+       26849 [map_reduce.py:        cnmf_patches():103] [8191] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 322560_360560Read file
+       26849 [map_reduce.py:        cnmf_patches():101] [8192] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 28860_67340START
+       26850 [map_reduce.py:        cnmf_patches():103] [8192] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 28860_67340Read file
+       26851 [map_reduce.py:        cnmf_patches():101] [8193] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 86460_124940START
+       26852 [map_reduce.py:        cnmf_patches():103] [8193] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 86460_124940Read file
+       26851 [map_reduce.py:        cnmf_patches():101] [8194] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 144060_182540START
+       26852 [map_reduce.py:        cnmf_patches():103] [8194] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 144060_182540Read file
+       26853 [map_reduce.py:        cnmf_patches():101] [8195] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 201660_240140START
+       26854 [map_reduce.py:        cnmf_patches():103] [8195] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 201660_240140Read file
+       26854 [map_reduce.py:        cnmf_patches():101] [8196] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 259260_297740START
+       26855 [map_reduce.py:        cnmf_patches():103] [8196] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 259260_297740Read file
+       26855 [map_reduce.py:        cnmf_patches():101] [8197] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 316860_355340START
+       26856 [map_reduce.py:        cnmf_patches():103] [8197] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 316860_355340Read file
+       26857 [map_reduce.py:        cnmf_patches():101] [8198] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 120_38600START
+       26858 [map_reduce.py:        cnmf_patches():103] [8198] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 120_38600Read file
+       26858 [map_reduce.py:        cnmf_patches():101] [8199] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 57720_96200START
+       26859 [map_reduce.py:        cnmf_patches():103] [8199] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 57720_96200Read file
+       26859 [map_reduce.py:        cnmf_patches():101] [8200] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 115320_153800START
+       26860 [map_reduce.py:        cnmf_patches():103] [8200] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 115320_153800Read file
+       26860 [map_reduce.py:        cnmf_patches():101] [8201] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 172920_211400START
+       26861 [map_reduce.py:        cnmf_patches():103] [8201] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 172920_211400Read file
+       26862 [map_reduce.py:        cnmf_patches():101] [8202] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 230520_269000START
+       26863 [map_reduce.py:        cnmf_patches():103] [8202] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 230520_269000Read file
+       26863 [map_reduce.py:        cnmf_patches():101] [8203] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 288120_326600START
+       26864 [map_reduce.py:        cnmf_patches():103] [8203] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 288120_326600Read file
+       26864 [map_reduce.py:        cnmf_patches():101] [8204] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 322680_360680START
+       26865 [map_reduce.py:        cnmf_patches():103] [8204] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 322680_360680Read file
+       26866 [map_reduce.py:        cnmf_patches():101] [8205] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 28980_67460START
+       26867 [map_reduce.py:        cnmf_patches():103] [8205] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 28980_67460Read file
+       26867 [map_reduce.py:        cnmf_patches():101] [8206] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 86580_125060START
+       26868 [map_reduce.py:        cnmf_patches():103] [8206] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 86580_125060Read file
+       26868 [map_reduce.py:        cnmf_patches():101] [8207] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 144180_182660START
+       26869 [map_reduce.py:        cnmf_patches():103] [8207] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 144180_182660Read file
+       26868 [map_reduce.py:        cnmf_patches():101] [8208] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 201780_240260START
+       26869 [map_reduce.py:        cnmf_patches():103] [8208] memmap__d1_480_d2_752_d3_1_order_C_frames_9000__LOG_ 201780_240260Read file
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Mar 11 16:51:07 CDT 2019 1552341067
+JobID: 3757894.qsched03.quest.it.northwestern.edu
+Session ID:			7541
+Resources Used:			cput=73:56:37,vmem=381622712kb,walltime=03:38:27,mem=52357420kb,energy_used=0
+Job exit value:			0
+----------------------------------------

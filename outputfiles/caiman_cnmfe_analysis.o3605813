@@ -1,0 +1,59 @@
+----------------------------------------
+PBS: Begin PBS Prologue Mon Feb 25 09:00:02 CST 2019 1551106802
+PBS: Job ID:		3605813.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     normal
+PBS: Job name:		caiman_cnmfe_analysis
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3605813.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5094
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5094/aux//3605813.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Mon Feb 25 09:00:02 CST 2019 1551106802
+/hpc/opt/torque6/nodes/qnode5094/mom_priv/jobs/3605813.qsched03.quest.it.northwestern.edu.SC: line 23: add: command not found
+       18037 [params.py:                 set():780] [18397] Changing key rf in group patch from None to 40
+       18038 [params.py:                 set():780] [18397] Changing key stride in group patch from None to 20
+       18038 [params.py:                 set():780] [18397] Changing key nb_patch in group patch from 1 to 0
+       18038 [params.py:                 set():780] [18397] Changing key low_rank_background in group patch from True to None
+       18038 [params.py:                 set():780] [18397] Changing key del_duplicates in group patch from False to True
+       18038 [params.py:                 set():780] [18397] Changing key p in group preprocess from 2 to 1
+       18038 [params.py:                 set():780] [18397] Changing key method_init in group init from greedy_roi to corr_pnr
+       18039 [params.py:                 set():780] [18397] Changing key K in group init from 30 to None
+       18039 [params.py:                 set():780] [18397] Changing key gSig in group init from [5, 5] to (3, 3)
+       18039 [params.py:                 set():780] [18397] Changing key gSiz in group init from [11, 11] to (13, 13)
+       18039 [params.py:                 set():780] [18397] Changing key ssub in group init from 2 to 1
+       18039 [params.py:                 set():780] [18397] Changing key nb in group init from 1 to 0
+       18039 [params.py:                 set():780] [18397] Changing key min_corr in group init from 0.85 to 0.8
+       18039 [params.py:                 set():780] [18397] Changing key min_pnr in group init from 20 to 10
+       18039 [params.py:                 set():780] [18397] Changing key normalize_init in group init from True to False
+       18040 [params.py:                 set():780] [18397] Changing key center_psf in group init from False to True
+       18040 [params.py:                 set():780] [18397] Changing key ring_size_factor in group init from 1.5 to 1.4
+       18040 [params.py:                 set():780] [18397] Changing key nb in group spatial from 1 to 0
+       18040 [params.py:                 set():780] [18397] Changing key p in group temporal from 2 to 1
+       18040 [params.py:                 set():780] [18397] Changing key nb in group temporal from 1 to 0
+       18040 [params.py:       change_params():851] [18397] No parameter merge_thresh found!
+loading file:
+/projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/memmap__d1_480_d2_752_d3_1_order_C_frames_19000_.mmap
+Traceback (most recent call last):
+  File "jjm_cnmfe_caiman_script.py", line 131, in <module>
+    cn_filter, pnr = cm.summary_images.correlation_pnr(images, gSig=gSig[0], swap_dim=False) # change swap dim if output looks weird, it is a problem with tiffile
+  File "/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/summary_images.py", line 371, in correlation_pnr
+    tmp_data = data_filtered.copy() / data_std
+MemoryError
+finished cnmfe
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Mon Feb 25 09:10:02 CST 2019 1551107402
+JobID: 3605813.qsched03.quest.it.northwestern.edu
+Session ID:			17809
+Resources Used:			cput=00:09:18,vmem=143672180kb,walltime=00:09:55,mem=101685744kb,energy_used=0
+Job exit value:			0
+----------------------------------------

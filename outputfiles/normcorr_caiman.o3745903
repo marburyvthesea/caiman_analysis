@@ -1,0 +1,193 @@
+----------------------------------------
+PBS: Begin PBS Prologue Sun Mar 10 15:58:07 CDT 2019 1552251487
+PBS: Job ID:		3745903.qsched03.quest.it.northwestern.edu
+PBS: Username:		jma819
+PBS: Group:		jma819
+PBS: Executing queue:     short
+PBS: Job name:		normcorr_caiman
+PBS: Account:		p30771
+----------------------------------------
+   The following variables are not
+   guaranteed to be the same in 
+   prologue and the job run script  
+----------------------------------------
+PBS: Temporary Dir($TMPDIR):	/tmp/3745903.qsched03.quest.it.northwestern.edu
+PBS: Master Node($PBS_MSHOST):		qnode5110
+PBS: node file($PBS_NODEFILE):  /hpc/opt/torque6/nodes/qnode5110/aux//3745903.qsched03.quest.it.northwestern.edu
+PBS: PATH (in prologue) : /bin:/usr/bin
+PBS: WORKDIR ($PBS_O_WORKDIR) is:  /home/jma819/caiman_data/demos/notebooks/caiman_analysis
+----------------------------------------
+PBS: End PBS Prologue Sun Mar 10 15:58:07 CDT 2019 1552251487
+loading folder: 
+file:  
+through: 
+running motion correction
+         394 [__init__.py:             wrapper():415] [5052] $HOME=/home/jma819
+         395 [__init__.py:             wrapper():415] [5052] CONFIGDIR=/home/jma819/.config/matplotlib
+         395 [__init__.py:             wrapper():415] [5052] matplotlib data path: /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data
+         399 [__init__.py: rc_params_from_file():1093] [5052] loaded rc file /home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc
+         402 [__init__.py:            <module>():1819] [5052] matplotlib version 3.0.2
+         402 [__init__.py:            <module>():1820] [5052] interactive is False
+         402 [__init__.py:            <module>():1821] [5052] platform is linux
+         402 [__init__.py:            <module>():1822] [5052] loaded modules: ['builtins', 'sys', '_frozen_importlib', '_imp', '_warnings', '_thread', '_weakref', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'zipimport', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_weakrefset', '_bootlocale', '_locale', 'site', 'os', 'errno', 'stat', '_stat', 'posixpath', 'genericpath', 'os.path', '_collections_abc', '_sitebuiltins', 'sysconfig', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'types', 'functools', '_functools', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'weakref', 'collections.abc', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', '_sysconfigdata_x86_64_conda_cos6_linux_gnu', 'mpl_toolkits', 'google', 'sphinxcontrib', 'logging', 'time', 'traceback', 'linecache', 'tokenize', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'token', 'string', '_string', 'threading', 'atexit', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'numpy.core', 'numpy.core.info', 'numpy.core.multiarray', 'numpy.core.overrides', 'datetime', 'math', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'fnmatch', 'ntpath', 'urllib', 'urllib.parse', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core._internal', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.shape_base', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.info', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.info', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.utils', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.mixins', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.scimath', 'numpy.lib.polynomial', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft.info', 'numpy.fft.fftpack', 'numpy.fft.fftpack_lite', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random.mtrand', 'cython_runtime', 'mtrand', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'textwrap', 'numpy.ma.extras', 'numpy.testing', 'unittest', 'unittest.result', 'unittest.util', 'unittest.case', 'difflib', 'pprint', 'unittest.suite', 'unittest.loader', 'unittest.main', 'argparse', 'copy', 'gettext', 'locale', 'unittest.runner', 'unittest.signals', 'signal', 'numpy.testing._private', 'numpy.testing._private.utils', 'gc', 'tempfile', 'random', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'numpy.testing._private.decorators', 'numpy.testing._private.nosetester', 'caiman', 'caiman.base', 'caiman.base.movies', 'past', 'past.translation', 'imp', 'lib2to3', 'lib2to3.pgen2', 'lib2to3.pgen2.parse', 'lib2to3.pgen2.token', 'lib2to3.refactor', 'lib2to3.pgen2.driver', 'pkgutil', 'lib2to3.pgen2.grammar', 'lib2to3.pgen2.tokenize', 'lib2to3.pgen2.pgen', 'lib2to3.fixer_util', 'lib2to3.pytree', 'lib2to3.pygram', 'lib2to3.patcomp', 'lib2to3.pgen2.literals', 'lib2to3.btm_matcher', 'lib2to3.btm_utils', 'libfuturize', 'libfuturize.fixes', 'future', 'past.utils', 'cv2', 'cv2.Error', 'cv2.cuda', 'cv2.detail', 'cv2.dnn', 'cv2.fisheye', 'cv2.flann', 'cv2.instr', 'cv2.ipp', 'cv2.ml', 'cv2.ocl', 'cv2.ogl', 'cv2.samples', 'cv2.utils', 'cv2.videoio_registry', 'cv2.cv2', 'cv2.data', 'h5py', 'h5py._errors', 'h5py._hl', 'h5py._hl.compat', 'six', 'h5py._conv', 'h5py.h5r', 'h5py._objects', '_cython_0_29_3', 'h5py.defs', 'h5py.h5t', 'h5py.utils', 'h5py.h5', 'h5py.h5py_warnings', 'platform', 'subprocess', '_posixsubprocess', 'select', 'selectors', 'h5py.h5z', 'h5py.h5a', 'h5py.h5s', 'h5py.h5p', 'h5py.h5ac', 'h5py._proxy', 'h5py.h5d', 'h5py.h5ds', 'h5py.h5f', 'h5py.h5g', 'h5py.h5i', 'h5py.h5fd', 'h5py._hl.filters', 'h5py._hl.base', 'h5py._hl.files', 'h5py._hl.group', 'h5py.h5o', 'h5py.h5l', 'h5py._hl.dataset', 'six.moves', 'h5py._hl.selections', 'h5py._hl.selections2', 'h5py._hl.datatype', 'h5py._hl.vds', 'h5py.version', 'h5py._hl.attrs', 'uuid', 'ctypes.util', 'matplotlib', 'distutils', 'distutils.version', 'inspect', 'dis', 'opcode', '_opcode', 'urllib.request', 'base64', 'binascii', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'socket', '_socket', 'email._parseaddr', 'calendar', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', 'ipaddress', '_ssl', 'urllib.error', 'urllib.response', 'matplotlib.cbook', 'glob', 'gzip', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'dateutil', 'dateutil._version']
+         620 [__init__.py:             wrapper():415] [5052] CACHEDIR=/home/jma819/.cache/matplotlib
+         622 [font_manager.py:            <module>():1362] [5052] Using fontManager instance from /home/jma819/.cache/matplotlib/fontlist-v300.json
+         767 [pyplot.py:      switch_backend():211] [5052] Loaded backend qt5agg version unknown.
+         816 [pyplot.py:      switch_backend():211] [5052] Loaded backend qt5agg version unknown.
+         818 [pyplot.py:      switch_backend():211] [5052] Loaded backend qt4agg version unknown.
+         844 [pyplot.py:      switch_backend():211] [5052] Loaded backend tkagg version unknown.
+         846 [pyplot.py:      switch_backend():211] [5052] Loaded backend agg version unknown.
+         846 [pyplot.py:      switch_backend():211] [5052] Loaded backend agg version unknown.
+loading
+['/projects/p30771/miniscope/data/GRIN009/1_23_2019/H13_M59_S14/TIFs/H13_M59_S14msCam10.tif']
+        3397 [params.py:                 set():780] [5052] Changing key fnames in group data from None to ['/projects/p30771/miniscope/data/GRIN009/1_23_2019/H13_M59_S14/TIFs/H13_M59_S14msCam10.tif']
+        3398 [params.py:                 set():780] [5052] Changing key fr in group data from 30 to 20
+        3398 [params.py:                 set():780] [5052] Changing key max_shifts in group motion from (6, 6) to (5, 5)
+        3398 [params.py:                 set():780] [5052] Changing key gSig_filt in group motion from None to (3, 3)
+        3398 [params.py:                 set():780] [5052] Changing key strides in group motion from (96, 96) to (48, 48)
+        3398 [params.py:                 set():780] [5052] Changing key overlaps in group motion from (32, 32) to (24, 24)
+        6616 [motion_correction.py:motion_correct_rigid():258] [5052] Entering Rigid Motion Correction
+        6616 [motion_correction.py:motion_correct_rigid():259] [5052] 1.2573732
+        8039 [movies.py:      extract_shifts():256] [5052] min_val in extract_shifts: -0.2842832809686661
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:258: UserWarning: ** Pixel averages are too negative. Removing 1 percentile. **
+  '** Pixel averages are too negative. Removing 1 percentile. **')
+/home/jma819/.conda/envs/caiman/lib/python3.6/site-packages/caiman/base/movies.py:277: UserWarning: Pixel averages are too negative for template. Removing 1 percentile.
+  'Pixel averages are too negative for template. Removing 1 percentile.')
+        9573 [movies.py:      extract_shifts():289] [5052] Frame 100
+        9640 [movies.py:        apply_shifts():352] [5052] cubic interpolation
+       10224 [movies.py:        apply_shifts():385] [5052] Frame 100
+       10762 [movies.py:      extract_shifts():256] [5052] min_val in extract_shifts: -0.2842832809686661
+       12307 [movies.py:      extract_shifts():289] [5052] Frame 100
+       12374 [movies.py:        apply_shifts():352] [5052] cubic interpolation
+       12956 [movies.py:        apply_shifts():385] [5052] Frame 100
+       13436 [movies.py:      extract_shifts():256] [5052] min_val in extract_shifts: -0.2842832809686661
+       14984 [movies.py:      extract_shifts():289] [5052] Frame 100
+       15050 [movies.py:        apply_shifts():352] [5052] cubic interpolation
+       15634 [movies.py:        apply_shifts():385] [5052] Frame 100
+       15938 [motion_correction.py:motion_correct_batch_rigid():2235] [5052] Adding to movie 1.2573732
+       15938 [motion_correction.py:motion_correct_batch_rigid():2241] [5052] 0
+       15938 [motion_correction.py:motion_correct_batch_rigid():2245] [5052] saving!
+       16186 [motion_correction.py:motion_correction_piecewise():2574] [5052] ** Starting parallel motion correction **
+       16380 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 0
+       16389 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 0
+       16405 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 0
+       16423 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 0
+       16435 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 0
+       16446 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 0
+       16452 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 0
+       16458 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 0
+       16469 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 0
+       16480 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 0
+       16482 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 0
+       16484 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 0
+       20732 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 10
+       20752 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 10
+       20764 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 10
+       20771 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 10
+       20779 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 10
+       20842 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 10
+       21060 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 10
+       21084 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 10
+       21102 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 10
+       21133 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 10
+       21482 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 10
+       21874 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 10
+       24795 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 20
+       25099 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 20
+       25267 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 20
+       25320 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 20
+       25379 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 20
+       25532 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 20
+       25793 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 20
+       25870 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 20
+       25945 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 20
+       26137 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 20
+       26441 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 20
+       27120 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 20
+       29596 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 30
+       29710 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 30
+       30094 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 30
+       30138 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 30
+       30184 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 30
+       30396 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 30
+       30424 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 30
+       30685 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 30
+       31015 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 30
+       31259 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 30
+       31799 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 30
+       31839 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 30
+       34427 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 40
+       34458 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 40
+       34711 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 40
+       35006 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 40
+       35459 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 40
+       35483 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 40
+       35501 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 40
+       35636 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 40
+       35720 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 40
+       35868 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 40
+       35941 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 40
+       37541 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 40
+       39390 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 50
+       39436 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 50
+       39695 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 50
+       39957 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 50
+       40307 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 50
+       40334 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 50
+       40344 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 50
+       40392 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 50
+       40421 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 50
+       40592 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 50
+       41501 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 50
+       41515 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 50
+       44136 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 60
+       44199 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 60
+       44460 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 60
+       44550 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 60
+       44815 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 60
+       45056 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 60
+       45100 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 60
+       45108 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 60
+       45615 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 60
+       45639 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 60
+       46477 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 60
+       46800 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 60
+       48936 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 70
+       49515 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 70
+       49561 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 70
+       49584 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 70
+       49840 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 70
+       49961 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 70
+       50069 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 70
+       50394 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 70
+       50725 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 70
+       51474 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 70
+       51664 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 70
+       51753 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 70
+       53670 [motion_correction.py:tile_and_correct_wrapper():2430] [5089] 80
+       53749 [motion_correction.py:tile_and_correct_wrapper():2430] [5092] 80
+       53805 [motion_correction.py:tile_and_correct_wrapper():2430] [5093] 80
+       54518 [motion_correction.py:tile_and_correct_wrapper():2430] [5094] 80
+       54658 [motion_correction.py:tile_and_correct_wrapper():2430] [5085] 80
+       54930 [motion_correction.py:tile_and_correct_wrapper():2430] [5083] 80
+       54947 [motion_correction.py:tile_and_correct_wrapper():2430] [5084] 80
+       55033 [motion_correction.py:tile_and_correct_wrapper():2430] [5088] 80
+       55382 [motion_correction.py:tile_and_correct_wrapper():2430] [5087] 80
+       55922 [motion_correction.py:tile_and_correct_wrapper():2430] [5090] 80
+       56090 [motion_correction.py:tile_and_correct_wrapper():2430] [5086] 80
+       56101 [motion_correction.py:tile_and_correct_wrapper():2430] [5091] 80
+     3855956 [motion_correction.py:motion_correction_piecewise():2582] [5052] ** Finished parallel motion correction **
+     3856261 [motion_correction.py:motion_correct_batch_rigid():2258] [5052] 0.0846364
+     3856263 [mmapping.py:         save_memmap():399] [5052] /projects/p30771/miniscope/data/GRIN009/1_23_2019/H13_M59_S14/TIFs/H13_M59_S14msCam10_rig__d1_480_d2_752_d3_1_order_F_frames_1000_.mmap
+     3856264 [movies.py:                load():1352] [5052] loading in memory
+     3857792 [movies.py:                load():1355] [5052] mmap
+     3859449 [mmapping.py:         save_memmap():463] [5052] SAVING WITH numpy.tofile()
+finished motion correction
+----------------------------------------
+PBS job ended
+Begin PBS Epilogue Sun Mar 10 17:02:39 CDT 2019 1552255359
+JobID: 3745903.qsched03.quest.it.northwestern.edu
+Session ID:			4518
+Resources Used:			cput=00:17:32,vmem=40696564kb,walltime=01:04:27,mem=8962068kb,energy_used=0
+Job exit value:			0
+----------------------------------------
