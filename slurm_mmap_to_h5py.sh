@@ -2,9 +2,11 @@
 #SBATCH -A p30771
 #SBATCH -p short
 #SBATCH -t walltime=04:00:00
-#SBATCH --job-name="slurm_matlab_cnmfe_run"
+#SBATCH --job-name="slurm_mmap_to_h5py"
 #SBATCH -N 1
 #SBATCH -n 2
+
+module purge all
 
 
 cd ~
