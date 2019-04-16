@@ -1,11 +1,13 @@
 #!/bin/bash
-#MSUB -A p30771
-#MSUB -q normal
-#MSUB -l walltime=12:00:00
-#MSUB -M johnjmarshall@u.northwestern.edu
-#MSUB -j oe
-#MSUB -N normcorr_caiman
-#MSUB -l nodes=1:ppn=4
+#SBATCH -A p30771
+#SBATCH -p normal
+#SBATCH -t walltime=12:00:00
+#SBATCH --job-name="slurm_normcorr"
+#SBATCH -N 1
+#SBATCH -n 12
+
+module purge all
+
 cd ~
 
 #add project directory to PATH
