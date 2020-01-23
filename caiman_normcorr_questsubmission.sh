@@ -5,7 +5,7 @@
 #MSUB -M johnjmarshall@u.northwestern.edu
 #MSUB -j oe
 #MSUB -N normcorr_caiman
-#MSUB -l nodes=1:ppn=4
+#MSUB -l nodes=1:ppn=12
 cd ~
 
 #add project directory to PATH
@@ -33,6 +33,6 @@ echo "through: $4"
 echo "running motion correction"
 
 # inputs are folder path, regular expression in file names(e.g. msCam), start and end files to correct, number of processors to run
-python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN013/H11_M46_S9 msCam 1 39 12
+python caiman_motion_correction_normcorr_e_script.py /projects/p30771/miniscope/data/GRIN013/H11_M46_S9/ H11_M46_S9msCam 1 39 12
 
 echo "finished motion correction"

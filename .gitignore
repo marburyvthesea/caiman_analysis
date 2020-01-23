@@ -1,0 +1,10 @@
+
+#ignore logfiles directory
+logfiles/
+
+#ignore log files in existing directory
+*.out
+
+#ignore core file
+*.core
+s

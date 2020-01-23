@@ -26,6 +26,6 @@ source activate caiman
 
 cd /home/jma819/caiman_data/demos/notebooks/caiman_analysis
 
-#
+# file path, num processors, length to concat to 
 
-python mmap_to_h5py.py /projects/p30771/miniscope/data/GRIN011/1_24_2019/H10_M19_S59/TIFs/mmapfiles_C_order/mmap_C_order 4 5
+python mmap_to_h5py.py /projects/p30771/miniscope/data/GRIN018/H17_M41_S43/mmap_C_order/ 4 5 
