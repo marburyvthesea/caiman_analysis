@@ -5,7 +5,7 @@
 #SBATCH -o ./logfiles/slurm.%x-%j.out # STDOUT
 #SBATCH --job-name="mmap_to_h5py"
 #SBATCH -N 1
-#SBATCH -n 2
+#SBATCH -n 3
 #SBATCH --mem=90G
 
 cd ~
