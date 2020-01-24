@@ -5,7 +5,46 @@ import sys
 import os
 import glob
 import multiprocessing as mp
-from caiman import mmapping as mmp
+#from caiman import mmapping as mmp
+
+def load_memmap(filename, mode='r'):
+    """ Load a memory mapped file created by the function save_memmap
+
+    Args:
+        filename: str
+            path of the file to be loaded
+        mode: str
+            One of 'r', 'r+', 'w+'. How to interact with files
+
+    Returns:
+        Yr:
+            memory mapped variable
+
+        dims: tuple
+            frame dimensions
+
+        T: int
+            number of frames
+
+
+    Raises:
+        Exception "Unknown file extension"
+
+    """
+    if ('.mmap' in filename):
+        # Strip path components and use CAIMAN_DATA/example_movies
+        # TODO: Eventually get the code to save these in a different dir
+        file_to_load = filename
+        filename = os.path.split(filename)[-1]
+        fpart = filename.split('_')[1:-1] # The filename encodes the structure of the map
+        d1, d2, d3, T, order = int(fpart[-9]), int(fpart[-7]
+                                                   ), int(fpart[-5]), int(fpart[-1]), fpart[-3]
+        Yr = np.memmap(file_to_load, mode=mode, shape=prepare_shape((
+            d1 * d2 * d3, T)), dtype=np.float32, order=order)
+        return (Yr, (d1, d2), T) if d3 == 1 else (Yr, (d1, d2, d3), T)
+    else:
+        logging.error("Unknown extension for file " + str(filename))
+        raise Exception('Unknown file extension (should be .mmap)')
 
 def chunks(l, n):
 	for i in range(0, len(l), n):
@@ -31,7 +70,7 @@ def save_to_hdf(folder, mmap_fname, frames_to_save):
 
 def convert_from_mmap(full_file_path):
 	folder_path, mmap_path  = os.path.split(full_file_path)
-	frames, dims, T = mmp.load_memmap(full_file_path)
+	frames, dims, T = load_memmap(full_file_path)
 	frames_array = np.array(frames)
 	output_fname = save_to_hdf(folder_path, mmap_path, frames_array)
 	print(mmap_path, 'done')
@@ -45,14 +84,14 @@ def concat_convert_from_mmap(full_file_paths, reshape=True):
 	print('starting chunk with', mmap_path_start)
 
 	#load 1st array 
-	frames_0, dims, T = mmp.load_memmap(full_file_paths[0])
+	frames_0, dims, T = load_memmap(full_file_paths[0])
 	concatenated = np.array(frames_0)
 	dims_list = [dims]
 	T_list = [T]
 
 	#join arrays frame by frame
 	for file_name in full_file_paths[1:]:
-		frames, dims, T = mmp.load_memmap(file_name)
+		frames, dims, T = load_memmap(file_name)
 		concatenated = np.concatenate((concatenated, np.array(frames)), axis=1)
 		dims_list.append(dims)
 		T_list.append(T)
