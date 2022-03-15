@@ -5,8 +5,13 @@
 #SBATCH -o ./logfiles/slurm.%x-%j.out # STDOUT
 #SBATCH --job-name="mmap_to_h5py"
 #SBATCH -N 1
-#SBATCH -n 5
+#SBATCH -n 3
 #SBATCH --mem=80G
+
+
+#file to convert
+
+INPUT_file=$1
 
 cd ~
 
@@ -25,6 +30,6 @@ source activate caiman
 
 cd /home/jma819/caiman_quest/demos/notebooks/caiman_analysis
 
-#inputs are path to directory containing files, number of processors to use and length of batches to concactenate into one file
+#inputs are file
 
-python mmap_to_h5py.py /projects/b1118/miniscope/data/v4/JJM/RotaryWheel/DIO_r2_4/Day8/2021_11_26/15_13_34/8bit_tifs/Corder/groupby5/ 5 5 
+python single_file_mmap_to_h5py.py $INPUT_file 

@@ -18,6 +18,7 @@ from caiman.motion_correction import MotionCorrect
 from caiman.source_extraction.cnmf import params as params
 from caiman.utils.visualization import plot_contours, nb_view_patches, nb_plot_contour
 import cv2
+import os
 
 try:
     cv2.setNumThreads(0)
@@ -28,16 +29,20 @@ bpl.output_notebook()
 
 
 folder = sys.argv[1]
-reg_exp = sys.argv[2]
-file_start = int(sys.argv[3])
-file_end = int(sys.argv[4])
-num_procs = int(sys.argv[5])
+#reg_exp = sys.argv[2]
+#file start is automatically 1 
+file_start = 1
+#run all tiff files in directory mating regexp
+file_end = len([f for f in os.listdir(folder) if ".tif" in f])
+num_procs = int(sys.argv[2])
 
-fnames = []
-for i in range(file_start, file_end):
-    fnames.append(str(folder+reg_exp+str(i).zfill(2)+'.tif'))  # input filenames as a list
+fnames = [folder+f for f in os.listdir(folder) if ".tif" in f]
+print(fnames)
+fnames.sort()
+#for i in range(file_start, file_end):
+#    fnames.append(str(folder+reg_exp+str(i)+'.tif'))  # input filenames as a list
 
-print('loading')
+print('sorted_order')
 print(fnames)
 
 if 'dview' in locals():
