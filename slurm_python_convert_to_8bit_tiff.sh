@@ -33,7 +33,7 @@ cd /home/jma819/caiman_quest/demos/notebooks/caiman_analysis
 
 #run script
 
-python msCamdir_tiffsto8bit.py $DIR_path
+python python_msCamdir_tiffsto8bit.py $DIR_path
 
 echo "finished conversion"
 

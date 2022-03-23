@@ -9,10 +9,12 @@ from skimage import io
 dir_path = sys.argv[1]
 v4 = sys.argv[2]
 
-if v4=='v4':
+if v4=='v3':
     avi_files = [dir_path + fname for fname in os.listdir(dir_path) if 'msCam' in fname and 'avi' in fname]
-elif v4=='v3':
+elif v4=='v4':
     avi_files = [dir_path + fname for fname in os.listdir(dir_path) if 'avi' in fname]
+
+print(avi_files)
 
 for path_to_video in tqdm(avi_files):
     print('converting to tiff')
@@ -23,9 +25,11 @@ for path_to_video in tqdm(avi_files):
     print(savepath) 
     try:	
         video_loaded = imageio.get_reader(path_to_video)
+        print('loaded')
         imageio.mimwrite(savepath, video_loaded)
+        print('saved')
     except OSError: 
-        print('error in:'+path_to_video.split('/')[-1])
+        print('error in:'+path_to_video)
         pass
 
 print('files converted to tiffs')
