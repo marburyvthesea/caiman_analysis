@@ -38,8 +38,8 @@ cd /home/jma819/caiman_quest/demos/notebooks/caiman_analysis
 
 echo "converting to tiffs"
 python python_msCamdir_totiff.py $DIR_path $INPUT_v4
-echo "converting to 8bit"
-python python_msCamdir_tiffsto8bit.py $DIR_path
+#echo "converting to 8bit"
+#python python_msCamdir_tiffsto8bit.py $DIR_path
 
-echo "finished conversion"
+#echo "finished conversion"
 
